@@ -1,7 +1,5 @@
 ---
-title: "mysite"
+title: "Grace M. Horne"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+This site is currently under construction. Thanks for visiting!
