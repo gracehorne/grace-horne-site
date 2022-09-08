@@ -1,5 +1,10 @@
 ---
 title: "Grace M. Horne"
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    css: styles.css
 ---
 
 This site is currently under construction. Thanks for visiting!
