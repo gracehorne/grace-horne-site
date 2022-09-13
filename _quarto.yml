@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "mysite"
+  title: "Grace M. Horne"
   navbar:
     left:
       - href: index.qmd
@@ -11,7 +12,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: litera
     css: styles.css
     toc: true
 
