@@ -6,9 +6,9 @@ website:
   title: "Grace M. Horne"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - research.qmd
+      - outreach.qmd
+      - resources.qmd
 
 format:
   html:
