@@ -13,6 +13,9 @@ website:
       - icon: github
         href: https://github.com/gracehorne
         aria-label: GitHub
+      - icon: twitter
+        href: https://twitter.com/ghorneworm
+        aria-label: Twitter
 
 format:
   html:
