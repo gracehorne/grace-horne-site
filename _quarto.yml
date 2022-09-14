@@ -9,6 +9,10 @@ website:
       - research.qmd
       - outreach.qmd
       - resources.qmd
+    right:
+      - icon: github
+        href: https://github.com/gracehorne
+        aria-label: GitHub
 
 format:
   html:

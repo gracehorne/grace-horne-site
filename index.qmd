@@ -1,5 +1,5 @@
 ---
-title: "Grace M. Horne"
+title: ''
 format:
   html:
     toc: true
