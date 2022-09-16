@@ -26,8 +26,7 @@ format:
       - styles.css
       - simplex
     mainfont: "Avenir Next"
-    toc: true
-    
+    toc: true    
 
 
 
