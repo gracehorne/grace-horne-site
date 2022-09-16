@@ -25,9 +25,8 @@ format:
     theme: 
       - styles.css
       - simplex
-    mainfont: "Helvetica Neue"
+    mainfont: "Avenir Next"
     toc: true
-    backgroundcolor: white
     
 
 
