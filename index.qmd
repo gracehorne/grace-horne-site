@@ -1,5 +1,4 @@
 ---
-title: ''
 format:
   html:
     toc: true

@@ -1,1 +1,5 @@
 /* css styles */
+/*-- scss:defaults --*/
+// Changing fonts (override)
+$font-family-serif: "Avenir Next" !important;
+$font-family: "Avenir Next", sans-serif !important;

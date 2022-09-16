@@ -6,9 +6,12 @@ website:
   title: "Grace M. Horne"
   navbar:
     left:
-      - research.qmd
-      - outreach.qmd
-      - resources.qmd
+      - text: "Research"
+        file: research.qmd
+      - text: "Outreach"
+        file: outreach.qmd
+      - text: "Resources"
+        file: resources.qmd
     right:
       - icon: github
         href: https://github.com/gracehorne
@@ -19,9 +22,13 @@ website:
 
 format:
   html:
-    theme: litera
-    css: styles.css
+    theme: 
+      - styles.css
+      - simplex
+    mainfont: "Helvetica Neue"
     toc: true
+    backgroundcolor: white
+    
 
 
 
