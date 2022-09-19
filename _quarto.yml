@@ -12,6 +12,7 @@ website:
         file: outreach.qmd
       - text: "Resources"
         file: resources.qmd
+    pinned: true
     right:
       - icon: github
         href: https://github.com/gracehorne

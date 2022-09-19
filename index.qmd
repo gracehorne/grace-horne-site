@@ -6,3 +6,13 @@ format:
 ---
 
 This site is currently under construction. Thanks for visiting!
+
+### Personal Statement
+
+I am interested in herbivore-plant interactions, especially between Lepidopterans and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with community scientists in data collection and environmental education.
+
+### CV
+
+```{=html}
+<iframe src="https://ucdavis.app.box.com/embed/s/jmuimrzc46ggkxjwl8uvpadqpgr1or2c" width="800" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+```

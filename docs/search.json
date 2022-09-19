@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Grace M. Horne",
     "section": "",
-    "text": "This site is currently under construction. Thanks for visiting!"
+    "text": "Personal Statement\nI am interested in herbivore-plant interactions, especially between Lepidopterans and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with community scientists in data collection and environmental education.\n\n\nCV"
   },
   {
     "objectID": "about.html",
@@ -33,5 +33,12 @@
     "title": "Grace M. Horne",
     "section": "",
     "text": "[Resources here]"
+  },
+  {
+    "objectID": "index.html#personal-statement",
+    "href": "index.html#personal-statement",
+    "title": "Grace M. Horne",
+    "section": "Personal Statement",
+    "text": "Personal Statement\nI am interested in herbivore-plant interactions, especially between Lepidopterans and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with community scientists in data collection and environmental education."
   }
 ]
