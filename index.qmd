@@ -7,6 +7,8 @@ format:
 
 This site is currently under construction. Thanks for visiting!
 
+![](images/DALL%C2%B7E%202022-09-20%2011.31.13%20-%20crisp%20line%20art%20of%20a%20tiny%20moth.png){fig-alt="a line art drawing of a moth" fig-align="center" width="150"}
+
 ### Personal Statement
 
 I am interested in herbivore-plant interactions, especially between Lepidopterans and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with community scientists in data collection and environmental education.
