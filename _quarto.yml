@@ -4,29 +4,33 @@ project:
 
 website:
   title: "Grace M. Horne"
-  navbar:
-    left:
-      - text: "Research"
-        file: research.qmd
-      - text: "Outreach"
-        file: outreach.qmd
-      - text: "Resources"
-        file: resources.qmd
-    pinned: true
-    right:
+  text-align: center
+  sidebar:
+    tools:
       - icon: github
         href: https://github.com/gracehorne
         aria-label: GitHub
       - icon: twitter
         href: https://twitter.com/ghorneworm
         aria-label: Twitter
+    style: "docked"
+    search: true
+    contents:
+      - text: "Research"
+        file: research.qmd
+      - text: "Outreach"
+        file: outreach.qmd
+      - text: "Resources"
+        file: resources.qmd
 
 format:
   html:
+    page-layout: full
+    anchor-sections: false
     theme: 
       - styles.css
       - simplex
-    mainfont: "Avenir Next"
+    mainfont: "Palatino"
     toc: true    
 
 

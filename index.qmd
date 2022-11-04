@@ -1,20 +1,25 @@
 ---
 format:
   html:
-    toc: true
+    toc: false
     html-math-method: katex
+css: styles.css
 ---
 
+::: {#body style="width: 80%; margin: auto; font-weight: normal; text-align: left"}
 This site is currently under construction. Thanks for visiting!
+:::
 
-![](images/DALL%C2%B7E%202022-09-20%2011.31.13%20-%20crisp%20line%20art%20of%20a%20tiny%20moth.png){fig-alt="a line art drawing of a moth" fig-align="center" width="150"}
+![](images/DALL%C2%B7E%202022-09-20%2011.31.13%20-%20crisp%20line%20art%20of%20a%20tiny%20moth.png){.column-margin fig-alt="a line art drawing of a moth" fig-align="center" width="150"}
 
-### Personal Statement
+#### Personal Statement {#sec-personal-statement style="text-align: center; font-weight: bold;"}
 
+::: {style="width: 80%; margin: auto; font-weight: normal; text-align: left"}
 I am interested in herbivore-plant interactions, especially between Lepidopterans and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with community scientists in data collection and environmental education.
+:::
 
-### CV
+#### CV {#sec-cv style="text-align: center; font-weight: bold;"}
 
 ```{=html}
-<iframe src="https://ucdavis.app.box.com/embed/s/jmuimrzc46ggkxjwl8uvpadqpgr1or2c" width="800" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+<iframe src="https://ucdavis.app.box.com/embed/s/jmuimrzc46ggkxjwl8uvpadqpgr1or2c" width="600" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 ```
