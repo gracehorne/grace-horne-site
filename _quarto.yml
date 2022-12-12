@@ -5,8 +5,6 @@ project:
 website:
   title: "Grace M. Horne"
   text-align: center
-  navbar: 
-    title: " "
   sidebar:
     tools:
       - icon: github
@@ -18,6 +16,7 @@ website:
       - icon: mastodon
         href: https://mastodon.social/@gracehorne
         aria-label: Mastodon
+    title: "Grace M. Horne"
     style: "floating"
     search: true
     contents:
