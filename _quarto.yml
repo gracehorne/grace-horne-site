@@ -5,6 +5,8 @@ project:
 website:
   title: "Grace M. Horne"
   text-align: center
+  navbar: 
+    title: false
   sidebar:
     tools:
       - icon: github
