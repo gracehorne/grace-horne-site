@@ -21,5 +21,5 @@ I am interested in herbivore-plant interactions, especially between [Lepidoptera
 #### CV {#sec-cv style="text-align: center; font-weight: bold;"}
 
 ```{=html}
-<iframe src="https://ucdavis.app.box.com/embed/s/jmuimrzc46ggkxjwl8uvpadqpgr1or2c" width="600" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+<iframe src="https://ucdavis.app.box.com/embed/s/jmuimrzc46ggkxjwl8uvpadqpgr1or2c" width=80% height=250% frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 ```
