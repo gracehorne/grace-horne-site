@@ -5,12 +5,8 @@ project:
 website:
   title: "Grace M. Horne"
   text-align: center
-  navbar:
-    background: primary
-    search: false
-    left:
-      - text: "Home"
   sidebar:
+    pinned: true
     tools:
       - icon: github
         href: https://github.com/gracehorne
@@ -21,7 +17,6 @@ website:
       - icon: mastodon
         href: https://mastodon.social/@gracehorne
         aria-label: Mastodon
-    title: "Grace M. Horne"
     style: "floating"
     search: true
     contents:
@@ -31,8 +26,6 @@ website:
         file: outreach.qmd
       - text: "Resources"
         file: resources.qmd
-  secondary-nav
-
 format:
   html:
     page-layout: full
