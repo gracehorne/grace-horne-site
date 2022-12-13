@@ -27,6 +27,7 @@ website:
         file: outreach.qmd
       - text: "Resources"
         file: resources.qmd
+  secondary-nav
 
 format:
   html:
