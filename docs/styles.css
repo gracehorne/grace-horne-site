@@ -1,3 +1,7 @@
 /* css styles */
 
+.quarto-secondary-nav-title {
+  visibility: hidden;
+}
+
 /*-- scss:defaults --*/
