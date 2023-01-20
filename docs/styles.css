@@ -4,4 +4,47 @@
   visibility: hidden;
 }
 
-/*-- scss:defaults --*/
+div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, 
+nav.sidebar.sidebar-navigation:not(.rollup) {
+    background-color:  #f8f8f2;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active {
+    border-left: 1px solid #ffb86c;
+    color: #ffb86c !important;
+}
+
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid #ffb86c;
+    color: #ffb86c !important;
+}
+
+.panel-caption, .figure-caption, figcaption {
+    color: #6272a4;
+}
+
+/* unvisited link */
+a:link {
+  color: #ff79c6;
+}
+
+/* visited link */
+a:visited {
+  color: #ff79c6;
+}
+
+/* mouse over link */
+a:hover {
+  color: #bd93f9;
+}
+
+/* selected link */
+a:active {
+  color: #ffb86c;
+}
+
+div.sidebar-item-container .active, 
+div.sidebar-item-container .show>.nav-link, 
+div.sidebar-item-container .sidebar-link>code {
+    color: #ffb86c;
+}

@@ -3,13 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "Grace M. Horne"
-  text-align: center
+  title: "**Grace M. Horne**"
   sidebar:
     pinned: true
     tools:
       - icon: github
         href: https://github.com/gracehorne
+        aria-label: GitHub
+      - icon: google
+        href: https://scholar.google.com/citations?user=pE2oVU0AAAAJ&hl=en
         aria-label: GitHub
       - icon: twitter
         href: https://twitter.com/ghorneworm
@@ -18,7 +20,7 @@ website:
         href: https://mastodon.social/@gracehorne
         aria-label: Mastodon
     style: "floating"
-    search: true
+    search: false
     contents:
       - text: "Research"
         file: research.qmd
@@ -34,7 +36,9 @@ format:
       - styles.css
       - simplex
     mainfont: "Avenir Next"
-    toc: true    
+    toc: true 
+    backgroundcolor: "#f8f8f2" 
+    fontcolor: "#282a36"
 
 
 

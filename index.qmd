@@ -1,25 +1,39 @@
 ---
 format:
   html:
-    toc: false
     html-math-method: katex
+    toc-depth: 4
 css: styles.css
 ---
 
-::: {#body style="width: 80%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 80%; margin: auto; font-weight: normal; text-align: left"}
 This site is currently under construction. Thanks for visiting!
+
+![](images/E3DCD3BC-4CEB-4E8D-82C7-64A09229D39C-02.JPG){fig-align="center" width="280"}
+
+I am interested in herbivore-plant interactions, especially between Lepidopterans and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with community scientists in data collection and environmental education.
+
 :::
-
-![](images/DALL%C2%B7E%202022-09-20%2011.31.13%20-%20crisp%20line%20art%20of%20a%20tiny%20moth.png){.column-margin fig-alt="a line art drawing of a moth" fig-align="center" width="150"}
-
-#### Personal Statement {#sec-personal-statement style="text-align: center; font-weight: bold;"}
 
 ::: {style="width: 80%; margin: auto; font-weight: normal; text-align: left"}
-I am interested in herbivore-plant interactions, especially between [Lepidopterans](https://en.wikipedia.org/wiki/Lepidoptera) and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with [community scientists](https://education.ucdavis.edu/center-community-and-citizen-science) in data collection and environmental education.
+
+### **Curriculum vitae**
+
+#### **Education**
+
+| 2021 -- present
+| *University of California, Davis*
+| Ph.D. Entomology, in progress
+| Advisor: Dr. Emily Meineke
+
+| 2017 -- 2021
+| *Colby College, Waterville, ME*
+| B.A. Biology (honors) & Environmental Science
+| *Magna cum laude* with distinction in both majors
+| Thesis: "Reduced performance of ash-specialist caterpillars on non-native, cultivated Oleaceous plants"
+
+| Spring 2020
+| *Round River Conservation Studies, Maun, Botswana*
+| 
+| Round River Conservation Studies (RRCS) is an environmental organization operating at the nexus of conservation and education. We explored the complex relationship between conservation, people, and wildlife, mostly in Mababe, Botswana. We worked with local experts to design and maintain wildlife monitoring systems to be used to substantiate economic and environmental decisions. This program helped me to develop fluency in field work, responses to human-wildlife conflict, and communication with local stakeholders.
 :::
-
-#### CV {#sec-cv style="text-align: center; font-weight: bold;"}
-
-```{=html}
-<iframe src="https://ucdavis.app.box.com/embed/s/jmuimrzc46ggkxjwl8uvpadqpgr1or2c" width="600" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
-```
