@@ -14,7 +14,7 @@ css: styles.css
   <body>
     <div class="container">
       <div class="image">
-        <img src="images/E3DCD3BC-4CEB-4E8D-82C7-64A09229D39C-02.jpg">
+        <img src="images/E3DCD3BC-4CEB-4E8D-82C7-64A09229D39C.jpg">
       </div>
       <div class="text">
       <h3><strong>Personal statement</strong></h2>
