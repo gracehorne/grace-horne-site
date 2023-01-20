@@ -6,9 +6,6 @@ format:
 css: styles.css
 ---
 
-\
-\
-
 ::: {style="width: 95%; margin: auto; font-weight: normal; text-align: left"}
 ```{=html}
   <body>

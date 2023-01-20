@@ -23,11 +23,11 @@ website:
     search: false
     contents:
       - text: "Research"
-        file: research.qmd
+        href: gracehorne.com/research
       - text: "Outreach"
-        file: outreach.qmd
+        href: gracehorne.com/outreach
       - text: "Resources"
-        file: resources.qmd
+        href: gracehorne.com/resources
 format:
   html:
     page-layout: full
