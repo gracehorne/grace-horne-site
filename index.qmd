@@ -6,19 +6,32 @@ format:
 css: styles.css
 ---
 
-::: {style="width: 80%; margin: auto; font-weight: normal; text-align: left"}
-This site is currently under construction. Thanks for visiting!
+\
+\
 
-![](images/E3DCD3BC-4CEB-4E8D-82C7-64A09229D39C-02.JPG){fig-align="center" width="280"}
-
-I am interested in herbivore-plant interactions, especially between Lepidopterans and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with community scientists in data collection and environmental education.
-
+::: {style="width: 95%; margin: auto; font-weight: normal; text-align: left"}
+```{=html}
+  <body>
+    <div class="container">
+      <div class="image">
+        <img src="images/E3DCD3BC-4CEB-4E8D-82C7-64A09229D39C-02.jpg">
+      </div>
+      <div class="text">
+      <h3><strong>Personal statement</strong></h2>
+        <p>I am interested in herbivore-plant interactions, especially between <a href = https://en.wikipedia.org/wiki/Lepidoptera>Lepidopterans</a> and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with <a href = https://www.calacademy.org/community-science>community scientists</a> in data collection and environmental education.</p>
+      </div>
+    </div>
+  </body>
+```
 :::
 
-::: {style="width: 80%; margin: auto; font-weight: normal; text-align: left"}
+\
 
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center"}
 ### **Curriculum vitae**
+:::
 
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 #### **Education**
 
 | 2021 -- present

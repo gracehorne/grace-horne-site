@@ -1,7 +1,18 @@
 /* css styles */
 
+.sidebar-title>a {
+    font-size: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .quarto-secondary-nav-title {
   visibility: hidden;
+}
+
+nav.quarto-secondary-nav {
+    background-color: #8be9fd;
+    border-bottom: 1px solid #8be9fd;
 }
 
 div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, 
@@ -48,3 +59,26 @@ div.sidebar-item-container .show>.nav-link,
 div.sidebar-item-container .sidebar-link>code {
     color: #ffb86c;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 90%;
+}
+
+.image {
+  flex: 1 1 200px;
+}
+
+.text {
+  font-size: 18px;
+  padding-left: 20px;
+  flex: 1 1 250px;
+}
+

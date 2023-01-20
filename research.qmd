@@ -6,7 +6,7 @@ format:
 css: styles.css
 ---
 
-::: {#body style="width: 65%; margin: auto; font-weight: normal; text-align: left"}
+::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
 ### **Specialist herbivore performance on introduced plants during native host decline**
 
 My senior undergraduate thesis was published in *Environmental Entomology* in January 2023. It is free to view at this link: <https://doi.org/10.1093/ee/nvac107>.

@@ -6,4 +6,6 @@ format:
 css: styles.css
 ---
 
-\[Outreach here\]
+::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+### **Outreach**
+:::
