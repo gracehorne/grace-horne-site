@@ -3,8 +3,10 @@ format:
   html:
     html-math-method: katex
     toc-depth: 4
+    permalink: pretty
 css: styles.css
 ---
+\
 
 ::: {style="width: 95%; margin: auto; font-weight: normal; text-align: left"}
 ```{=html}

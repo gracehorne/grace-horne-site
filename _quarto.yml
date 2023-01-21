@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: docs
 
+permalink: /:title
+
 website:
   title: "Grace M. Horne"
   sidebar:
@@ -23,11 +25,11 @@ website:
     search: false
     contents:
       - text: "Research"
-        href: gracehorne.com/research
+        href: research.qmd
       - text: "Outreach"
-        href: gracehorne.com/outreach
+        href: outreach.qmd
       - text: "Resources"
-        href: gracehorne.com/resources
+        href: resources.qmd
 format:
   html:
     page-layout: full

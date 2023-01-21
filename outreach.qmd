@@ -3,6 +3,7 @@ format:
   html:
     toc: false
     html-math-method: katex
+permalink: pretty
 css: styles.css
 ---
 
