@@ -13,7 +13,7 @@ css: styles.css
   <body>
     <div class="container">
       <div class="image">
-        <img src="images/grace.jpg">
+        <img src="images/grace.JPG">
       </div>
       <div class="text">
       <h3><strong>Personal statement</strong></h2>
