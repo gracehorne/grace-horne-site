@@ -2,10 +2,12 @@
 format:
   html:
     html-math-method: katex
+    toc: true
     toc-depth: 4
     permalink: pretty
 css: styles.css
 ---
+
 \
 
 ::: {style="width: 95%; margin: auto; font-weight: normal; text-align: left"}
@@ -48,4 +50,23 @@ css: styles.css
 | *Round River Conservation Studies, Maun, Botswana*
 | 
 | Round River Conservation Studies (RRCS) is an environmental organization operating at the nexus of conservation and education. We explored the complex relationship between conservation, people, and wildlife, mostly in Mababe, Botswana. We worked with local experts to design and maintain wildlife monitoring systems to be used to substantiate economic and environmental decisions. This program helped me to develop fluency in field work, responses to human-wildlife conflict, and communication with local stakeholders.
+
+#### **Teaching**
+
+| Fall 2022 
+| *UC Davis Department of Environmental Science & Policy, Davis, CA*
+| General Ecology Teaching Assistant
+| 
+| Spring 2022
+| *UC Davis Department of Evolution & Ecology, Davis, CA*
+| Introduction to Ecology Teaching Assistant
+| 
+| Winter 2022, 2023
+| *UC Davis Department of Entomology & Nematology, Davis, CA*
+| Natural History of Insects Guest Lecturer
+| Lecture: "Insects & Climate Change"
+| 
+| Fall 2018
+| *Colby College Mathematics Department, Waterville, ME*
+| Series and Multi-variable Calculus Teaching Assistant
 :::
