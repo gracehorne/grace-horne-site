@@ -9,4 +9,14 @@ css: styles.css
 
 ::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
 ### **Outreach**
+
+#### **Bohart Museum of Entomology**
+
+| Currently, at UC Davis, I volunteer with the Bohart Museum of Entomology whenever I get the chance. Regularly throughout the year, the Museum puts on open houses. Each open house has a theme, from 'Beetles' to 'Insects in Agriculture,' with experts and enthusiasts spreading their knowledge and answering questions. There is a focus on early education with crafts and tactile exhibits targeted towards little hands. These open houses are family friendly and open to the public. Visit their website for more details: <https://bohart.ucdavis.edu>.
+
+#### **The Caterpillar Lab**
+
+| During college, I spent my summers interning at The Caterpillar Lab, an environmental outreach organization in my hometown of Marlborough, NH. With the Lab, I was able to travel across New England to libraries, classrooms, botanic gardens, farmers markets, museums of science, etc. We brought our mobile exhibits of caterpillars displaying defensive coloration, neat host plant associations, and interesting tales of population decline everywhere we went. A semi-comprehensive list of all of the programs I attended with The Caterpillar Lab is available in the outreach section of my CV. Visit their website for more details: <https://www.thecaterpillarlab.org>.
+
+#### 
 :::

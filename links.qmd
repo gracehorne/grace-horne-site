@@ -1,0 +1,32 @@
+---
+format:
+  html:
+    toc: false
+    html-math-method: katex
+css: styles.css
+---
+
+::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+### **Links**
+
+Below is a working list of the resources I use for my research and life. You can view my current public projects on my GitHub profile, [\@gracehorne](https://github.com/gracehorne).
+
+#### **R**
+
+1.  [R for Data Science](https://r4ds.had.co.nz/)
+2.  [Stack Overflow](https://stackoverflow.com/)
+3.  [(R) Coding Club](https://ourcodingclub.github.io/)
+4.  [Happy Git with R](https://happygitwithr.com/)
+
+#### **UCD**
+
+**Entomology**
+
+1.  [Diversity statement](https://entomology.ucdavis.edu/department-solidarity-statement)
+2.  [Prospective students](https://entomology.ucdavis.edu/information-prospective-students)
+
+**Campus-wide**
+
+1.  [Mental health support](https://shcs.ucdavis.edu/services/counseling-services)
+2.  [Center for Advocacy, Resources, & Education (CARE)](https://care.ucdavis.edu/ "Home")
+:::

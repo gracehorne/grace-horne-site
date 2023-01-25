@@ -24,12 +24,12 @@ website:
     style: "floating"
     search: false
     contents:
-      - text: "Research"
+      - text: "🔬 Research"
         href: research.qmd
-      - text: "Outreach"
+      - text: "💡 Outreach"
         href: outreach.qmd
-      - text: "Resources"
-        href: resources.qmd
+      - text: " 🔗 Links"
+        href: links.qmd
 format:
   html:
     page-layout: full
@@ -39,6 +39,7 @@ format:
       - simplex
     mainfont: "Avenir Next"
     toc: true 
+    toc-depth: 4
     backgroundcolor: "#f8f8f2" 
     fontcolor: "#282a36"
 
