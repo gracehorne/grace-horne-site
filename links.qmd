@@ -9,6 +9,16 @@ css: styles.css
 ::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
 ### **Links**
 
+#### **Press**
+
+::: {layout="[[75,-10,75], [75]]"}
+[![](images/image-294911473.png){width="350"}](https://entomologytoday.org/)
+
+[![](images/image-1089920415.png){fig-alt="Colby College off-campus blog" width="188"}](https://web.colby.edu/offmayflowerhill/author/gmhorn21/)
+
+[![](images/image-1525590061.png){fig-alt="UC ANR" width="350"}](https://ucanr.edu/blogs/blogcore/postdetail.cfm?postnum=52104)
+:::
+
 Below is a working list of the resources I use for my research and life. You can view my current public projects on my GitHub profile, [\@gracehorne](https://github.com/gracehorne).
 
 #### **R**
