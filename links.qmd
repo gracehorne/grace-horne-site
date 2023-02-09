@@ -12,7 +12,7 @@ css: styles.css
 #### **Press**
 
 ::: {layout="[[75,-10,75], [75]]"}
-[![](images/image-294911473.png){width="350"}](https://entomologytoday.org/)
+[![](images/image-294911473.png){width="350"}](https://entomologytoday.org/2023/02/07/ash-trees-insects-alternative-host-plants/)
 
 [![](images/image-1089920415.png){fig-alt="Colby College off-campus blog" width="188"}](https://web.colby.edu/offmayflowerhill/author/gmhorn21/)
 
