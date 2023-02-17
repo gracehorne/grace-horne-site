@@ -23,10 +23,11 @@ Below is a working list of the resources I use for my research and life. You can
 
 #### **R**
 
-1.  [R for Data Science](https://r4ds.had.co.nz/)
-2.  [Stack Overflow](https://stackoverflow.com/)
-3.  [(R) Coding Club](https://ourcodingclub.github.io/)
-4.  [Happy Git with R](https://happygitwithr.com/)
+1.  [R Basics](https://ucdavisdatalab.github.io/workshop_r_basics/index.html)
+2.  [R for Data Science](https://r4ds.had.co.nz/)
+3.  [Stack Overflow](https://stackoverflow.com/)
+4.  [(R) Coding Club](https://ourcodingclub.github.io/)
+5.  [Happy Git with R](https://happygitwithr.com/)
 
 #### **UCD**
 
