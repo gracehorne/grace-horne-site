@@ -16,17 +16,18 @@ css: styles.css
 
 [![](images/image-1089920415.png){fig-alt="Colby College off-campus blog" width="188"}](https://web.colby.edu/offmayflowerhill/author/gmhorn21/)
 
-[![](images/image-1525590061.png){fig-alt="UC ANR" width="350"}](https://ucanr.edu/blogs/blogcore/postdetail.cfm?postnum=52104)
+[![](images/image-1525590061.png){fig-alt="UC ANR" width="350"}](https://ucanr.edu/blogs/blogcore/postdetail.cfm?postnum=56281)
 :::
 
 Below is a working list of the resources I use for my research and life. You can view my current public projects on my GitHub profile, [\@gracehorne](https://github.com/gracehorne).
 
 #### **R**
 
-1.  [R for Data Science](https://r4ds.had.co.nz/)
-2.  [Stack Overflow](https://stackoverflow.com/)
-3.  [(R) Coding Club](https://ourcodingclub.github.io/)
-4.  [Happy Git with R](https://happygitwithr.com/)
+1.  [R Basics](https://ucdavisdatalab.github.io/workshop_r_basics/index.html)
+2.  [R for Data Science](https://r4ds.had.co.nz/)
+3.  [Stack Overflow](https://stackoverflow.com/)
+4.  [(R) Coding Club](https://ourcodingclub.github.io/)
+5.  [Happy Git with R](https://happygitwithr.com/)
 
 #### **UCD**
 
