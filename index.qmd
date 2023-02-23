@@ -34,7 +34,9 @@ css: styles.css
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 #### **Education**
+:::
 
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | 2021 -- present
 | *University of California, Davis*
 | Ph.D. Entomology, in progress
@@ -50,9 +52,13 @@ css: styles.css
 | *Round River Conservation Studies, Maun, Botswana*
 | 
 | Round River Conservation Studies (RRCS) is an environmental organization operating at the nexus of conservation and education. We explored the complex relationship between conservation, people, and wildlife, mostly in Mababe, Botswana. We worked with local experts to design and maintain wildlife monitoring systems to be used to substantiate economic and environmental decisions. This program helped me to develop fluency in field work, responses to human-wildlife conflict, and communication with local stakeholders.
+:::
 
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 #### **Teaching**
+:::
 
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | Fall 2022
 | *UC Davis Department of Environmental Science & Policy, Davis, CA*
 | General Ecology Teaching Assistant
@@ -70,3 +76,24 @@ css: styles.css
 | *Colby College Mathematics Department, Waterville, ME*
 | Series and Multi-variable Calculus Teaching Assistant
 :::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+#### **Employment & Commissions**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| 2022 – present	
+| Picnic Day Co-Chair
+| University of California, Davis
+| 
+| 2018 – 2021		
+| Education Staff & Undergraduate Researcher 
+| The Caterpillar Lab, Marlborough, NH 
+| 
+| The Caterpillar Lab (TCL) is an environmental education organization focused on inviting people—kids and adults alike—to share in stories of ecology, evolution, and natural history. I have presented at over 30 locations including elementary school classrooms, botanic gardens, and children's museums, |with a goal to ignite in us a curiosity of the world we live in, from the smallest leaf-miners to the tallest trees. 
+| 
+| 2019 – 2020		
+| Student Assistant
+| Colby College Olin Science Library, Waterville, ME
+:::
+
