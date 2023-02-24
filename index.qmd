@@ -32,68 +32,248 @@ css: styles.css
 ### **Curriculum vitae**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
 #### **Education**
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
-| 2021 -- present
+| **2021 -- present**
 | *University of California, Davis*
 | Ph.D. Entomology, in progress
 | Advisor: Dr. Emily Meineke
 
-| 2017 -- 2021
+| **2017 -- 2021**
 | *Colby College, Waterville, ME*
 | B.A. Biology (honors) & Environmental Science
 | *Magna cum laude* with distinction in both majors
 | Thesis: "Reduced performance of ash-specialist caterpillars on non-native, cultivated Oleaceous plants"
 
-| Spring 2020
+| **Spring 2020**
 | *Round River Conservation Studies, Maun, Botswana*
 | 
 | Round River Conservation Studies (RRCS) is an environmental organization operating at the nexus of conservation and education. We explored the complex relationship between conservation, people, and wildlife, mostly in Mababe, Botswana. We worked with local experts to design and maintain wildlife monitoring systems to be used to substantiate economic and environmental decisions. This program helped me to develop fluency in field work, responses to human-wildlife conflict, and communication with local stakeholders.
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
 #### **Teaching**
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
-| Fall 2022
+| **Fall 2022**
 | *UC Davis Department of Environmental Science & Policy, Davis, CA*
 | General Ecology Teaching Assistant
 | 
-| Spring 2022
+| **Spring 2022**
 | *UC Davis Department of Evolution & Ecology, Davis, CA*
 | Introduction to Ecology Teaching Assistant
 | 
-| Winter 2022, 2023
+| **Winter 2022, 2023**
 | *UC Davis Department of Entomology & Nematology, Davis, CA*
 | Natural History of Insects Guest Lecturer
 | Lecture: "Insects & Climate Change"
 | 
-| Fall 2018
+| **Fall 2018**
 | *Colby College Mathematics Department, Waterville, ME*
 | Series and Multi-variable Calculus Teaching Assistant
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
 #### **Employment & Commissions**
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
-| 2022 – present	
+| **2022 -- present**
 | Picnic Day Co-Chair
 | University of California, Davis
 | 
-| 2018 – 2021		
-| Education Staff & Undergraduate Researcher 
-| The Caterpillar Lab, Marlborough, NH 
+| **2018 -- 2021**
+| Education Staff & Undergraduate Researcher
+| The Caterpillar Lab, Marlborough, NH
 | 
-| The Caterpillar Lab (TCL) is an environmental education organization focused on inviting people—kids and adults alike—to share in stories of ecology, evolution, and natural history. I have presented at over 30 locations including elementary school classrooms, botanic gardens, and children's museums, |with a goal to ignite in us a curiosity of the world we live in, from the smallest leaf-miners to the tallest trees. 
+| The Caterpillar Lab (TCL) is an environmental education organization focused on inviting people---kids and adults alike---to share in stories of ecology, evolution, and natural history. I have presented at over 30 locations including elementary school classrooms, botanic gardens, and children's museums, \|with a goal to ignite in us a curiosity of the world we live in, from the smallest leaf-miners to the tallest trees.
 | 
-| 2019 – 2020		
+| **2019 -- 2020**
 | Student Assistant
 | Colby College Olin Science Library, Waterville, ME
 :::
 
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+#### **Fellowships & Grants**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| ***External***
+| **2022**
+| CNPS Student Research Grant Award (\$595)
+| 
+| ***Internal***
+| **2022**
+| McBeth Memorial Scholarship
+| Henry A. Jastro Research Scholarship (combined, \$2,650)
+| 
+| **2020**
+| Colby College Students' Special Project Grant (\$500)
+| 
+| **2017 -- 2021**
+| Colby College National Merit Scholarship (\$8,000)
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+#### **Honors & Awards**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| **2021**
+| Colby College Off-Campus Study Photo Contest (**1^st^ place**)
+| Entry title, description: \"Cricket Cricket,\" a macro-photograph of a *setotojane* katydid
+| 
+| **2017 -- 2021**
+| Colby College National Merit Scholar
+| Dean\'s Honors (in every qualifying semester)
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+#### **Publications**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| 1.     **Horne, Grace M.**, Rea Manderino, and Samuel P. Jaffe. (2023) Specialist herbivore performance on introduced plants during native host decline. *Environmental Entomology.*
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+#### **Presentations**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| 6.     **Horne, Grace M.**\* (2023) Climate change and our backyard fauna: a tale of the moths of Davis, CA. *Atria Covell Gardens.*
+| 
+| 5.     Meineke, Emily K., Alison Colwell\*, **Grace M. Horne**, and David Eng. (2022) Harnessing the Power of Inadvertent Collecting: Bias assessments in support of use of herbarium specimens for entomology research. *California Native Plant Society Conference.*
+| 
+| 4.     **Horne, Grace M.**\*, Matthew L. Forister, and Emily K. Meineke. (2022) Two new datasets reveal long-term moth community shifts in a biodiversity hotspot. *Ecological Society of America Annual Meeting.*
+| 
+| 3.     **Horne, Grace M.**\* (2021) Reduced performance of ash-specialist caterpillars on non-native, cultivated Oleaceous plants. *Colby Liberal Arts Symposium.*
+| 
+| 2.     **Horne, Grace M.**\* (2020) Will non-native Oleaceae family plants preserve and support native ash-feeding Sphingid populations in post-emerald ash borer forests? *Coastal Maine Botanical Gardens.*
+| 
+| 1.     **Horne, Grace M.**\* (2019) Canid infectious disease transmission via domestic dogs to *Lycaon pictus*. *Colby Liberal Arts Symposium.*
+| 
+| \* presenting author
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+#### **Workshops**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| **2023**
+| Using GitHub with R(Studio), Williams Lab \@ UCD, February 17
+| 
+| **2022**
+| Using GitHub with R(Studio), Meineke Lab \@ UCD, October 28
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+#### **Outreach & Extension**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| **Bold type** indicates an institution serving a majority low-income population
+| 
+| **2023**
+| Bohart Museum Open House: \"Beetles!,\" January 22
+| Museum Biodiversity Day, February 18
+| 
+| **2022**
+| STEM Squad Event \@ **Winters Middle School**, February 24
+| STEM Squad Event \@ **Winters Middle School**, April 14
+| UC Davis Picnic Day: Entomology Exhibit, April 23^†^
+| Davis, CA Loopalooza: Bohart Museum Station, May 1
+| STEM Squad X Google Event \@ Holy Rosary School, May 13
+| Bohart Museum Open House: \"Bugs in Ag,\" May 28
+| Bohart Museum Open House: \"Insects, Art, & Culture,\" October 15
+| Go Wild Yolo Library \@ Capay Open Space Park, October 22
+| 
+| **2021**
+| Discovery Museum Residency, June 7 - 21
+| Troy, NH Girl Scouts of America Program, June 28
+| Berkshire Botanical Garden Residency, July 3 - 4
+| Royalston, MA Library Program, July 15
+| Bedrock Gardens Program, July 18
+| Squam Lakes Natural Science Center Program, July 28 - August 3
+| Vermont Institute of Natural Science Program, August 7
+| 
+| **2020\***
+| Coastal Maine Botanical Gardens Residency, August 29
+| 
+| **2019**
+| **Lincoln-Eliot School Program**, May 29
+| **Horace Mann School Program**, May 30
+| Randall Library Program, May 31
+| Keene Farmer\'s Market Booth, June 1
+| Framingham Public Library Program, June 2
+| NH Audubon Pollinator Party, June 15
+| Brattleboro Farmer\'s Market Booth, June 22
+| Wildwood Camp Program, June 25
+| Aldworth Manor Program, June 27
+| North Branch Nature Center Program, June 30
+| Bradford Conservation Commission Program, July 9
+| Squam Lakes Natural Science Center Program, July 11
+| Warren Public Library Program, July 13
+| Brattleboro, VT Museum Program, July 29
+| Coastal Maine Botanical Gardens Residency, July 22 - 27
+| Franklin Pierce University Camp Program, July 30
+| New England Botanic Garden at Tower Hill Program, August 3
+| 
+| **2018**
+| North Branch Nature Center BioBlitz, July 21 -- 22
+| Arnold Arboretum Program, July 28
+| Boston Museum of Science Exhibit, July 11
+| New England Botanic Garden at Tower Hill Program, July 25 -- 26
+| Discovery Museum Residency, July 28 -- August 3
+| 
+| \* Senior thesis data collection, COVID-19 pandemic
+| ^†^ Independently designed and presented
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+#### **Professional Affiliations**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| **2022 -- present**           
+| Ecological Society of America
+| Entomological Society of America
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+#### **Reviews**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| Proceedings of the Royal Society B
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+#### **Relevant Coursework**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| Cell Biology 
+| Conservation Biology 
+| Environmental & Natural Resource Economics 
+| GIS & Spatial Analysis 
+| Introduction to R 
+| Series & Multivariable Calculus 
+| Taxonomy of Flowering Plants 
+| Woody Plants
+| Problems in Environmental Science
+| Evolutionary Analysis
+| Community Ecology
+| Forest Ecosystems
+| Introduction to Entomology
+| Insect Physiology
+| Scientific Illustration in Illustrator & Photoshop
+| Trait-Based Ecology
+| Insect Ecology
+| Bayesian Statistics
+:::

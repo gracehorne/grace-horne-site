@@ -32,14 +32,14 @@ Below is a working list of the resources I use for my research and life. You can
 2.  [Center for Advocacy, Resources, & Education (CARE)](https://care.ucdavis.edu/ "Home")
 :::
 
-::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
-#### **Press**
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left; "}
+#### **Media & Press**
 
 ::: {layout="[[75], [75, -.5, 75]]"}
 [![](images/image-1841396989.png){fig-alt="The Caterpillar Lab" width="350"}](https://www.facebook.com/TheCaterpillarLab/posts/pfbid02QukCb6Lncr3zNovvu38Be2Wx26WPaQhxe1q7qsEpmHowi92ZbxtT9y5KarADgiULl)
 
-[![](images/image-294911473.png){width="351"}](https://entomologytoday.org/2023/02/07/ash-trees-insects-alternative-host-plants/)
+[![](images/image-294911473.png){width="350"}](https://entomologytoday.org/2023/02/07/ash-trees-insects-alternative-host-plants/)
 
-[![](images/image-1525590061.png){fig-alt="UC ANR" width="567"}](https://ucanr.edu/blogs/blogcore/postdetail.cfm?postnum=56281)
+[![](images/image-1525590061.png){fig-alt="UC ANR" width="350"}](https://ucanr.edu/blogs/blogcore/postdetail.cfm?postnum=56281)
 :::
 :::
