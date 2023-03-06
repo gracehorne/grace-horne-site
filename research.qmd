@@ -10,7 +10,7 @@ css: styles.css
 ::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
 ### **Specialist herbivore performance on introduced plants during native host decline**
 
-My senior undergraduate thesis was published in *Environmental Entomology* in January 2023. It is free to view at this link: <https://doi.org/10.1093/ee/nvac107>.
+My senior undergraduate thesis was published in *Environmental Entomology* in January 2023. It is free to view at this link: [https://doi.org/10.1093/ee/nvac107](https://doi.org/10.1093/ee/nvac107){.uri target="_blank"}.
 
 During the socially-distant summer of 2020, I raised hundreds of caterpillars with the goal of helping to answer a single question: what will become of ash-eating insects once ash disappears (or nearly disappears) from New England and northeastern forests? To chip away at this mammoth question---all insects are sure to respond differently!---I reared three species of hawkmoth caterpillars on four different host plants in the same plant family as their primary host plant, ash.
 

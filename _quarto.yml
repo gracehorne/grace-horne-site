@@ -24,11 +24,11 @@ website:
     style: "floating"
     search: false
     contents:
-      - text: "🔬 Research"
+      - text: "¹ Research"
         href: research.qmd
-      - text: "💡 Outreach"
+      - text: "² Outreach"
         href: outreach.qmd
-      - text: " 🔗 Links"
+      - text: "³ Links"
         href: links.qmd
 format:
   html:

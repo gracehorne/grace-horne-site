@@ -16,7 +16,7 @@ css: styles.css
 
 #### **The Caterpillar Lab**
 
-| During college, I spent my summers interning at The Caterpillar Lab, an environmental outreach organization in my hometown of Marlborough, NH. With the Lab, I was able to travel across New England to libraries, classrooms, botanic gardens, farmers markets, museums of science, etc. We brought our mobile exhibits of caterpillars displaying defensive coloration, neat host plant associations, and interesting tales of population decline everywhere we went. A semi-comprehensive list of all of the programs I attended with The Caterpillar Lab is available in the outreach section of my CV. Visit their website for more details: <https://www.thecaterpillarlab.org>.
+| During college, I spent my summers interning at The Caterpillar Lab, an environmental outreach organization in my hometown of Marlborough, NH. With the Lab, I was able to travel across New England to libraries, classrooms, botanic gardens, farmers markets, museums of science, etc. We brought our mobile exhibits of caterpillars displaying defensive coloration, neat host plant associations, and interesting tales of population decline everywhere we went. A semi-comprehensive list of all of the programs I attended with The Caterpillar Lab is available in the [outreach section](https://gracehorne.com/#outreach-extension) of my CV. Visit their website for more details: <https://www.thecaterpillarlab.org>.
 
 #### 
 :::

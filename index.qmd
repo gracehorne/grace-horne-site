@@ -125,11 +125,11 @@ css: styles.css
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | **2021**
 | Colby College Off-Campus Study Photo Contest (**1^st^ place**)
-| Entry title, description: \"Cricket Cricket,\" a macro-photograph of a *setotojane* katydid
+| Entry title, description: "Cricket Cricket," a macro-photograph of a *setotojane* katydid
 | 
 | **2017 -- 2021**
 | Colby College National Merit Scholar
-| Dean\'s Honors (in every qualifying semester)
+| Dean's Honors (in every qualifying semester)
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
@@ -180,7 +180,7 @@ css: styles.css
 | **Bold type** indicates an institution serving a majority low-income population
 | 
 | **2023**
-| Bohart Museum Open House: \"Beetles!,\" January 22
+| Bohart Museum Open House: "Beetles!," January 22
 | Museum Biodiversity Day, February 18
 | 
 | **2022**
@@ -189,8 +189,8 @@ css: styles.css
 | UC Davis Picnic Day: Entomology Exhibit, April 23^†^
 | Davis, CA Loopalooza: Bohart Museum Station, May 1
 | STEM Squad X Google Event \@ Holy Rosary School, May 13
-| Bohart Museum Open House: \"Bugs in Ag,\" May 28
-| Bohart Museum Open House: \"Insects, Art, & Culture,\" October 15
+| Bohart Museum Open House: "Bugs in Ag," May 28
+| Bohart Museum Open House: "Insects, Art, & Culture," October 15
 | Go Wild Yolo Library \@ Capay Open Space Park, October 22
 | 
 | **2021**
@@ -209,10 +209,10 @@ css: styles.css
 | **Lincoln-Eliot School Program**, May 29
 | **Horace Mann School Program**, May 30
 | Randall Library Program, May 31
-| Keene Farmer\'s Market Booth, June 1
+| Keene Farmer's Market Booth, June 1
 | Framingham Public Library Program, June 2
 | NH Audubon Pollinator Party, June 15
-| Brattleboro Farmer\'s Market Booth, June 22
+| Brattleboro Farmer's Market Booth, June 22
 | Wildwood Camp Program, June 25
 | Aldworth Manor Program, June 27
 | North Branch Nature Center Program, June 30
@@ -240,7 +240,7 @@ css: styles.css
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
-| **2022 -- present**           
+| **2022 -- present**
 | Ecological Society of America
 | Entomological Society of America
 :::
@@ -258,13 +258,13 @@ css: styles.css
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
-| Cell Biology 
-| Conservation Biology 
-| Environmental & Natural Resource Economics 
-| GIS & Spatial Analysis 
-| Introduction to R 
-| Series & Multivariable Calculus 
-| Taxonomy of Flowering Plants 
+| Cell Biology
+| Conservation Biology
+| Environmental & Natural Resource Economics
+| GIS & Spatial Analysis
+| Introduction to R
+| Series & Multivariable Calculus
+| Taxonomy of Flowering Plants
 | Woody Plants
 | Problems in Environmental Science
 | Evolutionary Analysis
