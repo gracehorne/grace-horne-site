@@ -9,6 +9,7 @@ css: styles.css
 ---
 
 \
+\
 
 ::: {style="width: 95%; margin: auto; font-weight: normal; text-align: left"}
 ```{=html}
@@ -27,6 +28,11 @@ css: styles.css
 :::
 
 \
+\
+\
+\
+\
+\
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center"}
 ### **Curriculum vitae**
@@ -40,7 +46,7 @@ css: styles.css
 | **2021 -- present**
 | *University of California, Davis*
 | Ph.D. Entomology, in progress
-| Advisor: Dr. Emily Meineke
+| Advisor: Dr. [Emily Meineke](https://emilykmeineke.com/)
 
 | **2017 -- 2021**
 | *Colby College, Waterville, ME*
@@ -51,7 +57,7 @@ css: styles.css
 | **Spring 2020**
 | *Round River Conservation Studies, Maun, Botswana*
 | 
-| Round River Conservation Studies (RRCS) is an environmental organization operating at the nexus of conservation and education. We explored the complex relationship between conservation, people, and wildlife, mostly in Mababe, Botswana. We worked with local experts to design and maintain wildlife monitoring systems to be used to substantiate economic and environmental decisions. This program helped me to develop fluency in field work, responses to human-wildlife conflict, and communication with local stakeholders.
+| [Round River Conservation Studies](https://www.roundriver.org/) (RRCS) is an environmental organization operating at the nexus of conservation and education. We explored the complex relationship between conservation, people, and wildlife, mostly in Mababe, Botswana. We worked with local experts to design and maintain wildlife monitoring systems to be used to substantiate economic and environmental decisions. This program helped me to develop fluency in field work, responses to human-wildlife conflict, and communication with local stakeholders.
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
@@ -90,7 +96,7 @@ css: styles.css
 | Education Staff & Undergraduate Researcher
 | The Caterpillar Lab, Marlborough, NH
 | 
-| The Caterpillar Lab (TCL) is an environmental education organization focused on inviting people---kids and adults alike---to share in stories of ecology, evolution, and natural history. I have presented at over 30 locations including elementary school classrooms, botanic gardens, and children's museums, \|with a goal to ignite in us a curiosity of the world we live in, from the smallest leaf-miners to the tallest trees.
+| [The Caterpillar Lab](https://www.thecaterpillarlab.org/) (TCL) is an environmental education organization focused on inviting people---kids and adults alike---to share in stories of ecology, evolution, and natural history. I have presented at over 30 locations including elementary school classrooms, botanic gardens, and children's museums, \|with a goal to ignite in us a curiosity of the world we live in, from the smallest leaf-miners to the tallest trees.
 | 
 | **2019 -- 2020**
 | Student Assistant
@@ -136,15 +142,20 @@ css: styles.css
 #### **Publications**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {layout="[[5, 75, 20]]" style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+```{=html}
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="140836740"></div>
+```
 | 1.     **Horne, Grace M.**, Rea Manderino, and Samuel P. Jaffe. (2023) Specialist herbivore performance on introduced plants during native host decline. *Environmental Entomology.*
+
+![](images/image-237850656.png){width="150"}
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
 #### **Presentations**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; fig-align: center"}
 | 6.     **Horne, Grace M.**\* (2023) Climate change and our backyard fauna: a tale of the moths of Davis, CA. *Atria Covell Gardens.*
 | 
 | 5.     Meineke, Emily K., Alison Colwell\*, **Grace M. Horne**, and David Eng. (2022) Harnessing the Power of Inadvertent Collecting: Bias assessments in support of use of herbarium specimens for entomology research. *California Native Plant Society Conference.*
