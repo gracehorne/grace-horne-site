@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
 
-permalink: /:title
+permalinks: /:slug
 
 website:
   title: "Grace M. Horne"

@@ -1,4 +1,5 @@
 ---
+slug: "link"
 format:
   html:
     toc: false
