@@ -31,8 +31,6 @@ css: styles.css
 \
 \
 \
-\
-\
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center"}
 ### **Curriculum vitae**
@@ -140,6 +138,10 @@ css: styles.css
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
 #### **Publications**
+:::
+
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| Full text publication access [link](https://www.zotero.org/groups/4992939/grace-horne/library) (view "attachments").
 :::
 
 ::: {layout="[[5, 75, 20]]" style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
