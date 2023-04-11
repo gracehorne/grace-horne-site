@@ -90,6 +90,10 @@ css: styles.css
 | Picnic Day Co-Chair
 | University of California, Davis
 | 
+| **2022 -- present**
+| Entomology Seminar Series Committee Member
+| University of California, Davis
+| 
 | **2018 -- 2021**
 | Education Staff & Undergraduate Researcher
 | The Caterpillar Lab, Marlborough, NH
@@ -107,6 +111,9 @@ css: styles.css
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | ***External***
+| **2023**
+| NSF Graduate Research Fellowship (\$147,000)
+| 
 | **2022**
 | CNPS Student Research Grant Award (\$595)
 | 
