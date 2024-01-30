@@ -71,7 +71,7 @@ css: styles.css
 | *UC Davis Department of Evolution & Ecology, Davis, CA*
 | Introduction to Ecology Teaching Assistant
 | 
-| **Winter 2022, 2023**
+| **Winter 2022, 2023, 2024**
 | *UC Davis Department of Entomology & Nematology, Davis, CA*
 | Natural History of Insects Guest Lecturer
 | Lecture: "Insects & Climate Change"
@@ -118,6 +118,9 @@ css: styles.css
 | CNPS Student Research Grant Award (\$595)
 | 
 | ***Internal***
+| **2023**
+| Jastro-Shields Graduate Student Research Award (\$2,650)
+| 
 | **2022**
 | McBeth Memorial Scholarship
 | Henry A. Jastro Research Scholarship (combined, \$2,650)
@@ -165,11 +168,13 @@ css: styles.css
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; fig-align: center"}
+| 7.     **Horne, Grace M.**\*, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (2023) Long-term datasets reveal climatic nuance in moth responses to global change. *Biology of Butterflies Conference.*
+| 
 | 6.     **Horne, Grace M.**\* (2023) Climate change and our backyard fauna: a tale of the moths of Davis, CA. *Atria Covell Gardens.*
 | 
 | 5.     Meineke, Emily K., Alison Colwell\*, **Grace M. Horne**, and David Eng. (2022) Harnessing the Power of Inadvertent Collecting: Bias assessments in support of use of herbarium specimens for entomology research. *California Native Plant Society Conference.*
 | 
-| 4.     **Horne, Grace M.**\*, Matthew L. Forister, and Emily K. Meineke. (2022) Two new datasets reveal long-term moth community shifts in a biodiversity hotspot. *Ecological Society of America Annual Meeting.*
+| 4.     **Horne, Grace M.**\*, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (2022) Two new datasets reveal long-term moth community shifts in a biodiversity hotspot. *Ecological Society of American Annual Meeting.*
 | 
 | 3.     **Horne, Grace M.**\* (2021) Reduced performance of ash-specialist caterpillars on non-native, cultivated Oleaceous plants. *Colby Liberal Arts Symposium.*
 | 
@@ -177,7 +182,7 @@ css: styles.css
 | 
 | 1.     **Horne, Grace M.**\* (2019) Canid infectious disease transmission via domestic dogs to *Lycaon pictus*. *Colby Liberal Arts Symposium.*
 | 
-| \* presenting author
+| \* presenting authorenting author
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
@@ -199,9 +204,17 @@ css: styles.css
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | **Bold type** indicates an institution serving a majority low-income population
 | 
+| **2024**
+| Biodiversity Museum Day, February 10
+| 
 | **2023**
 | Bohart Museum Open House: "Beetles!," January 22
 | Museum Biodiversity Day, February 18
+| UC Davis Picnic Day: Entomology Exhibit, April 15^†^
+| Bohart Museum \@ Sacramento Earth Day, April 23
+| City Nature Challenge BioBlitz \@ Davis Arboretum, April 29^†^
+| City Nature Challenge \@ SMUD Museum of Science, April 29
+| Go Wild Yolo Library \@ Capay Open Space Park, June 10
 | 
 | **2022**
 | STEM Squad Event \@ **Winters Middle School**, February 24
