@@ -284,6 +284,7 @@ css: styles.css
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | Proceedings of the Royal Society B
+| Scientific Reports
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}

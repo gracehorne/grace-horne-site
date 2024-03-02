@@ -15,12 +15,6 @@ website:
       - icon: google
         href: https://scholar.google.com/citations?user=pE2oVU0AAAAJ&hl=en
         aria-label: GitHub
-      - icon: twitter
-        href: https://twitter.com/ghorneworm
-        aria-label: Twitter
-      - icon: mastodon
-        href: https://mastodon.social/@gracehorne
-        aria-label: Mastodon
     style: "floating"
     search: false
     contents:
@@ -30,6 +24,8 @@ website:
         href: outreach.qmd
       - text: "³ Links"
         href: links.qmd
+      - text: "⁴ Tutorials"
+        href: tutorials.qmd
 format:
   html:
     page-layout: full
