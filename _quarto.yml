@@ -9,6 +9,9 @@ website:
   sidebar:
     pinned: true
     tools:
+      - icon: envelope-heart
+        href: mailto:gmhorne@ucdavis.edu
+        aria-label: email
       - icon: github
         href: https://github.com/gracehorne
         aria-label: GitHub
