@@ -1,0 +1,543 @@
+---
+slug: "writing-functions-in-R"
+format:
+  html:
+    toc: false
+    html-math-method: katex
+css: styles.css
+bibliography: references.bib
+highlight-style: github
+---
+
+::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: center"}
+```{=html}
+<a href="http://www.gracehorne.com/" target="_blank" rel="noopener noreferrer">
+  <button type="button" class="btn btn-outline-danger">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+      <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"></path>
+      <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1     5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0        0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"></path>
+    </svg>
+    printer-friendly version
+  </button>
+</a>
+```
+:::
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+### wRiting functions in R
+
+R is a **functional programming** language, meaning that it provides tools for writing and manipulating functions [@wickham2019]. Functional programming contrasts with **imperative programming** where the main focus is on how an operation is performed. Imperative programming allows the programmer to follow exactly what is going on throughout the process. Both approaches allow us to write **iterative code**.
+:::
+
+#### Part I: how to repeat yourself {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+Let’s run through an example of iterative code exemplifying each approach. Say we want to find the median petal length for each species of *Iris* in the built-in `iris` dataset. We could just could just copy and paste:
+
+```{r}
+
+# load the tidyverse
+library(tidyverse)
+
+# load iris data
+data(iris)
+
+# median petal length for Iris setosa
+median(iris$Petal.Length[which(iris$Species == "setosa")])
+
+# median petal length for Iris versicolor
+median(iris$Petal.Length[which(iris$Species == "versicolor")])
+
+# median petal length for Iris virginica
+median(iris$Petal.Length[which(iris$Species == "virginica")])
+```
+
+This method might cause headaches if we were to make a mistake in editing the code or if we have more than three medians to calculate. Let’s see if we can use a more scalable approach, the for loop. A for loop has 2 main components [@martin2020]:
+
+1.  The first line dictates how many times we want to loop
+
+2.  The bracketed code defines the repeated code
+
+```{r}
+
+# create a vector to store the output
+petal_medians <- vector()
+
+# loop through the species
+for (species in unique(iris$Species)) {
+  petal_medians[species] <-
+    median(iris$Petal.Length[which(iris$Species == species)])
+}
+
+```
+
+Let’s motivate the use of functions. We will write a function that does the same thing as above, but faster and with more customization. For example, we can perform the same function over and over on different data frames instead of copying and pasting the for loop for each data frame. Moreover, functions provide at least three major advantages over other strategies [@martin2020]:
+
+1.  they can have names which makes code easier to understand
+
+2.  if your requirements change, you only have 1 place to edit
+
+3.  they minimize copy-paste errors
+
+::: callout-tip
+## It’s typically recommended that you should write a function when you’ve copy and pasted code at least once (follow the DRY principle: “[d]{.underline}on’t [r]{.underline}epeat [y]{.underline}ourself”)
+:::
+
+You can think about functions as building blocks for solving data science problems. Functions are “**first class objects**” and can be treated just like other R objects [@peng2012]. For instance, they can be passed as arguments to other functions and can be nested. Functions are created using the `function()` directive and have the form:
+
+```{r}
+functionName <- function(x, y = 1) {
+  # function body here
+}
+
+```
+
+Let’s put our `iris` example in function form.
+
+```{r}
+
+# create function 
+speciesMedian <- function(df = df, col = "Petal.Length") {
+  medians <- vector()
+  
+  for (species in unique(iris$Species)) {
+    medians[species] <-
+      median(iris[iris$Species == species, col])
+  }
+  medians
+} 
+
+# execute function 
+speciesMedian(iris)
+
+```
+
+::: callout-tip
+## When drafting a function, first identify the inputs (e.g., `df` and `col` from `speciesMedian()`)
+:::
+
+In the example above, `speciesMedian()` has two arguments `df` and `col`. `col` has a default value of `"Petal.Length"` meaning that if you don’t change its value when you call the function, it will automatically be set to `"Petal.Length"`. R function arguments are matched either by position or by name. This means that writing `speciesMedian(iris, "Petal.Length")` (matched by position) and `speciesMedian(col = "Petal.Length", df = iris)` will do the same thing. You can test it out to prove it to yourself!
+
+::: callout-tip
+## Usually first arguments contain data (e.g., `df`) and the last ones contain calculation details (e.g., `col`)
+:::
+
+You may have intuited that I added a little extra functionality into the function `speciesMedian()`. Because I added an argument for `col`, we are able to use this function to calculate the median value of other columns. Let’s see this in practice.
+
+```{r}
+
+# cols in iris
+colnames(iris)
+
+# median sepal length per species
+speciesMedian(iris, "Sepal.Length")
+
+# median sepal width per species
+speciesMedian(iris, "Sepal.Width")
+
+```
+
+::: callout-warning
+## Objects within a function reset each time the function is called (e.g., `medians` within the `speciesMedian()` function does not exist in your global environment)
+:::
+
+When we made our function, you may have noticed that we combined the for loop and function approaches into a single composite. This method still suffers from the slowness and the clunkiness of for loops. To supercharge our median calculations, let’s use the **`purr`** package from the **`tidyverse`.**
+
+The `purrr` package provides `map()` functions which take a function and a series of elements to apply the function on. Once we gather all of the building blocks for our data science problem, we can use `purrr` to combine them.
+
+```{r}
+
+# let's use the map function to calculate the median of each column
+# for each species 
+map(split(iris, iris$Species), # split the iris data by species
+        ~ summarize(.x  %>% group_by(Species), # group by species
+            across(everything(), # iterate over every column
+                   median)) # calculate the median
+) %>% list_rbind() # bind into a single df
+
+# I was trying to illustrate my point using map functions
+# but there's actually a much simpler way to achieve the same
+# result using dplyr
+
+summarize(iris %>% group_by(Species), across(everything(), median))
+
+```
+
+The names of the different `map()` functions are derived from your desired output [@wright2021]. For example,
+
+-   `map()` - returns a list
+
+-   `map_lgl()` - returns a logical vector
+
+-   `map_int()` - returns an integer vector
+
+-   `map_dbl()` - returns a double vector
+
+-   `map_chr()` - returns a character vector
+:::
+
+#### Part II: flexing your skills {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+For Part II of this tutorial, we will be working with the built-in data set `co2`. This is a simple data set of the monthly atmospheric CO~2~ concentrations at the Mauna Loa Observatory in Hawaii from 1959 to 1997.
+
+To start, we need to load some packages and our data. As is, the data is in the form of a time series. We want to convert it to a data frame.
+
+```{r}
+#| include: false
+
+library(ggplot2)
+source(
+  "/Users/gracehorne/Library/CloudStorage/Box-Box/Box-Files/Timeless/grace-horne-site/theme_simple.R"
+)
+theme_set(theme_simple())
+
+```
+
+```{r}
+#| output: false
+
+# load necessary packages - make sure you have these installed!
+library(rvest)
+library(data.table)
+
+# load Mauna Loa Atmospheric CO2 Concentration data
+data(co2)
+
+# convert to a data frame
+co2 <-
+  data.frame(
+    CO2 = as.numeric(co2),
+    month = rep(month.abb, 39),
+    year = rep(1959:1997, each = 12)
+  )
+
+# new column for date
+co2 <- co2 %>% # create a date column and convert to date format
+  # we know the measurement is taken on the 15th
+  mutate(date = paste("15", month, year) %>% 
+           as.Date(., format = "%d %b %Y")) 
+
+```
+
+Let's explore the data! Here are some easy ways to get a feel for your data.
+
+```{r, fig.align = 'center'}
+
+head(co2) # view the first couple of rows of data
+tail(co2) # view the last couple of rows of data
+str(co2) # take a look at the classes of data
+
+# make a line plot of the data
+# note that your plot will probably look aesthetically different than
+# mine because I am using a base R inspired gg theme
+ggplot(data = co2, aes(x = date, y = CO2)) + 
+  geom_line(alpha = 0.5, color = "red")
+
+```
+
+Now this is all well and good, but what if we wanted to know what happens *after* 1997. After all, some of the people in this room were born after that date and we want to know what has happened in our lifetimes.
+
+Okay, let's grab some data from the Scripps CO~2~ program. Because we are all hackers in the room, we are going to scrape data from the website programatically instead of downloading it and then importing it. We will write a function to do this for all of the sampling station locations we are interested in! Before we even think about writing a function, we want to make sure our code works for one site.
+
+Navigate to the following website and pick your favorite sampling station **which has monthly flask CO~2~ data**: <https://scrippsco2.ucsd.edu/data/atmospheric_co2/sampling_stations.html>
+
+For this example, I am going to pick our old friend the Mauna Loa Observatory, but I want you to **pick a different one.**
+
+```{r}
+#| output: false
+
+# URL of the website containing the .csv files
+url <- "https://scrippsco2.ucsd.edu/data/atmospheric_co2/mlo.html"
+
+# read the HTML content of the webpage
+webpage <- read_html(url)
+
+# find all links on the webpage
+links <- webpage %>% 
+  html_nodes("a") %>% 
+  html_attr("href")
+
+# filter links that point to CSV files then
+# filter the links to only the file containing flask CO2 monthly readings
+csv_links <- tibble(link = links) %>%
+  filter(str_detect(link, ".csv$"),
+         str_detect(link, "flask_co2/monthly")) 
+
+link2file <- csv_links[1]
+
+# download and import CSV file into R
+file_url <- paste0("https://scrippsco2.ucsd.edu", link2file)
+filename <- basename(file_url)
+download.file(file_url, destfile = filename, mode = "wb")
+data1 <- read.csv(filename)
+
+view(data1)
+```
+
+Ack! There's a bunch of junk at the top of the file. Let's wrangle this sucker real fast. We know from viewing the file that the first column header is `Yr` so let's just skip everything before that.
+
+```{r}
+#| output: false
+
+# skip everything until the `Yr` column
+data <- fread(filename, 
+      skip = "Yr", check.names = TRUE)
+
+# remove downloaded files
+file.remove(filename)
+
+view(data)
+```
+
+That looks much better. All that junk was metadata. I'll copy it below, but if you don't trust me, you can go back and view `data1`.
+
+> The data file below contains 10 columns. Columns 1-4 give the dates in several redundant formats. Column 5 below gives monthly Mauna Loa CO2 concentrations in micro-mol CO2 per mole (ppm), reported on the 2012 SIO manometric mole fraction scale. This is the standard version of the data most often sought. The monthly values have been adjusted to 24:00 hours on the 15th of each month. Column 6 gives the same data after a seasonal adjustment to remove the quasi-regular seasonal cycle. The adjustment involves subtracting from the data a 4-harmonic fit with a linear gain factor. Column 7 is a smoothed version of the data generated from a stiff cubic spline function plus 4-harmonic functions with linear gain. Column 8 is the same smoothed version with the seasonal cycle removed. Column 9 is identical to Column 5 except that the missing values from Column 5 have been filled with values from Column 7. Column 10 is identical to Column 6 except missing values have been filled with values from Column 8. Missing values are denoted by -99.99. Column 11 is the 3-digit sampling station identifier.
+
+Alright. We know right off the bat that we are going to have to do some more wrangling here. I want to rename the columns to something that makes sense to me, then I want to delete the rows without data, then I want to replace missing values with `NA`s, and then I want to convert the date column into class `Date`. We also want to make sure all of the measurement columns are in numeric form.
+
+```{r}
+#| output: false
+
+# make a vector of new names
+new_names <- c(
+  "year",
+  "month",
+  "date_excel",
+  "date",
+  "co2",
+  "co2_season_adj",
+  "co2_smooth",
+  "co2_smooth_season_adj",
+  "co2_interpolated",
+  "co2_season_adj_interpolated"
+)
+
+# replace old names
+data <- data %>%
+  rename_with(~new_names, everything())
+
+# delete rows with no data
+data <- data %>% slice(-c(1:2))
+
+# replace -99.99 or NaN with NAs
+data <- data %>%
+  mutate_all(~ ifelse(.x == -99.99 | .x == "NaN", NA_real_, .x))
+
+# reformat date column
+data <- data %>%
+  mutate(date = as.Date(as.numeric(date_excel) - 1, 
+                        origin = "1899-12-30"))
+
+# reformat measurement columns
+data <- data %>%
+  mutate_at(vars(starts_with("co2")), as.numeric)
+         
+view(data)
+```
+
+Yay, that looks nice :). Let's explore this data set just like we did the built-in `co2` data set.
+
+```{r}
+
+head(data) # view the first couple of rows of data
+tail(data) # view the last couple of rows of data
+str(data) # take a look at the classes of data
+
+# make a line plot of the data
+ggplot(data = data, aes(x = date, y = co2)) + 
+  geom_line(alpha = 0.5, color = "red")
+
+# looks good! there are some missing values at the start
+```
+
+I think we are ready to start making our functions! Let's try to grab all of the sites with flask CO~2~ data and bind them all into one data frame. For simplicity, here's a list of all of the sites which meet that requirement:
+
+1.  Alert, NWT, Canada
+2.  Mauna Loa Observatory, Hawaii
+3.  Cape Kumukahi, Hawaii
+4.  Fanning Island
+5.  Christmas Island
+6.  American Samoa
+7.  Kermadec Islands
+8.  Baring Head, New Zealand
+
+Let's make a series of functions for this problem: one to get the data urls, one to download and load the data into R, and one to wrangle it. Firstly, we want to get the URLs for each of the above sites.
+
+```{r}
+
+# function to find matches within a vector from a given URL
+getURLs <- function(url, vector) {
+  # read the HTML content from the given URL
+  html <- read_html(url)
+  
+  # extract text from <td class="rollover-links"> tags
+  matches <- html_nodes(html, "td.rollover-links") %>%
+    html_text()
+  
+  # find matches within the vector
+  matched_vector <- vector[vector %in% matches]
+  
+  # E]extract href attributes corresponding to the matched text
+  href_matches <- html_nodes(html, "td.rollover-links") %>%
+    html_nodes("a") %>%
+    html_attr("href")
+  
+  # prepend the base URL string to each href attribute
+  href_matches <- paste0("https://scrippsco2.ucsd.edu/data/atmospheric_co2/", href_matches)
+  
+  # return URLs only for the matches within the vector
+  return(href_matches[matches %in% matched_vector])
+  
+}
+
+url <- "https://scrippsco2.ucsd.edu/data/atmospheric_co2/sampling_stations.html"
+sites <- c("Alert, NWT, Canada", "Mauna Loa Observatory, Hawaii", "Cape Kumukahi, Hawaii", "Fanning Island", "Christmas Island", "American Samoa", "Kermadec Island", "Baring Head, New Zealand")
+
+matched_urls <- getURLs(url = url, vector = sites)
+print(matched_urls)
+```
+
+Sweet! Now we have all of the URLs. Let's download the data now. We need to edit our code from the earlier chunk where we supplied a URL, downloaded a .csv, and loaded it into R. Before we copied and pasted the site URL. Now we want to supply our function with our `matched_urls` vector and get the downloaded data.
+
+```{r}
+
+# function to scrape data from a URL
+scrapeData <- function(url) {
+  # read the HTML content of the webpage
+  webpage <- read_html(url)
+  
+  # find all links on the webpage
+  links <- webpage %>% 
+    html_nodes("a") %>% 
+    html_attr("href")
+  
+  # filter links that point to CSV files then
+  # filter the links to only the file containing flask CO2 monthly readings
+  csv_links <- tibble(link = links) %>%
+    filter(str_detect(link, ".csv$"),
+           str_detect(link, "flask_co2/monthly")) 
+  
+  # if no CSV link is found, return NULL
+  if (nrow(csv_links) == 0) {
+    return(NULL)
+  }
+  
+  # select the first CSV link
+  link2file <- csv_links$link[1]
+  file_url <- paste0("https://scrippsco2.ucsd.edu", link2file)
+  filename <- basename(file_url)
+  
+  # skip everything until the `Yr` column and read the CSV
+  data <- fread(file_url, skip = "Yr", check.names = TRUE)
+  
+  # return the data
+  return(data)
+}
+
+# scrape data from each URL and name each df after the site
+dfs <- set_names(map(matched_urls, scrapeData), 
+                 map(matched_urls, ~ sub("\\..*$", "", basename(.x))))
+
+# filter out NULL values (if any)
+dfs <- compact(dfs)
+
+```
+
+Ok, now that we have the data downloaded, let's wrangle it and flatten it into a single data frame with a column identifying each site.
+
+```{r}
+
+# make a function to wrangle the scraped data
+processData <- function(data, site_name) {
+  # make a vector of new names
+  new_names <- c(
+    "year",
+    "month",
+    "date_excel",
+    "date",
+    "co2",
+    "co2_season_adj",
+    "co2_smooth",
+    "co2_smooth_season_adj",
+    "co2_interpolated",
+    "co2_season_adj_interpolated"
+  )
+  
+  # replace old names
+  data <- data %>%
+    rename_with(~ new_names, everything())
+  
+  # delete rows with no data
+  data <- data %>% slice(-c(1:2))
+  
+  # replace -99.99 or NaN with NAs
+  data <- data %>%
+    mutate_all(~ ifelse(.x == -99.99 | .x == "NaN", NA_real_, .x))
+  
+  # reformat date column
+  data <- data %>%
+    mutate(date = as.Date(as.numeric(date_excel) - 1, origin = "1899-12-30"))
+  
+  # reformat measurement columns and add a site column
+  data <- data %>%
+    mutate_at(vars(starts_with("co2")), as.numeric) %>%
+    mutate(site = site_name)
+  
+  return(data)
+}
+
+# process the data for each dataframe within the df list and
+# bind everything together
+co2_all <- map2(dfs, names(dfs), processData) %>% list_rbind()
+
+```
+
+Finally, let's look at our newly acquired data. We can use `ggplot2` to create facets for each site and look at all of our data at once. We can also look at other columns such as `co2_season_adj_interpolated`.
+
+```{r fig.width = 10, fig.height = 7}
+
+# make a line plot of the data and facet by site
+ggplot(data = co2_all, aes(x = date, y = co2)) + 
+  geom_line(alpha = 0.5, color = "red") + 
+  facet_wrap(~ site, scales = "free_x")
+
+# make a line plot of the interpolated and seasonally adjusted 
+# data and facet by site
+ggplot(data = co2_all, 
+       aes(x = date, y = co2_season_adj_interpolated)) + 
+  geom_line(alpha = 0.5, color = "red") + 
+  facet_wrap(~ site, scales = "free_x")
+
+```
+
+#### Glossary
+
+first class objects
+
+:   objects that are treated as any other data type
+
+functional programming
+
+:   the computer is given a set of functions to be performed
+
+imperative programming
+
+:   the computer is given a set of steps to accomplish the goal
+
+iterative code
+
+:   a set of instructions being repeated
+
+pipe operator `%>%`
+
+:   takes the output of the expression on the left and passes it as the first argument of the function on the right
+
+`purrr`
+
+:   a package providing tools for working with functions and vectors
+
+`tidyverse`
+
+:   a collection of open source packages built with "tidy data" design principles
+:::
