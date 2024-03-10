@@ -2,9 +2,8 @@
 slug: "research"
 format:
   html:
-    toc: true
+    toc: false
     html-math-method: katex
-    toc-depth: 4
 css: styles.css
 ---
 
@@ -19,5 +18,5 @@ Over the course of the experiment, I began to notice differences in how the thre
 :::
 
 ::: {style="width: 65%; margin: auto; font-weight: normal; text-align: left;"}
-![The impact of a plant species becoming locally rare can have rippling impacts up trophic levels.](images/graphicalAbstract.png){alt="The impact of a plant species becoming locally rare can have rippling impacts up trophic levels." fig-alt="Graphical abstract of Horne et al. 2023" fig-align="center" width="600"}
+![The impact of a plant species becoming locally rare can have rippling impacts up trophic levels.](images/graphicalAbstract.png){fig-alt="Graphical abstract of Horne et al. 2023" fig-align="center" width="600"}
 :::

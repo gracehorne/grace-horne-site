@@ -46,8 +46,8 @@ theme_simple <- function() {
       # axis text
       axis.text = element_text(
         size = 12),
-      axis.text.x = element_text(margin = ggplot2::margin(5, 0, 10, 0)),
-      axis.text.y = element_text(hjust = 1, margin = ggplot2::margin(0, 5, 0, 10)),
+      axis.text.x = element_text(margin = margin(b = 10, t = 5)),
+      axis.text.y = element_text(hjust = 1, margin = margin(l = 5, r = 5)),
       
       # legend
       legend.text = element_text(color = "black", size = 10),
