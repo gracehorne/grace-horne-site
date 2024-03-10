@@ -54,26 +54,7 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -195,7 +176,7 @@ div.csl-indent {
 </div>
 <section id="writing-functions-in-r" class="level3" style="width: 75%; margin: auto; font-weight: normal; text-align: left">
 <h3 data-anchor-id="writing-functions-in-r">wRiting functions in R</h3>
-<p>R is a <strong>functional programming</strong> language, meaning that it provides tools for writing and manipulating functions <span class="citation" data-cites="wickham2019">(<a href="#ref-wickham2019" role="doc-biblioref">Wickham 2019</a>)</span>. Functional programming contrasts with <strong>imperative programming</strong> where the main focus is on how an operation is performed. Imperative programming allows the programmer to follow exactly what is going on throughout the process. Both approaches allow us to write <strong>iterative code</strong>.</p>
+<p>R is a <strong>functional programming</strong> language, meaning that it provides tools for writing and manipulating functions <span class="citation" data-cites="wickham2019">(<a href="#ref-wickham2019" role="doc-biblioref"><strong>wickham2019?</strong></a>)</span>. Functional programming contrasts with <strong>imperative programming</strong> where the main focus is on how an operation is performed. Imperative programming allows the programmer to follow exactly what is going on throughout the process. Both approaches allow us to write <strong>iterative code</strong>.</p>
 </section>
 <section id="part-i-how-to-repeat-yourself" class="level4" style="text-align: center">
 <h4 style="text-align: center" data-anchor-id="part-i-how-to-repeat-yourself">Part I: how to repeat yourself</h4>
@@ -235,7 +216,7 @@ div.csl-indent {
 <pre><code>[1] 5.55</code></pre>
 </div>
 </div>
-<p>This method might cause headaches if we were to make a mistake in editing the code or if we have more than three medians to calculate. Let’s see if we can use a more scalable approach, the for loop. A for loop has 2 main components <span class="citation" data-cites="martin2020">(<a href="#ref-martin2020" role="doc-biblioref">Martin 2020</a>)</span>:</p>
+<p>This method might cause headaches if we were to make a mistake in editing the code or if we have more than three medians to calculate. Let’s see if we can use a more scalable approach, the for loop. A for loop has 2 main components <span class="citation" data-cites="martin2020">(<a href="#ref-martin2020" role="doc-biblioref"><strong>martin2020?</strong></a>)</span>:</p>
 <ol type="1">
 <li><p>The first line dictates how many times we want to loop</p></li>
 <li><p>The bracketed code defines the repeated code</p></li>
@@ -250,7 +231,7 @@ div.csl-indent {
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">median</span>(iris<span class="sc">$</span>Petal.Length[<span class="fu">which</span>(iris<span class="sc">$</span>Species <span class="sc">==</span> species)])</span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Let’s motivate the use of functions. We will write a function that does the same thing as above, but faster and with more customization. For example, we can perform the same function over and over on different data frames instead of copying and pasting the for loop for each data frame. Moreover, functions provide at least three major advantages over other strategies <span class="citation" data-cites="martin2020">(<a href="#ref-martin2020" role="doc-biblioref">Martin 2020</a>)</span>:</p>
+<p>Let’s motivate the use of functions. We will write a function that does the same thing as above, but faster and with more customization. For example, we can perform the same function over and over on different data frames instead of copying and pasting the for loop for each data frame. Moreover, functions provide at least three major advantages over other strategies <span class="citation" data-cites="martin2020">(<a href="#ref-martin2020" role="doc-biblioref"><strong>martin2020?</strong></a>)</span>:</p>
 <ol type="1">
 <li><p>they can have names which makes code easier to understand</p></li>
 <li><p>if your requirements change, you only have 1 place to edit</p></li>
@@ -269,7 +250,7 @@ It’s typically recommended that you should write a function when you’ve copy
 
 </div>
 </div>
-<p>You can think about functions as building blocks for solving data science problems. Functions are “<strong>first class objects</strong>” and can be treated just like other R objects <span class="citation" data-cites="peng2012">(<a href="#ref-peng2012" role="doc-biblioref">Peng 2012</a>)</span>. For instance, they can be passed as arguments to other functions and can be nested. Functions are created using the <code>function()</code> directive and have the form:</p>
+<p>You can think about functions as building blocks for solving data science problems. Functions are “<strong>first class objects</strong>” and can be treated just like other R objects <span class="citation" data-cites="peng2012">(<a href="#ref-peng2012" role="doc-biblioref"><strong>peng2012?</strong></a>)</span>. For instance, they can be passed as arguments to other functions and can be nested. Functions are created using the <code>function()</code> directive and have the form:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>functionName <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">y =</span> <span class="dv">1</span>) {</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># function body here</span></span>
@@ -387,7 +368,7 @@ Objects within a function reset each time the function is called (e.g., <code>me
 3 virginica           6.5         3           5.55         2  </code></pre>
 </div>
 </div>
-<p>The names of the different <code>map()</code> functions are derived from your desired output <span class="citation" data-cites="wright2021">(<a href="#ref-wright2021" role="doc-biblioref">Wright et al. 2021</a>)</span>. For example,</p>
+<p>The names of the different <code>map()</code> functions are derived from your desired output <span class="citation" data-cites="wright2021">(<a href="#ref-wright2021" role="doc-biblioref"><strong>wright2021?</strong></a>)</span>. For example,</p>
 <ul>
 <li><p><code>map()</code> - returns a list</p></li>
 <li><p><code>map_lgl()</code> - returns a logical vector</p></li>
@@ -813,23 +794,9 @@ Objects within a function reset each time the function is called (e.g., <code>me
 </div>
 
 
-
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-martin2020" class="csl-entry" role="listitem">
-Martin, Charles. 2020. <span>“Functions and Iteration.”</span> <a href="https://numerilab.io//en/workshops/FunctionsIteration">https://numerilab.io//en/workshops/FunctionsIteration</a>.
-</div>
-<div id="ref-peng2012" class="csl-entry" role="listitem">
-Peng, Roger. 2012. <span>“Writing Functions.”</span> <a href="https://www.youtube.com/watch?v=KIqlKw2zqEQ">https://www.youtube.com/watch?v=KIqlKw2zqEQ</a>.
-</div>
-<div id="ref-wickham2019" class="csl-entry" role="listitem">
-Wickham, Hadley. 2019. <em>Advanced R</em>. Second edition. Chapman &amp; Hall/CRC: The R series. Boca Raton London New York: CRC Press, Taylor &amp; Francis Group.
-</div>
-<div id="ref-wright2021" class="csl-entry" role="listitem">
-Wright, Carrie, Shannon Ellis, Stephanie Hicks, and Roger D Peng. 2021. <em>Tidyverse Skills for Data Science in R</em>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
