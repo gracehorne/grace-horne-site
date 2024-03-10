@@ -182,7 +182,7 @@ css: styles.css
 | 
 | 1.     **Horne, Grace M.**\* (2019) Canid infectious disease transmission via domestic dogs to *Lycaon pictus*. *Colby Liberal Arts Symposium.*
 | 
-| \* presenting authorenting author
+| \* presenting author
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
