@@ -1,0 +1,414 @@
+---
+slug: "metabolomics-analysis-with-brms"
+format:
+  html:
+    toc: false
+    html-math-method: katex
+css: styles.css
+bibliography: references.bib
+highlight-style: github
+---
+
+::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: center"}
+```{=html}
+<a href="https://drive.google.com/file/d/1IrY3V-shDKvro7E07L0mvHEtNIoVsJpa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+  <button type="button" class="btn btn-outline-danger">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+      <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"></path>
+      <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1     5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0        0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"></path>
+    </svg>
+    printer-friendly version
+  </button>
+</a>
+```
+:::
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+### metabolomics analysis with `brms`
+
+\<Grace write intro\>
+
+![An abbreviated workflow](images/bayes-workflow-03.png){fig-align="center"}
+:::
+
+#### Part 0: getting familiar with the data {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+Let's make sure we are set up for success. Let's load into memory the two packages we need (`tidyverse` and `brms`) and the data. Please download the data using the button below and ensure that you are pointed to the proper working directory (hint: `setwd()`) before you load it.
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: center"}
+```{=html}
+<a href="https://drive.google.com/file/d/10WWc06belyJhYWLgiQq7Vx_RG-lQEnni/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+  <button type="button" class="btn btn-outline-danger">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+</svg>
+    download data
+  </button>
+</a>
+```
+:::
+
+```{r libraries}
+#| warning: false
+#| output: false
+
+# required packages
+library(tidyverse)
+library(brms)
+library(bayesplot)
+
+# data frame (assuming your data are in the folder called "files")
+dat <- read_csv("files/meineke-primary-metabolism-GCTOFMS.csv")
+```
+
+### Wrangling into a readable format
+
+First, let's wrangle the data into a machine- and human-readable format. Pretty much, we want to take the metadata from the first few rows and add it back in the long format. Then, we want to scale the peak height variable so it is
+
+```{r wrangling}
+#| warning: false
+
+# get dimensions of data
+dim(dat)
+
+# look at the first couple of rows
+# the first 7 columns are blank until the column names
+head(dat, n = 10L)
+
+# make an id row so we can match samples later
+# we are adding NAs for the blank columns for now
+values <- as.character(c(rep(NA, 7), "id", 1:47))
+id_row <- matrix(values, nrow = 1) %>% as.data.frame()
+
+# make the col names the same as the data
+names(id_row) <- colnames(dat)
+
+# add the id row to the data frame
+dat <- dat %>% add_row(.before = 1, !!!id_row)
+
+# get the metadata (from the first 8 columns) and reformat
+meta_dat <- dat[1:8, 8:55] # get data
+names(meta_dat) <- as.vector(meta_dat[1,]) # rename
+meta_dat <- meta_dat %>%
+  slice(-1) %>%
+  column_to_rownames(var = "id") %>%
+  t() %>% 
+  as.data.frame() %>% 
+  rowid_to_column(var = "id") %>%
+  mutate(treatment = str_remove(treatment, "-.*$"),
+         treatment = tolower(treatment),
+         id = as.character(id)) %>%
+  rename_with(~ str_replace_all(., " ", "_"), contains(" "))
+  
+# get rid of metadata from the full df
+dat <- dat %>% slice(-(2:8))
+
+# get the correct col names
+replacement_ids <- dat[1, ] %>% as.character()
+replacement_names <- dat[2, ] %>% as.character()
+
+# make a vector of new names
+new_names <- ifelse(str_detect(names(dat), "\\.{3}|file id"), replacement_names, replacement_ids)
+
+# rename columns
+names(dat) <- new_names
+
+# reformat data and rename columns
+dat <- dat %>% slice(-(1:2)) %>%
+  pivot_longer(cols = "1":"47",
+               names_to = "id",
+               values_to = "peak_height") %>%
+  rename_with( ~ str_replace_all(., "[. ]", "_"), 
+               matches("[. ]")) %>%
+  rename(compound = BinBase_name, InChI = InChI_Key) %>%
+  full_join(., meta_dat, by = "id", keep = FALSE) %>%
+  select(mx_sample, everything(), peak_height, -id) 
+
+# make sure data are of proper class
+dat <- dat %>%
+  mutate(peak_height = as.numeric(peak_height))
+
+# scale peak heights
+dat <- dat %>% 
+  group_by(compound) %>%
+  mutate(peak_heightZ = scale(peak_height)) %>%
+  ungroup()
+
+# remove extra objects
+all_objects <- ls() # list all objects
+
+# remove all objects except the df
+rm(list = setdiff(all_objects, "dat"))
+rm(all_objects)
+```
+
+```{r theme set}
+#| include: false
+
+source(
+  "/Users/gracehorne/Library/CloudStorage/Box-Box/Box-Files/Timeless/grace-horne-site/theme_simple.R"
+)
+theme_set(theme_simple())
+
+```
+
+### Initial data exploration
+
+Here, we will pick a random compound (or compounds) and look at the distribution of the data. This will give us an opportunity to familiarize ourselves with the shape and values in our dataset. Remember, we scaled the data, so the histograms we are going to generate are deviations from the mean rather than peak heights.
+
+```{r exploration}
+
+# set seed
+set.seed(7348923)
+
+# pick a random compound
+pick <- sample(unique(dat$compound), 1)
+
+# make a histogram of the random compound
+dat %>%
+  filter(compound == pick) %>%
+  ggplot(aes(x = peak_heightZ)) + 
+  geom_histogram(bins = 10)
+```
+:::
+
+#### Part 1: pick an initial model {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+Pick 3 compounds to model the "abundance" (our scaled peak heights) by treatment. You can inspect the dataset using either `View(dat)` or `unique(dat$compound)`. We also want to group by compound. This makes the model hierarchical, nesting the effects of treatment within each compound.
+
+When you are actually modelling the data, you will use the entire dataset, but for our exploration we are working with a subset so that the model runs within the bounds of a class period.
+
+Hint: the syntax for the formula is: `response ~ pterms + (gterms | group)`
+
+```{r first model}
+#| warning: false
+#| output: false
+
+# filter our dataset down to the 3 compounds and remove the "pool" treatment
+dat2 <- dat %>%
+  filter(treatment != "pool", compound == "saccharic acid" |
+           compound == "kaempferol" | compound == "vanillic acid")
+
+# write the model and store it as an object
+default_prior_mbrms <- brms::brm(
+  peak_heightZ ~ treatment + (1 | compound),
+  data = dat2,
+  family = gaussian(),
+  chains = 3,
+  iter = 3000,
+  warmup = 1000,
+  cores = 3
+)
+
+```
+:::
+
+#### Part 2: prior predictive check {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+<text>
+
+```{r priors, error = TRUE}
+#| error: true
+
+# use default_prior() on the model object to look at the values
+# brms automatically gives to the model
+default_prior(default_prior_mbrms)
+
+# rerun the model with the arguement: sample_prior = "only"
+
+default_prior_check <- brms::brm(
+  peak_heightZ ~ treatment + (1 | compound),
+  data = dat2,
+  family = gaussian(),
+  chains = 3,
+  iter = 3000,
+  warmup = 1000,
+  cores = 3,
+  sample_prior = "only"
+)
+
+```
+
+Did you get an error? That's because the betas (b) have totally flat priors. You can think of that as the uniform distribution below where all outcomes are equally likely (improper prior).
+
+```{r unif}
+
+# create a data frame with x values for plotting
+x_values <- seq(from = 0, to = 4, length.out = 100)
+data <- data.frame(x = x_values)
+
+# create the plot
+ggplot(data, aes(x)) +
+  stat_function(fun = dunif, args = list(min = 0, max = 4)) +
+  ylim(0, 1)
+
+```
+:::
+
+#### Part 3: modify the model {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+<text about how we are changing the model and then rerun the prior predictive check>
+
+Because models with horseshoe priors are more likely than other models to have divergent transitions, we need to increase `adapt_delta` which will slow the sampler but should decrease the number of divergent transitions.
+
+```{r priors II}
+#| warning: false
+#| output: false
+
+# write the modified model and sample the prior *only*
+horseshoe_prior_check <- brm(
+  data = dat2,
+  family = gaussian,
+  peak_heightZ ~ treatment + (1 + treatment | compound),
+  prior = c(
+    prior(normal(0, 1), class = b), 
+    prior("horseshoe(3)", class = sd)
+  ),
+  iter = 2000,
+  warmup = 1000,
+  chains = 3,
+  cores = 3,
+  sample_prior = "only"
+)
+
+model <- brm(
+  peak_height ~ treatment * compound,
+  data = dat,
+  family = gaussian,
+  prior = c(
+    prior(normal(0, 1), class = b, coef = "treatment"),
+    prior(horseshoe(3), class = b, coef = "compound"),
+    prior(horseshoe(3), class = b, coef = "treatment:compound")
+  ),
+  chains = 4,
+  iter = 2000,
+  warmup = 1000,
+  cores = 4,
+  control = list(adapt_delta = 0.99, max_treedepth = 15)
+)
+
+# define some priors
+bprior <- c(
+  prior(normal(0, 1), class = b),
+  prior(
+    normal(1, 2),
+    class = b,
+    group = compound
+  ),
+  prior(cauchy(0, 2), class = sd)
+)
+
+brm(
+  peak_height ~ treatment * compound + (1 | compound),
+  data = dat2,
+  family = gaussian,
+  prior = bprior,
+  chains = 4,
+  iter = 2000,
+  warmup = 1000,
+  cores = 4,
+  control = list(adapt_delta = 0.99, max_treedepth = 15)
+)
+
+# prior predictive check
+pp_check(horseshoe_prior_check)
+
+```
+:::
+
+#### Part 4: fit the model {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+```{r run model}
+
+# run the modified model
+horseshoe_prior_mbrms <- brm(
+  data = dat2,
+  family = gaussian,
+  peak_heightZ ~ treatment + (1 + treatment | compound),
+  prior = c(
+    prior(normal(0, 1), class = b), 
+    prior("horseshoe(3)", class = sd)
+  ),
+  iter = 2000,
+  warmup = 1000,
+  chains = 3,
+  cores = 3
+)
+
+horseshoe_prior_mbrms_full <- brm(
+  data = dat,
+  family = gaussian,
+  peak_heightZ ~ treatment + (1 + treatment | compound),
+  prior = c(
+    prior(normal(0, 1), class = b), 
+    prior("horseshoe(3)", class = sd)
+  ),
+  iter = 2000,
+  warmup = 1000,
+  chains = 3,
+  cores = 3
+)
+
+# get the stats
+summary(horseshoe_prior_mbrms_full)
+coef(horseshoe_prior_mbrms_full)$compound
+
+```
+:::
+
+#### Part 5: validate computation {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+```{r model checks}
+
+pp_check(horseshoe_prior_mbrms_full)
+
+pp_check(horseshoe_prior_mbrms_full, type = "stat_grouped",
+         group = "compound")
+
+```
+:::
+
+#### Part 6: addressing computation issues {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+\<This part will be text only based on Gelman et al. 2020\>
+:::
+
+#### Part 7: evaluate the model {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+### Posterior predictive check
+
+```{r posterior}
+
+```
+
+### Influence of the prior
+
+```{r influence}
+
+```
+:::
+
+#### Part 8: model is provisionally accepted (!!!) {style="text-align: center"}
+
+::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+### Plotting the model
+
+```{r viz}
+
+```
+
+### Glossary
+
+\<term\>
+
+:   def
+:::
