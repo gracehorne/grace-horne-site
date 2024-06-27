@@ -5,7 +5,7 @@ project:
     - "*.qmd"
     - "!metabolomics-analysis-with-brms.qmd" #(add html to https://robinmoisson.github.io/staticrypt/)
 
-permalinks: /:slug
+permalink: /:title/
 
 website:
   title: "Grace M. Horne"

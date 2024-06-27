@@ -4,7 +4,6 @@ format:
     html-math-method: katex
     toc: true
     toc-depth: 4
-    permalink: pretty
 css: styles.css
 ---
 
