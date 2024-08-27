@@ -36,9 +36,9 @@ format:
   html:
     page-layout: full
     anchor-sections: false
-    theme: 
-      - styles.css
+    theme:
       - simplex
+      - styles.css
     mainfont: "Avenir Next"
     toc: true 
     toc-depth: 4

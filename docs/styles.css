@@ -10,6 +10,11 @@
   visibility: hidden;
 }
 
+/* apply normal font weight to strong elements only within nav */
+nav strong {
+    font-weight: normal;
+}
+
 nav.quarto-secondary-nav {
     background-color: #8be9fd;
     border-bottom: 1px solid #8be9fd;
@@ -28,6 +33,10 @@ nav.sidebar.sidebar-navigation:not(.rollup) {
 .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
     border-left: 1px solid #ffb86c;
     color: #ffb86c !important;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a:hover, .sidebar nav[role=doc-toc] ul>li>ul>li>a:hover {
+    color: #bd93f9 !important;
 }
 
 .panel-caption, .figure-caption, figcaption {
@@ -67,6 +76,8 @@ div.sidebar-item-container .sidebar-link>code {
   align-items: center;
   justify-content: center;
 }
+
+
 
 img {
   max-width: 90%;

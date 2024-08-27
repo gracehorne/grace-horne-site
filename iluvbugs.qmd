@@ -1,0 +1,32 @@
+---
+slug: "research"
+format:
+  html:
+    toc: false
+    html-math-method: katex
+css: styles-dark.css
+lightbox: true
+---
+
+::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+### **#il[uv]{.underline}bugs photo gallery**
+
+\
+
+::: {layout-ncol="3" layout-valign="top" fig-align="top"}
+![#il**uv**bugs X City Nature Challenge BioBlitz home base\
+Photo credit: Marielle Hansel Friedman](images/iluvbugsevent.png){group="my-gallery"}
+
+![A caterpillar fluoresces under ultraviolet light\
+Photo credit: Grace Horne](images/IMG_4327.png){group="my-gallery"}
+
+![A fawn sphinx caterpillar illuminated by ultraviolet light\
+Photo credit: Grace Horne](images/IMG_4328.png){group="my-gallery"}
+
+![A viewing box of a fluorescing millipede at UCD Picnic Day\
+Photo credit: Marielle Hansel Friedman](images/glowingbugsexhibitpicnicday2-01.jpeg){group="my-gallery"}
+
+![Grace Horne and Marielle Hansel Friedman of the Meineke Lab discuss the mechanisms behind fluorescence at UCD Picnic Day\
+Photo credit: Kathy Keatley Garvey](images/GraceandMarielle_glowingbugsexhibit_picnicday-02.JPG){group="my-gallery"}
+:::
+:::

@@ -18,7 +18,6 @@ css: styles.css
         <img src="images/grace.png">
       </div>
       <div class="text">
-      <h3><strong>Personal statement</strong></h2>
         <p>I am interested in herbivore-plant interactions, especially between <a href = https://en.wikipedia.org/wiki/Lepidoptera>Lepidopterans</a> and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with <a href = https://www.calacademy.org/community-science>community scientists</a> in data collection and environmental education.</p>
       </div>
     </div>
@@ -26,16 +25,13 @@ css: styles.css
 ```
 :::
 
-\
-\
-\
-\
-
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center"}
-### **Curriculum vitae**
+::: {style="width: 95%; margin: auto; font-weight: normal; text-align: center;"}
+```{=html}
+<h1><i class="bi bi-stars"></i></h1>
+```
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Education**
 :::
 
@@ -44,20 +40,20 @@ css: styles.css
 | *University of California, Davis*
 | Ph.D. Entomology, in progress
 | Advisor: Dr. [Emily Meineke](https://emilykmeineke.com/)
-
+| 
 | **2017 -- 2021**
 | *Colby College, Waterville, ME*
 | B.A. Biology (honors) & Environmental Science
 | *Magna cum laude* with distinction in both majors
 | Thesis: "Reduced performance of ash-specialist caterpillars on non-native, cultivated Oleaceous plants"
-
+| 
 | **Spring 2020**
 | *Round River Conservation Studies, Maun, Botswana*
 | 
 | [Round River Conservation Studies](https://www.roundriver.org/) (RRCS) is an environmental organization operating at the nexus of conservation and education. We explored the complex relationship between conservation, people, and wildlife, mostly in Mababe, Botswana. We worked with local experts to design and maintain wildlife monitoring systems to be used to substantiate economic and environmental decisions. This program helped me to develop fluency in field work, responses to human-wildlife conflict, and communication with local stakeholders.
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Teaching**
 :::
 
@@ -80,7 +76,7 @@ css: styles.css
 | Series and Multi-variable Calculus Teaching Assistant
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Employment & Commissions**
 :::
 
@@ -104,7 +100,7 @@ css: styles.css
 | Colby College Olin Science Library, Waterville, ME
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Fellowships & Grants**
 :::
 
@@ -131,7 +127,7 @@ css: styles.css
 | Colby College National Merit Scholarship (\$8,000)
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Honors & Awards**
 :::
 
@@ -145,12 +141,14 @@ css: styles.css
 | Dean's Honors (in every qualifying semester)
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Publications**
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | Full text publication access [link](https://www.zotero.org/groups/4992939/grace-horne/library) (view "attachments").
+
+\
 :::
 
 ::: {layout="[[5, 75, 20]]" style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
@@ -162,7 +160,7 @@ css: styles.css
 ![](images/image-237850656.png){width="150"}
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Presentations**
 :::
 
@@ -184,7 +182,7 @@ css: styles.css
 | \* presenting author
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Workshops**
 :::
 
@@ -196,7 +194,7 @@ css: styles.css
 | Using GitHub with R(Studio), Meineke Lab \@ UCD, October 28
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; text-decoration: underline"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Outreach & Extension**
 :::
 
@@ -204,7 +202,10 @@ css: styles.css
 | **Bold type** indicates an institution serving a majority low-income population
 | 
 | **2024**
-| Biodiversity Museum Day, February 10
+| UC Davis Picnic Day: Entomology Exhibit, April 20
+| City Nature Challenge BioBlitz \@ Davis Arboretum, April 26
+| #iluvbugs BioBlitz \@ Davis Arboretum, April 27
+| Discovery Museum Program, August 15-16
 | 
 | **2023**
 | Bohart Museum Open House: "Beetles!," January 22

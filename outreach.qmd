@@ -10,6 +10,10 @@ css: styles.css
 ::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
 ### **Outreach**
 
+#### **#il[uv]{.underline}bugs**
+
+| As a recipient of the Community and Citizen Science in Conservation Fellowship from the UC Davis Center for Community and Citizen Science, I developed a project aimed at engaging citizen scientists in backyard biodiversity observation. The project focuses on introducing entomological research methods, particularly light trapping and UV insect surveying, to the public. Through a combination of educational exhibits and hands-on experiences, participants learned about insect fluorescence and collection techniques. The initiative culminated in a nighttime bioblitz event where citizen scientists explored the UC Davis Arboretum, documenting flora and fauna using UV flashlights and the iNaturalist app. This project not only promoted curiosity about the natural world but also contributed valuable data to broader biodiversity research efforts. By employing a gradual release of responsibility model, the project aimed to empower participants to continue observing and tracking biodiversity independently, bridging the gap between scientific research and public engagement. Please visit this dedicated [webpage](https://gracehorne.com/iluvbugs.html) for a photo gallery. 
+
 #### **Bohart Museum of Entomology**
 
 | Currently, at UC Davis, I volunteer with the Bohart Museum of Entomology whenever I get the chance. Regularly throughout the year, the Museum puts on open houses. Each open house has a theme, from 'Beetles' to 'Insects in Agriculture,' with experts and enthusiasts spreading their knowledge and answering questions. There is a focus on early education with crafts and tactile exhibits targeted towards little hands. These open houses are family friendly and open to the public. Visit their website for more details: <https://bohart.ucdavis.edu>.

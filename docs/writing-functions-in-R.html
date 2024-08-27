@@ -204,7 +204,7 @@ div.csl-indent {
 </a>
 </div>
 <section id="writing-functions-in-r" class="level3" style="width: 75%; margin: auto; font-weight: normal; text-align: left">
-<h3 data-anchor-id="writing-functions-in-r">wRiting functions in R</h3>
+<h3 data-anchor-id="writing-functions-in-r"><strong>wRiting functions in R</strong></h3>
 <p>R is a <strong>functional programming</strong> language, meaning that it provides tools for writing and manipulating functions <span class="citation" data-cites="wickham2019">(<a href="#ref-wickham2019" role="doc-biblioref">Wickham et al. 2019</a>)</span>. Functional programming contrasts with <strong>imperative programming</strong> where the main focus is on how an operation is performed. Imperative programming allows the programmer to follow exactly what is going on throughout the process. Both approaches allow us to write <strong>iterative code</strong>.</p>
 </section>
 <section id="part-i-how-to-repeat-yourself" class="level4" style="text-align: center">
@@ -216,11 +216,11 @@ div.csl-indent {
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.2     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.2     ✔ tibble    3.2.1
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.1     
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
@@ -566,14 +566,16 @@ Objects within a function reset each time the function is called (e.g., <code>me
 <div class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data) <span class="co"># view the first couple of rows of data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>   year month date_excel       date    co2 co2_season_adj co2_smooth
-1: 1960     1      21930 1960-01-14     NA             NA     316.32
-2: 1960     2      21961 1960-02-14     NA             NA     316.97
-3: 1960     3      21990 1960-03-14 317.70         316.29     317.80
-4: 1960     4      22021 1960-04-14 319.08         316.57     318.97
-5: 1960     5      22051 1960-05-14     NA             NA     319.48
-6: 1960     6      22082 1960-06-14     NA             NA     318.72
+<pre><code>    year month date_excel       date    co2 co2_season_adj co2_smooth
+   &lt;int&gt; &lt;int&gt;     &lt;char&gt;     &lt;Date&gt;  &lt;num&gt;          &lt;num&gt;      &lt;num&gt;
+1:  1960     1      21930 1960-01-14     NA             NA     316.32
+2:  1960     2      21961 1960-02-14     NA             NA     316.97
+3:  1960     3      21990 1960-03-14 317.70         316.29     317.80
+4:  1960     4      22021 1960-04-14 319.08         316.57     318.97
+5:  1960     5      22051 1960-05-14     NA             NA     319.48
+6:  1960     6      22082 1960-06-14     NA             NA     318.72
    co2_smooth_season_adj co2_interpolated co2_season_adj_interpolated
+                   &lt;num&gt;            &lt;num&gt;                       &lt;num&gt;
 1:                316.23           316.32                      316.23
 2:                316.31           316.97                      316.31
 3:                316.39           317.70                      316.29
@@ -583,24 +585,26 @@ Objects within a function reset each time the function is called (e.g., <code>me
 </div>
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(data) <span class="co"># view the last couple of rows of data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>   year month date_excel       date    co2 co2_season_adj co2_smooth
-1: 2023     7      45122 2023-07-14 421.06         420.81     421.42
-2: 2023     8      45153 2023-08-14 419.69         421.65     419.49
-3: 2023     9      45184 2023-09-14 418.20         421.70     418.23
-4: 2023    10      45214 2023-10-14     NA             NA     418.73
-5: 2023    11      45245 2023-11-14     NA             NA     420.43
-6: 2023    12      45275 2023-12-14     NA             NA     421.93
+<pre><code>    year month date_excel       date   co2 co2_season_adj co2_smooth
+   &lt;int&gt; &lt;int&gt;     &lt;char&gt;     &lt;Date&gt; &lt;num&gt;          &lt;num&gt;      &lt;num&gt;
+1:  2024     7      45488 2024-07-14    NA             NA     424.22
+2:  2024     8      45519 2024-08-14    NA             NA     422.33
+3:  2024     9      45550 2024-09-14    NA             NA     421.10
+4:  2024    10      45580 2024-10-14    NA             NA     421.56
+5:  2024    11      45611 2024-11-14    NA             NA     423.18
+6:  2024    12      45641 2024-12-14    NA             NA     424.63
    co2_smooth_season_adj co2_interpolated co2_season_adj_interpolated
-1:                421.17           421.06                      420.81
-2:                421.45           419.69                      421.65
-3:                421.73           418.20                      421.70
-4:                422.00           418.73                      422.00
-5:                422.28           420.43                      422.28
-6:                422.55           421.93                      422.55</code></pre>
+                   &lt;num&gt;            &lt;num&gt;                       &lt;num&gt;
+1:                424.03           424.22                      424.03
+2:                424.28           422.33                      424.28
+3:                424.53           421.10                      424.53
+4:                424.77           421.56                      424.77
+5:                425.02           423.18                      425.02
+6:                425.26           424.63                      425.26</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(data) <span class="co"># take a look at the classes of data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Classes 'data.table' and 'data.frame':  768 obs. of  10 variables:
+<pre><code>Classes 'data.table' and 'data.frame':  780 obs. of  10 variables:
  $ year                       : int  1960 1960 1960 1960 1960 1960 1960 1960 1960 1960 ...
  $ month                      : int  1 2 3 4 5 6 7 8 9 10 ...
  $ date_excel                 : chr  "21930" "21961" "21990" "22021" ...
@@ -617,7 +621,8 @@ Objects within a function reset each time the function is called (e.g., <code>me
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> co2)) <span class="sc">+</span> </span>
 <span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 5 rows containing missing values (`geom_line()`).</code></pre>
+<pre><code>Warning: Removed 10 rows containing missing values or values outside the scale range
+(`geom_line()`).</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -776,7 +781,8 @@ Objects within a function reset each time the function is called (e.g., <code>me
 <span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span> </span>
 <span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> site, <span class="at">scales =</span> <span class="st">"free_x"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 8 rows containing missing values (`geom_line()`).</code></pre>
+<pre><code>Warning: Removed 13 rows containing missing values or values outside the scale range
+(`geom_line()`).</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
