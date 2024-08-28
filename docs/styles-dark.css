@@ -20,6 +20,10 @@ nav strong {
     font-weight: normal;
 }
 
+  .quarto-page-breadcrumbs {
+    display: none !important; /* Hides the breadcrumb navigation */
+  }
+
 .quarto-secondary-nav-title {
   visibility: hidden;
 }
