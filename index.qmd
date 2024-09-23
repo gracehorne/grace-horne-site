@@ -315,7 +315,7 @@ Total funds awarded: \$216,940
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | **2024**
-| [wRiting functions in R](http://localhost:5758/writing-functions-in-R.html), Entomology graduate students, March 12
+| [wRiting functions in R](https://gracehorne.com/writing-functions-in-R.html), Entomology graduate students, March 12
 | 
 | **2023**
 | Using GitHub with R(Studio), Williams Lab \@ UCD, February 17
