@@ -10,15 +10,15 @@ css: styles.css
 \
 \
 
-::: {.columns style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;"}
+::::: {.columns style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;"}
 ::: {.column style="flex: 0 0 45%;"}
 ![](images/grace.png)
 :::
 
 ::: {.column style="flex: 0 0 40%; text-align: center;"}
-*I am interested in herbivore-plant interactions, especially between [Lepidopterans](https://en.wikipedia.org/wiki/Lepidoptera) and their food-plants. I seek to qualify how these relationships will change in response to disturbances such as exotic species invasion and climate change. I am eager to engage with [community scientists](https://www.calacademy.org/community-science) in data collection and environmental education.*
+*I am interested in herbivore-plant interactions, especially between [Lepidopterans](https://en.wikipedia.org/wiki/Lepidoptera) and their food-plants. I seek to qualify how these relationships will shift in response to global change. I am eager to engage with [community scientists](https://www.calacademy.org/community-science) in data collection and environmental education.*
 :::
-:::
+:::::
 
 ```{=html}
 <style>
@@ -55,6 +55,7 @@ css: styles.css
   }
 </style>
 ```
+
 ::: {style="width: 95%; margin: auto; font-weight: normal; text-align: center;"}
 ```{=html}
 <h1><i class="bi bi-stars"></i></h1>
@@ -88,6 +89,12 @@ css: styles.css
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| 
+| **Winter 2022 - 2024**
+| *UC Davis Department of Entomology & Nematology, Davis, CA*
+| Natural History of Insects Guest Lecturer
+| Lecture: "Insects & Climate Change"
+| 
 | **Fall 2022**
 | *UC Davis Department of Environmental Science & Policy, Davis, CA*
 | General Ecology Teaching Assistant
@@ -95,11 +102,6 @@ css: styles.css
 | **Spring 2022**
 | *UC Davis Department of Evolution & Ecology, Davis, CA*
 | Introduction to Ecology Teaching Assistant
-| 
-| **Winter 2022, 2023, 2024**
-| *UC Davis Department of Entomology & Nematology, Davis, CA*
-| Natural History of Insects Guest Lecturer
-| Lecture: "Insects & Climate Change"
 | 
 | **Fall 2018**
 | *Colby College Mathematics Department, Waterville, ME*
@@ -111,13 +113,19 @@ css: styles.css
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| **2025**
+| Intern
+| Native Plant Trust, Framingham, MA
+| 
+| The mission of [Native Plant Trust](https://www.nativeplanttrust.org/) (NPT) is to save rare and endangered plants through conservation, horticulture, and education. As part of my role at NPT, I will lead the Chaperoned Assisted Migration Experiment (ChAsM) which involves establishing plants of conservation concern in botanic gardens that simulate projected future climate conditions, ensuring their *ex situ* preservation.
+| 
 | **2022 -- 2024**
 | Picnic Day Co-Chair
-| University of California, Davis
+| University of California, Davis, CA
 | 
 | **2022 -- 2023**
 | Entomology Seminar Series Committee Member
-| University of California, Davis
+| University of California, Davis, CA
 | 
 | **2018 -- 2021**
 | Education Staff & Undergraduate Researcher
@@ -128,6 +136,10 @@ css: styles.css
 | **2019 -- 2020**
 | Student Assistant
 | Colby College Olin Science Library, Waterville, ME
+| 
+| **2019**
+| Colby Outdoor Orientation Trip (COOT) Leader
+| Colby College, Waterville, ME
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
@@ -173,6 +185,9 @@ Total funds awarded: \$216,940
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+| **2024**
+| Environmental Entomology People's Choice Runner Up
+| 
 | **2021**
 | Colby College Off-Campus Study Photo Contest (**1^st^ place**)
 | Entry title, description: "Cricket Cricket," a macro-photograph of a *setotojane* katydid
@@ -287,11 +302,16 @@ Total funds awarded: \$216,940
 </body>
 </html>
 ```
+
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Presentations**
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; fig-align: center"}
+| 9.     Marielle S. Hansel Friedman\*, Alison E. L. Colwell, Elizeth Cinto Mejía, **Grace M. Horne**, Ian S. Pearse, Emily K. Meineke, Paul D. Pratt. (2024) Herbarium specimens faithfully capture changing plant-insect interactions over years. *Entomology Society of America Annual Meeting.*
+| 
+| 8.     **Horne, Grace M.\***, Rea Manderino, and Samuel P. Jaffe. (2024) Specialist herbivore performance on introduced plants during native host decline. *Entomology Society of America Annual Meeting.* **Invited**, but unable to deliver due to illness.
+| 
 | 7.     **Horne, Grace M.**\*, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (2023) Long-term datasets reveal climatic nuance in moth responses to global change. *Biology of Butterflies Conference.*
 | 
 | 6.     **Horne, Grace M.**\* (2023) Climate change and our backyard fauna: a tale of the moths of Davis, CA. *Atria Covell Gardens.*
@@ -424,7 +444,7 @@ Total funds awarded: \$216,940
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | Cell Biology
 | Conservation Biology
-| Environmental & Natural Resource Economics
+| Env. & Natural Resource Economics
 | GIS & Spatial Analysis
 | Introduction to R
 | Series & Multivariable Calculus
@@ -436,8 +456,12 @@ Total funds awarded: \$216,940
 | Forest Ecosystems
 | Introduction to Entomology
 | Insect Physiology
-| Scientific Illustration in Illustrator & Photoshop
+| Digital Scientific Illustration
 | Trait-Based Ecology
 | Insect Ecology
 | Bayesian Statistics
+| Citizen Science in Conservation
+| Bio-Collections for Global Change Research
+| Metabolomics
+| Organisms & Methods Across System
 :::
