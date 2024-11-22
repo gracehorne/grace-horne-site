@@ -308,9 +308,11 @@ Total funds awarded: \$216,940
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; fig-align: center"}
-| 9.     Marielle S. Hansel Friedman\*, Alison E. L. Colwell, Elizeth Cinto Mejía, **Grace M. Horne**, Ian S. Pearse, Emily K. Meineke, Paul D. Pratt. (2024) Herbarium specimens faithfully capture changing plant-insect interactions over years. *Entomology Society of America Annual Meeting.*
+| 10.     Marielle S. Hansel Friedman\*, Alison E. L. Colwell, Elizeth Cinto Mejía, **Grace M. Horne**, Ian S. Pearse, Emily K. Meineke, Paul D. Pratt. (2024) Herbarium specimens faithfully capture changing plant-insect interactions over years. *Entomology Society of America Annual Meeting.*
 | 
-| 8.     **Horne, Grace M.\***, Rea Manderino, and Samuel P. Jaffe. (2024) Specialist herbivore performance on introduced plants during native host decline. *Entomology Society of America Annual Meeting.* **Invited**, but unable to deliver due to illness.
+| 9.     **Horne, Grace M.\***, Rea Manderino, and Samuel P. Jaffe. (2024) Specialist herbivore performance on introduced plants during native host decline. *Entomology Society of America Annual Meeting.* **Invited**, but unable to deliver due to illness.
+
+| 8.     **Horne, Grace M.\*** and Marielle S. Hansel Friedman. (2024) #iluvbugs: Illuminating backyard biodiversity through citizen science and UV insect exploration. *IE Faculty Fellows and Graduate Scholars Symposium*. Poster.
 | 
 | 7.     **Horne, Grace M.**\*, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (2023) Long-term datasets reveal climatic nuance in moth responses to global change. *Biology of Butterflies Conference.*
 | 
