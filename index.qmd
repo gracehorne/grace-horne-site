@@ -117,7 +117,7 @@ css: styles.css
 | Intern
 | Native Plant Trust, Framingham, MA
 | 
-| The mission of [Native Plant Trust](https://www.nativeplanttrust.org/) (NPT) is to save rare and endangered plants through conservation, horticulture, and education. As part of my role at NPT, I will lead the Chaperoned Assisted Migration Experiment (ChAsM) which involves establishing plants of conservation concern in botanic gardens that simulate projected future climate conditions, ensuring their *ex situ* preservation.
+| The mission of [Native Plant Trust](https://www.nativeplanttrust.org/) (NPT) is to save rare and endangered plants through conservation, horticulture, and education. As part of my role at NPT, I will contribute to the Chaperoned Assisted Migration Experiment (ChAsM) which involves establishing plants of conservation concern in botanic gardens that simulate projected future climate conditions, ensuring their *ex situ* preservation.
 | 
 | **2022 -- 2024**
 | Picnic Day Co-Chair
@@ -311,7 +311,7 @@ Total funds awarded: \$216,940
 | 10.     Marielle S. Hansel Friedman\*, Alison E. L. Colwell, Elizeth Cinto Mejía, **Grace M. Horne**, Ian S. Pearse, Emily K. Meineke, Paul D. Pratt. (2024) Herbarium specimens faithfully capture changing plant-insect interactions over years. *Entomology Society of America Annual Meeting.*
 | 
 | 9.     **Horne, Grace M.\***, Rea Manderino, and Samuel P. Jaffe. (2024) Specialist herbivore performance on introduced plants during native host decline. *Entomology Society of America Annual Meeting.* **Invited**, but unable to deliver due to illness.
-
+| 
 | 8.     **Horne, Grace M.\*** and Marielle S. Hansel Friedman. (2024) #iluvbugs: Illuminating backyard biodiversity through citizen science and UV insect exploration. *IE Faculty Fellows and Graduate Scholars Symposium*. Poster.
 | 
 | 7.     **Horne, Grace M.**\*, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (2023) Long-term datasets reveal climatic nuance in moth responses to global change. *Biology of Butterflies Conference.*
@@ -354,10 +354,13 @@ Total funds awarded: \$216,940
 | **Bold type** indicates an institution serving a majority low-income population
 | 
 | **2024**
-| UC Davis Picnic Day: Entomology Exhibit, April 20
+| UC Davis Picnic Day: Entomology Exhibit, April 20^†^
 | City Nature Challenge BioBlitz \@ Davis Arboretum, April 26
-| #iluvbugs BioBlitz \@ Davis Arboretum, April 27
-| Discovery Museum Program, August 15-16
+| #iluvbugs BioBlitz \@ Davis Arboretum, April 27^†^
+| Bioblitz at The Seeds of Solidarity Farm, May 26
+| Discovery Museum Program, August 15 - 16
+| California Biodiversity Day, September 7 
+| (collaboratively created [regional biodiversity guides](https://drive.google.com/drive/folders/1HQZsG10TBvSzO29jdyQa9i2nrTin_lov?usp=sharing))
 | 
 | **2023**
 | Bohart Museum Open House: "Beetles!," January 22
