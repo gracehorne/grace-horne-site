@@ -67,15 +67,16 @@ css: styles.css
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
-| **2021 -- present**
+| **2021 - present**
 | *University of California, Davis*
 | Ph.D. Entomology, in progress
 | Advisor: Dr. [Emily Meineke](https://emilykmeineke.com/)
 | 
-| **2017 -- 2021**
+| **2017 - 2021**
 | *Colby College, Waterville, ME*
 | B.A. Biology (honors) & Environmental Science
 | *Magna cum laude* with distinction in both majors
+| Advisors: Drs. Justin Becknell & Judy Stone
 | Thesis: "Reduced performance of ash-specialist caterpillars on non-native, cultivated Oleaceous plants"
 | 
 | **Spring 2020**
@@ -90,7 +91,7 @@ css: styles.css
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | 
-| **Winter 2022 - 2024**
+| **Winters 2022 - 2025**
 | *UC Davis Department of Entomology & Nematology, Davis, CA*
 | Natural History of Insects Guest Lecturer
 | Lecture: "Insects & Climate Change"
@@ -117,23 +118,29 @@ css: styles.css
 | Intern
 | Native Plant Trust, Framingham, MA
 | 
-| The mission of [Native Plant Trust](https://www.nativeplanttrust.org/) (NPT) is to save rare and endangered plants through conservation, horticulture, and education. As part of my role at NPT, I will contribute to the Chaperoned Assisted Migration Experiment (ChAsM) which involves establishing plants of conservation concern in botanic gardens that simulate projected future climate conditions, ensuring their *ex situ* preservation.
+| The mission of [Native Plant Trust](https://www.nativeplanttrust.org/) (NPT) is to save rare and endangered plants through conservation, horticulture, and education. As part of my role at NPT, I contributed to the New England Plant Conservation Program (NEPCoP) by assisting in securing permission for rare plant surveys from a variety of land owners, including government agencies, NGOs, and private landowners.
 | 
-| **2022 -- 2024**
+| **2025**
+| Research Intern
+| Appalachian Mountain Club Jackson, NH
+| 
+| The [Appalachian Mountain Club](https://www.outdoors.org/) (AMC) aims to protect the outdoors from environmental threats. Their work runs the gamut from maintaining trails to administering a collection of high elevation huts to conducting observational research across New England’s alpine and sub-alpine zones. In my capacity as an intern, I helped develop an alpine pollinator monitoring project under the guidance of senior scientist Georgia Murray.
+| 
+| **2022 - 2024**
 | Picnic Day Co-Chair
 | University of California, Davis, CA
 | 
-| **2022 -- 2023**
+| **2022 - 2023, 2025 - 2026**
 | Entomology Seminar Series Committee Member
 | University of California, Davis, CA
 | 
-| **2018 -- 2021**
+| **2018 - 2021**
 | Education Staff & Undergraduate Researcher
 | The Caterpillar Lab, Marlborough, NH
 | 
 | [The Caterpillar Lab](https://www.thecaterpillarlab.org/) (TCL) is an environmental education organization focused on inviting people---kids and adults alike---to share in stories of ecology, evolution, and natural history. I have presented at over 30 locations including elementary school classrooms, botanic gardens, and children's museums, \|with a goal to ignite in us a curiosity of the world we live in, from the smallest leaf-miners to the tallest trees.
 | 
-| **2019 -- 2020**
+| **2019 - 2020**
 | Student Assistant
 | Colby College Olin Science Library, Waterville, ME
 | 
@@ -147,7 +154,7 @@ css: styles.css
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center"}
-Total funds awarded: \$216,940
+Total funds awarded: \$219,190
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
@@ -162,6 +169,10 @@ Total funds awarded: \$216,940
 | CNPS Student Research Grant Award (\$595)
 | 
 | ***Internal***
+| **2025**
+| Duffey Dingle Research Award (\$1,300)
+| McBeth Memorial Scholarship (\$950)
+| 
 | **2024**
 | Entomology Student Support Research Award
 | Henry A. Jastro Research Scholarship (combined, \$2,750)
@@ -192,7 +203,7 @@ Total funds awarded: \$216,940
 | Colby College Off-Campus Study Photo Contest (**1^st^ place**)
 | Entry title, description: "Cricket Cricket," a macro-photograph of a *setotojane* katydid
 | 
-| **2017 -- 2021**
+| **2017 - 2021**
 | Colby College National Merit Scholar
 | Dean's Honors (in every qualifying semester)
 :::
@@ -308,6 +319,10 @@ Total funds awarded: \$216,940
 :::
 
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; fig-align: center"}
+| 12.      **Horne, Grace M.**\* and Emily K. Meineke. (2025) Herbarium sheets as ecological data caches. *Entomological Society of America Annual Meeting.* **Invited.**
+| 
+| 11.      **Horne, Grace M.**\*, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (2025) Climate change favors moths able to keep pace with an earlier spring. *Ecological Society of America Annual Meeting.* **Invited.**
+| 
 | 10.     Marielle S. Hansel Friedman\*, Alison E. L. Colwell, Elizeth Cinto Mejía, **Grace M. Horne**, Ian S. Pearse, Emily K. Meineke, Paul D. Pratt. (2024) Herbarium specimens faithfully capture changing plant-insect interactions over years. *Entomology Society of America Annual Meeting.*
 | 
 | 9.     **Horne, Grace M.\***, Rea Manderino, and Samuel P. Jaffe. (2024) Specialist herbivore performance on introduced plants during native host decline. *Entomology Society of America Annual Meeting.* **Invited**, but unable to deliver due to illness.
@@ -353,13 +368,23 @@ Total funds awarded: \$216,940
 ::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 | **Bold type** indicates an institution serving a majority low-income population
 | 
+| **Forthcoming**
+| Calscape “Pollinator Companion” decision support tool, a product of a working group led by Drs. Chris Cosma & L. Melissa Guzman in collaboration with the California Native Plant Society & National Center for Ecological Analysis and Synthesis
+| 
+| Age of Loneliness, feature documentary (in production). Directed by Jenni Morello. Interviewed as an entomologist and global change researcher.
+| 
+| **2025**
+| AMC Guide to the Pollinators of the WMNF, [full](https://drive.google.com/file/d/1aloFyCDI9kHhKHO_LqxdBAacF8EraHfE/view?usp=drive_link) & [abridged](https://drive.google.com/file/d/15WQ0iC4QMaNe-bYUuI1JUMEZHZpC-vq6/view?usp=drive_link) guides^†^
+| AMC Annual Dandelion Dig Day, July 9
+| The Caterpillar Lab \@ Garden in the Woods, August 30 – September 1
+| 
 | **2024**
 | UC Davis Picnic Day: Entomology Exhibit, April 20^†^
 | City Nature Challenge BioBlitz \@ Davis Arboretum, April 26
 | #iluvbugs BioBlitz \@ Davis Arboretum, April 27^†^
 | Bioblitz at The Seeds of Solidarity Farm, May 26
 | Discovery Museum Program, August 15 - 16
-| California Biodiversity Day, September 7 
+| California Biodiversity Day, September 7
 | (collaboratively created [regional biodiversity guides](https://drive.google.com/drive/folders/1HQZsG10TBvSzO29jdyQa9i2nrTin_lov?usp=sharing))
 | 
 | **2023**
@@ -413,11 +438,11 @@ Total funds awarded: \$216,940
 | New England Botanic Garden at Tower Hill Program, August 3
 | 
 | **2018**
-| North Branch Nature Center BioBlitz, July 21 -- 22
+| North Branch Nature Center BioBlitz, July 21 - 22
 | Arnold Arboretum Program, July 28
 | Boston Museum of Science Exhibit, July 11
-| New England Botanic Garden at Tower Hill Program, July 25 -- 26
-| Discovery Museum Residency, July 28 -- August 3
+| New England Botanic Garden at Tower Hill Program, July 25 - 26
+| Discovery Museum Residency, July 28 - August 3
 | 
 | \* Senior thesis data collection, COVID-19 pandemic
 | ^†^ Independently designed and presented
