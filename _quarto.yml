@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - .htaccess
+    - fonts/
   render:
     - "*.qmd"
     - "!metabolomics-analysis-with-brms.qmd" #(add html to https://robinmoisson.github.io/staticrypt/)
@@ -41,7 +42,6 @@ format:
     theme:
       - simplex
       - styles.css
-    # mainfont: "Josefin Sans"
     toc: true 
     toc-depth: 4
     backgroundcolor: "#f8f8f2" 
