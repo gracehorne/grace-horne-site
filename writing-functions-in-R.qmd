@@ -371,29 +371,29 @@ getURLs <- function(url, vector) {
   # read the HTML content from the given URL
   html <- read_html(url)
   
-  # extract text from <td class="rollover-links"> tags
-  matches <- html_nodes(html, "td.rollover-links") %>%
-    html_text()
+  # extract text from navigation links in the sidebar
+  nav_links <- html_nodes(html, "#sidebar-menu .nav-link")
   
-  # find matches within the vector
-  matched_vector <- vector[vector %in% matches]
+  # get the text content
+  link_text <- html_text(nav_links)
   
-  # E]extract href attributes corresponding to the matched text
-  href_matches <- html_nodes(html, "td.rollover-links") %>%
-    html_nodes("a") %>%
-    html_attr("href")
+  # get the href attributes
+  href_links <- html_attr(nav_links, "href")
   
-  # prepend the base URL string to each href attribute
-  href_matches <- paste0("https://scrippsco2.ucsd.edu/data/atmospheric_co2/", href_matches)
+  # find which links match the vector
+  matched_indices <- which(link_text %in% vector)
   
-  # return URLs only for the matches within the vector
-  return(href_matches[matches %in% matched_vector])
+  # prepend the base URL to matched hrefs
+  matched_urls <- paste0("https://scrippsco2.ucsd.edu", href_links[matched_indices])
   
+  # return the matched URLs
+  return(matched_urls)
 }
 
 url <- "https://scrippsco2.ucsd.edu/data/atmospheric_co2/sampling_stations.html"
-sites <- c("Alert, NWT, Canada", "Mauna Loa Observatory, Hawaii", "Cape Kumukahi, Hawaii", "Fanning Island", "Christmas Island", "American Samoa", "Kermadec Island", "Baring Head, New Zealand")
-
+sites <- c("Alert, NWT, Canada", "Mauna Loa Observatory, Hawaii", 
+           "Cape Kumukahi, Hawaii", "Fanning Island", "Christmas Island", 
+           "American Samoa", "Kermadec Island", "Baring Head, New Zealand")
 matched_urls <- getURLs(url = url, vector = sites)
 print(matched_urls)
 ```

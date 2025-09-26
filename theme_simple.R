@@ -9,7 +9,7 @@ library(ggtext)
 
 
 theme_simple <- function() {
-  font <- "Avenir"      # assign font family
+  font <- "Avenir Next"      # assign font family
   
   theme_excel_new() %+replace%
     
