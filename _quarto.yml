@@ -4,6 +4,13 @@ project:
   resources:
     - .htaccess
     - fonts/
+    - favicon.ico
+    - favicon.svg
+    - favicon-96x96.png
+    - apple-touch-icon.png
+    - web-app-manifest-192x192.png
+    - web-app-manifest-512x512.png
+    - site.webmanifest
   render:
     - "*.qmd"
     - "!metabolomics-analysis-with-brms.qmd" #(add html to https://robinmoisson.github.io/staticrypt/)
@@ -47,6 +54,7 @@ format:
     toc-depth: 4
     backgroundcolor: "#f8f8f2" 
     fontcolor: "#282a36"
+    include-in-header: favicon.html
 
 
 
