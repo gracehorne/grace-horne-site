@@ -1,11 +1,9 @@
 RewriteEngine On
 
-# redirect from .html to clean URL
-RewriteCond %{THE_REQUEST} ^GET\ /(.*)\.html(\?[^\ ]*)?\ HTTP
-RewriteRule ^(.*)\.html$ /$1 [R=301,L]
-
-# serve .html for clean URLs
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+# remove .html from URL
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+)$ $1.html [L]
+RewriteRule ^(.*)$ $1.html [L]
+
+# redirect .html to non-.html
+RewriteCond %{REQUEST_URI} \.html$
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]

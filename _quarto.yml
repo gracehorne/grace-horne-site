@@ -12,6 +12,7 @@ permalink: /:title/
 
 website:
   title: "Grace M. Horne"
+  favicon: favicon.png
   sidebar:
     pinned: true
     tools:
@@ -28,13 +29,13 @@ website:
     search: false
     contents:
       - text: "¹ Research"
-        href: research.qmd
+        href: https://gracehorne.com/research
       - text: "² Outreach"
-        href: outreach.qmd
+        href: https://gracehorne.com/outreach
       - text: "³ Links"
-        href: links.qmd
+        href: https://gracehorne.com/links
       - text: "⁴ Tutorials"
-        href: tutorials.qmd
+        href: https://gracehorne.com/tutorials
 format:
   html:
     page-layout: full
