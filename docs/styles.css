@@ -10,6 +10,27 @@
   visibility: hidden;
 }
 
+/* dropdown menu from hamburger with light background */
+@media (max-width: 768px) {
+  .navbar-brand, .navbar-toggler {
+    background-color: rgba(248, 248, 242, 0.9) !important;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .navbar-collapse {
+    background-color: rgba(248, 248, 242, 0.9) !important;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  /* style the links in the dropdown */
+  .navbar-collapse .nav-link {
+    color: #282A36 !important; /* dark text on light background */
+  }
+}
+
 html body {
   font-family: 'Montserrat', sans-serif !important;
 }
@@ -98,6 +119,61 @@ img {
   font-size: 18px;
   padding-left: 20px;
   flex: 1 1 250px;
+}
+
+/* 100% transparent navbar */
+.navbar {
+  background-color: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* on mobile, navbar scrolls away with content (not fixed) */
+@media (max-width: 768px) {
+  .navbar {
+    position: relative !important;
+  }
+}
+
+
+/* remove navbar border/line */
+.navbar {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* hide table of contents */
+#TOC {
+  display: none !important;
+}
+
+.toc-actions {
+  display: none !important;
+}
+
+/* hide search */
+#quarto-search {
+  display: none !important;
+}
+
+.aa-Autocomplete {
+  display: none !important;
+}
+
+/* add background when scrolled */
+.navbar.scrolled {
+  background-color: #f8f8f2 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* hide navbar when scrolling down */
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+/* add padding to body so content isn't hidden under fixed navbar */
+body {
+  padding-top: 60px; /* adjust based on your navbar height */
 }
 
 /* change sidebar toggle icon to bi-list with custom color */
@@ -249,4 +325,90 @@ img {
   font-style: italic;
   font-weight: 900;
   src: url('../fonts/montserrat-v31-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* navbar and dropdown styling - light version */
+.navbar {
+  background-color: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* navbar links */
+.navbar .nav-link {
+  color: #ff79c6 !important; /* unvisited link color */
+}
+
+.navbar .nav-link:visited {
+  color: #ff79c6 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #bd93f9 !important; /* hover color */
+}
+
+.navbar .nav-link:active, .navbar .nav-link.active {
+  color: #ffb86c !important; /* active link color */
+}
+
+/* remove bold from navbar */
+.navbar strong {
+  font-weight: normal;
+}
+
+/* mobile navbar styling - light version */
+@media (max-width: 768px) {
+  .navbar-brand, .navbar-toggler {
+    background-color: rgba(248, 248, 242, 0.9) !important;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #8be9fd !important; /* blue border */
+  }
+  
+  /* change hamburger icon to pink */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%23ff79c6' fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/%3e%3c/svg%3e") !important;
+}
+
+/* keep blue border on hamburger even when toggled */
+@media (max-width: 768px) {
+  .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
+    background-color: rgba(248, 248, 242, 0.9) !important;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #8be9fd !important; /* blue border */
+    box-shadow: none !important; /* remove focus shadow */
+  }
+}
+  
+/* dropdown menu */
+  .navbar-collapse {
+    background-color: rgba(248, 248, 242, 0.9) !important; /* light background with 90% opacity */
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #8be9fd; /* border accent */
+  }
+  
+  /* dropdown links */
+  .navbar-collapse .nav-link {
+    color: #ff79c6 !important;
+  }
+  
+  .navbar-collapse .nav-link:hover {
+    color: #bd93f9 !important;
+  }
+  
+  .navbar-collapse .nav-link:active, .navbar-collapse .nav-link.active {
+    color: #ffb86c !important;
+    border-left: 1px solid #ffb86c;
+    padding-left: 10px;
+  }
+}
+
+/* remove border around hamburger when toggled */
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
 }

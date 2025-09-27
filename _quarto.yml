@@ -7,25 +7,14 @@ project:
   render:
     - "*.qmd"
     - "!metabolomics-analysis-with-brms.qmd" #(add html to https://robinmoisson.github.io/staticrypt/)
-
 website:
   title: "Grace M. Horne"
   favicon: favicon.png
-  sidebar:
-    pinned: true
-    tools:
-      - icon: envelope-heart
-        href: mailto:gmhorne@ucdavis.edu
-        aria-label: email
-      - icon: github
-        href: https://github.com/gracehorne
-        aria-label: GitHub
-      - icon: google
-        href: https://scholar.google.com/citations?user=pE2oVU0AAAAJ&hl=en
-        aria-label: GitHub
-    style: "floating"
+  navbar:
+    pinned: false
     search: false
-    contents:
+    toggle-icon: bi-list
+    right:
       - text: "¹ Research"
         href: https://gracehorne.com/research
       - text: "² Outreach"
@@ -41,10 +30,6 @@ format:
     theme:
       - simplex
       - styles.css
-    toc: true 
-    toc-depth: 4
+    toc: false
     backgroundcolor: "#f8f8f2" 
     fontcolor: "#282a36"
-
-
-
