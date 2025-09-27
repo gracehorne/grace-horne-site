@@ -9,7 +9,7 @@ bibliography: references.bib
 highlight-style: github
 ---
 
-::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: center"}
+::: {#body style="width: 90%; margin: auto; font-weight: normal; text-align: center"}
 ```{=html}
 <a href="https://drive.google.com/file/d/1IrY3V-shDKvro7E07L0mvHEtNIoVsJpa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   <button type="button" class="btn btn-outline-danger">
@@ -23,7 +23,7 @@ highlight-style: github
 ```
 :::
 
-::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 ### **wRiting functions in R**
 
 R is a **functional programming** language, meaning that it provides tools for writing and manipulating functions [@wickham2019]. Functional programming contrasts with **imperative programming** where the main focus is on how an operation is performed. Imperative programming allows the programmer to follow exactly what is going on throughout the process. Both approaches allow us to write **iterative code**.
@@ -31,7 +31,7 @@ R is a **functional programming** language, meaning that it provides tools for w
 
 #### Part I: how to repeat yourself {style="text-align: center"}
 
-::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 Let’s run through an example of iterative code exemplifying each approach. Say we want to find the median petal length for each species of *Iris* in the built-in `iris` dataset. We could just could just copy and paste:
 
 ```{r}
@@ -178,7 +178,7 @@ The names of the different `map()` functions are derived from your desired outpu
 
 #### Part II: flexing your skills {style="text-align: center"}
 
-::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 For Part II of this tutorial, we will be working with the built-in data set `co2`. This is a simple data set of the monthly atmospheric CO~2~ concentrations at the Mauna Loa Observatory in Hawaii from 1959 to 1997.
 
 To start, we need to load some packages and our data. As is, the data is in the form of a time series. We want to convert it to a data frame.

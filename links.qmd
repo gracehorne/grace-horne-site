@@ -9,7 +9,7 @@ format:
 css: styles.css
 ---
 
-::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+::: {#body style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 ### **Links**
 
 Below is a working list of the resources I use for my research and life. You can view my current public projects on my GitHub profile, [\@gracehorne](https://github.com/gracehorne).
@@ -35,7 +35,7 @@ Below is a working list of the resources I use for my research and life. You can
 2.  [Center for Advocacy, Resources, & Education (CARE)](https://care.ucdavis.edu/ "Home")
 :::
 
-::: {style="width: 75%; margin: auto; font-weight: normal; text-align: left; "}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; "}
 #### **Media & Press**
 
 ::: {layout-ncol="3" layout-valign="center" fig-align="center"}

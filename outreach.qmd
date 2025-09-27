@@ -7,7 +7,7 @@ format:
 css: styles.css
 ---
 
-::: {#body style="width: 75%; margin: auto; font-weight: normal; text-align: left"}
+::: {#body style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
 ### **Outreach**
 
 #### **#il[uv]{.underline}bugs**

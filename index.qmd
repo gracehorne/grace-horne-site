@@ -7,66 +7,44 @@ format:
 css: styles.css
 ---
 
-\
-\
-
-::::: {.columns style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;"}
-::: {.column style="flex: 0 0 45%;"}
-![](images/grace.png)
+::::: {.columns style="display: flex; align-items: center; gap: 20px;"}
+::: {.column style="flex: 1;"}
+![](images/grace2.png)
 :::
 
-::: {.column style="flex: 0 0 40%; text-align: center;"}
+::: {.column style="flex: 1; text-align: left;"}
 *I am interested in herbivore-plant interactions, especially between [Lepidopterans](https://en.wikipedia.org/wiki/Lepidoptera) and their food-plants. I seek to qualify how these relationships will shift in response to global change. I am eager to engage with [community scientists](https://www.calacademy.org/community-science) in data collection and environmental education.*
 :::
 :::::
-
 ```{=html}
 <style>
+@media (max-width: 768px) {
   .columns {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px; /* Space between the picture and text */
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; /* center the image */
   }
   
   .column {
-    box-sizing: border-box;
+    width: 100% !important;
+    flex: none !important;
   }
   
   .column img {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto;
+    width: 50%; /* image at 50% width */
+    max-width: 50%;
+    margin: 0 auto; /* center the image */
+    display: block;
   }
-  
-  .column-text {
-    text-align: center; /* Justify the text */
-  }
-  
-  @media (max-width: 768px) {
-    .columns {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: flex-start; /* Align items to the start of the container */
-    }
-    
-    .column {
-      width: 100%; /* Make columns take up full width on smaller screens */
-      margin: 10px 0; /* Add space between stacked items */
-    }
-  }
+}
 </style>
 ```
 
-::: {style="width: 95%; margin: auto; font-weight: normal; text-align: center;"}
-```{=html}
-<h1><i class="bi bi-stars"></i></h1>
-```
-:::
-
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Education**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | **2021 - present**
 | *University of California, Davis*
 | Ph.D. Entomology, in progress
@@ -85,11 +63,11 @@ css: styles.css
 | [Round River Conservation Studies](https://www.roundriver.org/) (RRCS) is an environmental organization operating at the nexus of conservation and education. We explored the complex relationship between conservation, people, and wildlife, mostly in Mababe, Botswana. We worked with local experts to design and maintain wildlife monitoring systems to be used to substantiate economic and environmental decisions. This program helped me to develop fluency in field work, responses to human-wildlife conflict, and communication with local stakeholders.
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Teaching**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | 
 | **Winters 2022 - 2025**
 | *UC Davis Department of Entomology & Nematology, Davis, CA*
@@ -109,11 +87,11 @@ css: styles.css
 | Series and Multi-variable Calculus Teaching Assistant
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Employment & Commissions**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | **2025**
 | Intern
 | Native Plant Trust, Framingham, MA
@@ -138,7 +116,7 @@ css: styles.css
 | Education Staff & Undergraduate Researcher
 | The Caterpillar Lab, Marlborough, NH
 | 
-| [The Caterpillar Lab](https://www.thecaterpillarlab.org/) (TCL) is an environmental education organization focused on inviting people---kids and adults alike---to share in stories of ecology, evolution, and natural history. I have presented at over 30 locations including elementary school classrooms, botanic gardens, and children's museums, \|with a goal to ignite in us a curiosity of the world we live in, from the smallest leaf-miners to the tallest trees.
+| [The Caterpillar Lab](https://www.thecaterpillarlab.org/) (TCL) is an environmental education organization focused on inviting people---kids and adults alike---to share in stories of ecology, evolution, and natural history. I have presented at over 30 locations including elementary school classrooms, botanic gardens, and children's museums, with a goal to ignite in us a curiosity of the world we live in, from the smallest leaf-miners to the tallest trees.
 | 
 | **2019 - 2020**
 | Student Assistant
@@ -149,15 +127,15 @@ css: styles.css
 | Colby College, Waterville, ME
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Fellowships & Grants**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center"}
 Total funds awarded: \$219,190
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | ***External***
 | **2024**
 | NSF INTERN Supplemental Funding for Non-Academic Research Internships (\$52,795)
@@ -191,11 +169,11 @@ Total funds awarded: \$219,190
 | Colby College National Merit Scholarship (\$8,000)
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Honors & Awards**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | **2024**
 | Environmental Entomology People's Choice Runner Up
 | 
@@ -208,11 +186,11 @@ Total funds awarded: \$219,190
 | Dean's Honors (in every qualifying semester)
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Publications**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | Full text publication access [link](https://www.zotero.org/groups/4992939/grace-horne/library) (view "attachments").
 
 \
@@ -228,7 +206,7 @@ Total funds awarded: \$219,190
         .container {
             display: flex;
             flex-direction: column;
-            width: 90%;
+            width: 100%;
             margin: auto;
             font-weight: normal;
             text-align: left;
@@ -240,22 +218,27 @@ Total funds awarded: \$219,190
         }
         .altmetric-citation-pair {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
+            flex-direction: row; /* keep side by side on mobile */
+            gap: 15px; /* increased space between altmetric and text */
+            align-items: flex-start;
         }
         .altmetric {
+            flex: 0 0 auto;
             max-width: 100px;
         }
         .citation {
             flex: 1;
+            width: 100%;
         }
         .image {
-            max-width: 150px;
+            width: 100%; /* full width container on mobile */
+            max-width: 200px; /* constrain image size */
             margin: 20px auto;
         }
         .image img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
+            display: block;
         }
         @media (min-width: 768px) {
             .container {
@@ -278,6 +261,7 @@ Total funds awarded: \$219,190
                 flex: 0 0 20%;
                 margin: 0;
                 align-self: center;
+                max-width: none; /* remove max-width constraint on desktop */
             }
         }
     </style>
@@ -314,11 +298,11 @@ Total funds awarded: \$219,190
 </html>
 ```
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Presentations**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left; fig-align: center"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left; fig-align: center"}
 | 12.      **Horne, Grace M.**\* and Emily K. Meineke. (2025) Herbarium sheets as ecological data caches. *Entomological Society of America Annual Meeting.* **Invited.**
 | 
 | 11.      **Horne, Grace M.**\*, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (2025) Climate change favors moths able to keep pace with an earlier spring. *Ecological Society of America Annual Meeting.* **Invited.**
@@ -346,11 +330,11 @@ Total funds awarded: \$219,190
 | \* presenting author
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Workshops**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | **2024**
 | [wRiting functions in R](https://gracehorne.com/writing-functions-in-R.html), Entomology graduate students, March 12
 | 
@@ -361,11 +345,11 @@ Total funds awarded: \$219,190
 | Using GitHub with R(Studio), Meineke Lab \@ UCD, October 28
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Outreach & Extension**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | **Bold type** indicates an institution serving a majority low-income population
 | 
 | **Forthcoming**
@@ -448,30 +432,30 @@ Total funds awarded: \$219,190
 | ^†^ Independently designed and presented
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Professional Affiliations**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | **2022 -- present**
 | Ecological Society of America
 | Entomological Society of America
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Reviews**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | Proceedings of the Royal Society B
 | Scientific Reports
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Relevant Coursework**
 :::
 
-::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | Cell Biology
 | Conservation Biology
 | Env. & Natural Resource Economics
