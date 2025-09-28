@@ -6,39 +6,24 @@ project:
     - fonts/
   render:
     - "*.qmd"
-    - "!metabolomics-analysis-with-brms.qmd" #(add html to https://robinmoisson.github.io/staticrypt/)
+    - "!metabolomics-analysis-with-brms.qmd"
+
 website:
   title: "Grace M. Horne"
-<<<<<<< HEAD
   favicon: favicon.png
-  navbar:
-    pinned: false
-=======
   sidebar:
-    pinned: true
-    tools:
-      - icon: envelope-heart
-        href: mailto:gmhorne@ucdavis.edu
-        aria-label: email
-      - icon: github
-        href: https://github.com/gracehorne
-        aria-label: GitHub
-      - icon: google
-        href: https://scholar.google.com/citations?user=pE2oVU0AAAAJ&hl=en
-        aria-label: GitHub
-    style: "floating"
->>>>>>> parent of f0d04b6 (Add favicon and update navigation links to absolute URLs)
+    style: "floating"  # or "docked"
     search: false
-    toggle-icon: bi-list
-    right:
+    contents:
       - text: "¹ Research"
-        href: research.qmd
+        href: https://gracehorne.com/research
       - text: "² Outreach"
-        href: outreach.qmd
+        href: https://gracehorne.com/outreach
       - text: "³ Links"
-        href: links.qmd
+        href: https://gracehorne.com/links
       - text: "⁴ Tutorials"
-        href: tutorials.qmd
+        href: https://gracehorne.com/tutorials
+
 format:
   html:
     page-layout: full
@@ -47,5 +32,6 @@ format:
       - simplex
       - styles.css
     toc: false
-    backgroundcolor: "#f8f8f2" 
+    include-after-body: sidebar-close.html
+    backgroundcolor: "#f8f8f2"
     fontcolor: "#282a36"

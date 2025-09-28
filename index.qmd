@@ -43,9 +43,9 @@ css: styles.css
 
 ```{=html}
 <div style="text-align: center; margin-top: 15px;">
-  <a href="mailto:gmhorne@ucdavis.edu" aria-label="email" style="font-size: 24px; color: #282a36; margin: 0 10px;"><i class="bi bi-envelope-heart"></i></a>
-  <a href="https://github.com/gracehorne" aria-label="GitHub" style="font-size: 24px; color: #282a36; margin: 0 10px;"><i class="bi bi-github"></i></a>
-  <a href="https://scholar.google.com/citations?user=pE2oVU0AAAAJ&hl=en" aria-label="Google Scholar" style="font-size: 24px; color: #282a36; margin: 0 10px;"><i class="bi bi-google"></i></a>
+  <a href="mailto:gmhorne@ucdavis.edu" aria-label="email" style="font-size: 24px; color: #ff79c6; margin: 0 10px;"><i class="bi bi-envelope-heart"></i></a>
+  <a href="https://github.com/gracehorne" aria-label="GitHub" style="font-size: 24px; color: #ff79c6; margin: 0 10px;"><i class="bi bi-github"></i></a>
+  <a href="https://scholar.google.com/citations?user=pE2oVU0AAAAJ&hl=en" aria-label="Google Scholar" style="font-size: 24px; color: #ff79c6; margin: 0 10px;"><i class="bi bi-google"></i></a>
 </div>
 ```
 
@@ -203,6 +203,9 @@ Total funds awarded: \$219,190
 | Full text publication access [link](https://www.zotero.org/groups/4992939/grace-horne/library) (view "attachments").
 
 \
+3.     **Horne, Grace M.**, Lauren Azevedo-Schmidt, and Emily K. Meineke. (in prep.) Herbivory diversity and function: A unifying framework for temporal ecology.
+
+2.     **Horne, Grace M.**, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (in prep.) Climate change favors moths able to keep pace with an earlier spring.
 :::
 
 ```{=html}
@@ -345,7 +348,7 @@ Total funds awarded: \$219,190
 
 ::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
 | **2024**
-| [wRiting functions in R](https://gracehorne.com/writing-functions-in-R.html), Entomology graduate students, March 12
+| [wRiting functions in R](https://gracehorne.com/writing-functions-in-R), Entomology graduate students, March 12
 | 
 | **2023**
 | Using GitHub with R(Studio), Williams Lab \@ UCD, February 17

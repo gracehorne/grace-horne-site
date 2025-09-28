@@ -1,0 +1,50 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.getElementById('quarto-sidebar');
+    const toggleButton = document.querySelector('.quarto-btn-toggle');
+    
+    function closeSidebar() {
+        if (toggleButton) {
+            toggleButton.click(); // use Quarto's built-in toggle
+        }
+    }
+    
+    function addCloseButton() {
+        if (window.innerWidth <= 768 && sidebar && sidebar.classList.contains('show')) {
+            const existingBtn = sidebar.querySelector('.sidebar-close-btn');
+            if (existingBtn) return; // don't add duplicate
+            
+            const closeBtn = document.createElement('button');
+            closeBtn.className = 'sidebar-close-btn';
+            closeBtn.innerHTML = '✕';
+            closeBtn.onclick = closeSidebar;
+            sidebar.appendChild(closeBtn);
+        }
+    }
+    
+    // watch for sidebar state changes
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.target.id === 'quarto-sidebar') {
+                if (mutation.target.classList.contains('show')) {
+                    setTimeout(addCloseButton, 50); // small delay for Quarto to finish
+                } else {
+                    const closeBtn = mutation.target.querySelector('.sidebar-close-btn');
+                    if (closeBtn) closeBtn.remove();
+                }
+            }
+        });
+    });
+    
+    if (sidebar) {
+        observer.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
+    }
+    
+    // escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && sidebar && sidebar.classList.contains('show')) {
+            closeSidebar();
+        }
+    });
+});
+</script>

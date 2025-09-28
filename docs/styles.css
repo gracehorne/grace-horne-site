@@ -41,8 +41,8 @@ nav strong {
 }
 
 nav.quarto-secondary-nav {
-    background-color: #8be9fd;
-    border-bottom: 1px solid #8be9fd;
+    background-color: #f8f8f2 !important;
+    border-bottom: 1px solid #f8f8f2 !important;
 }
 
 div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, 
@@ -103,7 +103,7 @@ div.sidebar-item-container .sidebar-link>code {
 }
 
   .quarto-page-breadcrumbs {
-    display: none !important; /* Hides the breadcrumb navigation */
+    display: none !important; /* hides the breadcrumb navigation */
   }
 
 
@@ -176,155 +176,132 @@ body {
   padding-top: 60px; /* adjust based on your navbar height */
 }
 
-/* change sidebar toggle icon to bi-list with custom color */
-.quarto-btn-toggle i.bi-layout-text-sidebar-reverse::before {
-  content: "\f479" !important;
-  color: #f8f8f2 !important;
-}
-
-/* montserrat-100 - latin */
+/* montserrat font faces */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 100;
-  src: url('../fonts/montserrat-v31-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-100.woff2') format('woff2');
 }
-/* montserrat-100italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 100;
-  src: url('../fonts/montserrat-v31-latin-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-100italic.woff2') format('woff2');
 }
-/* montserrat-200 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 200;
-  src: url('../fonts/montserrat-v31-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-200.woff2') format('woff2');
 }
-/* montserrat-200italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 200;
-  src: url('../fonts/montserrat-v31-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-200italic.woff2') format('woff2');
 }
-/* montserrat-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/montserrat-v31-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-300.woff2') format('woff2');
 }
-/* montserrat-300italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 300;
-  src: url('../fonts/montserrat-v31-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-300italic.woff2') format('woff2');
 }
-/* montserrat-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-regular.woff2') format('woff2');
 }
-/* montserrat-italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/montserrat-v31-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-italic.woff2') format('woff2');
 }
-/* montserrat-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/montserrat-v31-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-500.woff2') format('woff2');
 }
-/* montserrat-500italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 500;
-  src: url('../fonts/montserrat-v31-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-500italic.woff2') format('woff2');
 }
-/* montserrat-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/montserrat-v31-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-600.woff2') format('woff2');
 }
-/* montserrat-600italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 600;
-  src: url('../fonts/montserrat-v31-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-600italic.woff2') format('woff2');
 }
-/* montserrat-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/montserrat-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-700.woff2') format('woff2');
 }
-/* montserrat-700italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/montserrat-v31-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-700italic.woff2') format('woff2');
 }
-/* montserrat-800 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
-  src: url('../fonts/montserrat-v31-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-800.woff2') format('woff2');
 }
-/* montserrat-800italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 800;
-  src: url('../fonts/montserrat-v31-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-800italic.woff2') format('woff2');
 }
-/* montserrat-900 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/montserrat-v31-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-900.woff2') format('woff2');
 }
-/* montserrat-900italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 900;
-  src: url('../fonts/montserrat-v31-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v31-latin-900italic.woff2') format('woff2');
 }
 
 /* navbar and dropdown styling - light version */
@@ -357,53 +334,125 @@ body {
   font-weight: normal;
 }
 
-/* mobile navbar styling - light version */
-@media (max-width: 768px) {
-  .navbar-brand, .navbar-toggler {
-    background-color: rgba(248, 248, 242, 0.9) !important;
-    padding: 8px 12px;
-    border-radius: 5px;
-    border: 1px solid #8be9fd !important; /* blue border */
-  }
-  
-  /* change hamburger icon to pink */
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%23ff79c6' fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/%3e%3c/svg%3e") !important;
+/* prevent body graying/modal backdrop */
+.modal-backdrop {
+  display: none !important;
 }
 
-/* keep blue border on hamburger even when toggled */
-@media (max-width: 768px) {
-  .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
-    background-color: rgba(248, 248, 242, 0.9) !important;
-    padding: 8px 12px;
-    border-radius: 5px;
-    border: 1px solid #8be9fd !important; /* blue border */
-    box-shadow: none !important; /* remove focus shadow */
-  }
+body.modal-open {
+  overflow: auto !important;
+  padding-right: 0 !important;
 }
-  
-/* dropdown menu */
-  .navbar-collapse {
-    background-color: rgba(248, 248, 242, 0.9) !important; /* light background with 90% opacity */
-    border-radius: 5px;
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #8be9fd; /* border accent */
+
+/* sidebar toggle button styling - follows link aesthetics */
+.quarto-btn-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* change sidebar toggle icon to bi-list */
+.bi-layout-text-sidebar-reverse::before {
+  content: "\f479" !important; /* bi-list icon */
+  color: #ff79c6 !important;
+}
+
+/* sidebar toggle on hover (purple like hover links) */
+.quarto-btn-toggle:hover .bi-layout-text-sidebar-reverse::before {
+  color: #bd93f9 !important;
+}
+
+/* sidebar toggle on active/click (orange like active links) */
+.quarto-btn-toggle:active .bi-layout-text-sidebar-reverse::before,
+.quarto-btn-toggle[aria-expanded="true"] .bi-layout-text-sidebar-reverse::before {
+  color: #ffb86c !important;
+}
+
+/* mobile sidebar - work WITH Quarto's system */
+@media (max-width: 768px) {
+  /* completely hide sidebar during all transition states */
+  #quarto-sidebar {
+    display: none !important;
   }
   
-  /* dropdown links */
-  .navbar-collapse .nav-link {
+  /* only show when it has the 'show' class and make it full screen immediately */
+  #quarto-sidebar.show {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(248, 248, 242, 0.95) !important;
+    z-index: 1050 !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 60px 20px !important;
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  /* center the sidebar content */
+  #quarto-sidebar.show .sidebar-menu-container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  
+  /* style sidebar links */
+  #quarto-sidebar.show .sidebar-item-text {
     color: #ff79c6 !important;
+    font-size: 24px !important;
+    margin: 15px 0 !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
   }
   
-  .navbar-collapse .nav-link:hover {
+  #quarto-sidebar.show .sidebar-item-text:hover {
     color: #bd93f9 !important;
   }
   
-  .navbar-collapse .nav-link:active, .navbar-collapse .nav-link.active {
+  #quarto-sidebar.show .sidebar-item-text:active,
+  #quarto-sidebar.show .sidebar-item-text.active {
     color: #ffb86c !important;
-    border-left: 1px solid #ffb86c;
-    padding-left: 10px;
+  }
+  
+  /* hide the sidebar header on mobile full screen */
+  #quarto-sidebar.show .sidebar-header {
+    display: none !important;
+  }
+  
+  /* close button styling */
+  .sidebar-close-btn {
+    position: absolute !important;
+    top: 20px !important;
+    right: 20px !important;
+    font-size: 24px !important;
+    color: #ff79c6 !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 1060 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: color 0.2s ease !important;
+  }
+  
+  .sidebar-close-btn:hover {
+    color: #bd93f9 !important;
+  }
+  
+  .sidebar-close-btn:active {
+    color: #ffb86c !important;
   }
 }
 
