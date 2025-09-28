@@ -41,14 +41,6 @@ css: styles.css
 </style>
 ```
 
-```{=html}
-<div style="text-align: center; margin-top: 15px;">
-  <a href="mailto:gmhorne@ucdavis.edu" aria-label="email" style="font-size: 24px; color: #ff79c6; margin: 0 10px;"><i class="bi bi-envelope-heart"></i></a>
-  <a href="https://github.com/gracehorne" aria-label="GitHub" style="font-size: 24px; color: #ff79c6; margin: 0 10px;"><i class="bi bi-github"></i></a>
-  <a href="https://scholar.google.com/citations?user=pE2oVU0AAAAJ&hl=en" aria-label="Google Scholar" style="font-size: 24px; color: #ff79c6; margin: 0 10px;"><i class="bi bi-google"></i></a>
-</div>
-```
-
 ::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
 #### **Education**
 :::

@@ -23,7 +23,16 @@ website:
         href: https://gracehorne.com/links
       - text: "⁴ Tutorials"
         href: https://gracehorne.com/tutorials
-
+    tools:
+      - icon: envelope-heart
+        href: mailto:gmhorne@ucdavis.edu
+        aria-label: "Email"
+      - icon: github  
+        href: https://github.com/gracehorne
+        aria-label: "GitHub"
+      - icon: google
+        href: https://scholar.google.com/citations?user=pE2oVU0AAAAJ&hl=en
+        aria-label: "Google Scholar"
 format:
   html:
     page-layout: full

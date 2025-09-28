@@ -349,12 +349,14 @@ body.modal-open {
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
+  padding: 12px !important; /* make button area bigger */
 }
 
-/* change sidebar toggle icon to bi-list */
+/* change sidebar toggle icon to bi-list - bigger size */
 .bi-layout-text-sidebar-reverse::before {
   content: "\f479" !important; /* bi-list icon */
   color: #ff79c6 !important;
+  font-size: 1.5rem !important; /* make icon bigger */
 }
 
 /* sidebar toggle on hover (purple like hover links) */
@@ -454,10 +456,115 @@ body.modal-open {
   .sidebar-close-btn:active {
     color: #ffb86c !important;
   }
+  
+  /* home button styling */
+  .sidebar-home-btn {
+    position: absolute !important;
+    top: 20px !important;
+    left: 20px !important;
+    font-size: 20px !important;
+    color: #ff79c6 !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 1060 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
+  }
+  
+  .sidebar-home-btn:hover {
+    color: #bd93f9 !important;
+  }
+  
+  .sidebar-home-btn:active {
+    color: #ffb86c !important;
+  }
 }
 
 /* remove border around hamburger when toggled */
 .navbar-toggler:focus {
   box-shadow: none !important;
   border-color: transparent !important;
+}
+
+/* desktop theme toggle styling */
+.desktop-theme-toggle {
+  margin-top: 20px !important;
+}
+
+/* mobile theme toggle button */
+@media (max-width: 768px) {
+  .sidebar-theme-btn {
+    position: absolute !important;
+    top: 20px !important;
+    left: 70px !important; /* adjusted for better alignment */
+    font-size: 20px !important;
+    color: #ff79c6 !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 1060 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: color 0.2s ease !important;
+  }
+  
+  .sidebar-theme-btn:hover {
+    color: #bd93f9 !important;
+  }
+  
+  .sidebar-theme-btn:active {
+    color: #ffb86c !important;
+  }
+  
+  /* mobile social media buttons */
+  .mobile-social-btn {
+    position: absolute !important;
+    top: 20px !important;
+    font-size: 18px !important;
+    color: #ff79c6 !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 1060 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
+  }
+  
+  .mobile-social-btn:hover {
+    color: #bd93f9 !important;
+  }
+  
+  .mobile-social-btn:active {
+    color: #ffb86c !important;
+  }
+  
+  /* better centered alignment for all buttons */
+  .email-btn {
+    left: 120px !important;
+  }
+  
+  .github-btn {
+    left: 170px !important;
+  }
+  
+  .scholar-btn {
+    left: 220px !important;
+  }
 }

@@ -1,50 +1,249 @@
 <script>
+// working sidebar functionality that integrates with Quarto
 document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.getElementById('quarto-sidebar');
     const toggleButton = document.querySelector('.quarto-btn-toggle');
     
+    // function to close sidebar using Quarto's method
     function closeSidebar() {
         if (toggleButton) {
-            toggleButton.click(); // use Quarto's built-in toggle
+            // use Quarto's built-in toggle function
+            toggleButton.click();
         }
     }
     
-    function addCloseButton() {
-        if (window.innerWidth <= 768 && sidebar && sidebar.classList.contains('show')) {
-            const existingBtn = sidebar.querySelector('.sidebar-close-btn');
-            if (existingBtn) return; // don't add duplicate
+    // add theme toggle to desktop sidebar
+    function addThemeToggle() {
+        // only add on desktop where sidebar is always visible
+        if (window.innerWidth > 768 && sidebar) {
+            // check if theme toggle already exists
+            const existingToggle = sidebar.querySelector('.theme-toggle');
+            if (existingToggle) return;
             
+            // find the sidebar menu container
+            const menuContainer = sidebar.querySelector('.sidebar-menu-container');
+            if (menuContainer) {
+                // create theme toggle element
+                const themeToggle = document.createElement('div');
+                themeToggle.className = 'sidebar-item theme-toggle desktop-theme-toggle';
+                
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                const toggleText = savedTheme === 'light' ? 'lights off?' : 'lights on?';
+                const iconClass = savedTheme === 'light' ? 'bi-lightbulb' : 'bi-lightbulb-fill';
+                
+                themeToggle.innerHTML = `
+                    <div class="sidebar-item-container">
+                        <a href="#" class="sidebar-item-text sidebar-link theme-toggle-link">
+                            <span class="menu-text"><i class="bi ${iconClass}"></i> <span class="theme-text">${toggleText}</span></span>
+                        </a>
+                    </div>
+                `;
+                
+                // add click handler for theme toggle
+                const toggleLink = themeToggle.querySelector('.theme-toggle-link');
+                toggleLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    toggleTheme();
+                });
+                
+                // append after the existing menu items
+                menuContainer.querySelector('ul').appendChild(themeToggle);
+            }
+        }
+    }
+    
+    // remove theme toggle (when switching to mobile)
+    function removeThemeToggle() {
+        const themeToggle = sidebar?.querySelector('.theme-toggle');
+        if (themeToggle) {
+            themeToggle.remove();
+        }
+    }
+    
+    // toggle between light and dark themes
+    function toggleTheme() {
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        // save preference
+        localStorage.setItem('theme', newTheme);
+        
+        // apply theme by changing the CSS file reference
+        // you'll need to update this path to match your CSS file setup
+        const cssLink = document.querySelector('link[href*="styles"]');
+        if (cssLink) {
+            if (newTheme === 'dark') {
+                cssLink.href = cssLink.href.replace('styles.css', 'styles-dark.css');
+            } else {
+                cssLink.href = cssLink.href.replace('styles-dark.css', 'styles.css');
+            }
+        }
+        
+        // update the desktop toggle text and icon
+        const desktopToggleText = document.querySelector('.desktop-theme-toggle .theme-text');
+        const desktopToggleIcon = document.querySelector('.desktop-theme-toggle .bi');
+        if (desktopToggleText && desktopToggleIcon) {
+            if (newTheme === 'dark') {
+                desktopToggleText.textContent = 'lights on?';
+                desktopToggleIcon.className = 'bi bi-lightbulb-fill';
+            } else {
+                desktopToggleText.textContent = 'lights off?';
+                desktopToggleIcon.className = 'bi bi-lightbulb';
+            }
+        }
+        
+        // update the mobile toggle icon
+        const mobileToggleIcon = document.querySelector('.mobile-theme-toggle .bi');
+        if (mobileToggleIcon) {
+            if (newTheme === 'dark') {
+                mobileToggleIcon.className = 'bi bi-lightbulb-fill';
+            } else {
+                mobileToggleIcon.className = 'bi bi-lightbulb';
+            }
+        }
+    }
+    
+    // apply saved theme on page load
+    function applySavedTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            const cssLink = document.querySelector('link[href*="styles"]');
+            if (cssLink) {
+                cssLink.href = cssLink.href.replace('styles.css', 'styles-dark.css');
+            }
+        }
+    }
+    
+    // add all mobile buttons when sidebar opens
+    function addButtons() {
+        if (window.innerWidth <= 768 && sidebar && sidebar.classList.contains('show')) {
+            // remove existing buttons
+            const existingButtons = sidebar.querySelectorAll('.sidebar-close-btn, .sidebar-home-btn, .mobile-theme-toggle, .mobile-social-btn');
+            existingButtons.forEach(btn => btn.remove());
+            
+            // create close button
             const closeBtn = document.createElement('button');
             closeBtn.className = 'sidebar-close-btn';
             closeBtn.innerHTML = '✕';
-            closeBtn.onclick = closeSidebar;
+            closeBtn.setAttribute('aria-label', 'Close sidebar');
+            closeBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                closeSidebar();
+            });
+            
+            // create home button
+            const homeBtn = document.createElement('a');
+            homeBtn.className = 'sidebar-home-btn';
+            homeBtn.innerHTML = '<i class="bi bi-house-fill"></i>';
+            homeBtn.setAttribute('aria-label', 'Go to home page');
+            homeBtn.href = '/';
+            
+            // create mobile theme toggle button
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            const iconClass = savedTheme === 'light' ? 'bi-lightbulb' : 'bi-lightbulb-fill';
+            
+            const themeBtn = document.createElement('button');
+            themeBtn.className = 'sidebar-theme-btn mobile-theme-toggle';
+            themeBtn.innerHTML = `<i class="bi ${iconClass}"></i>`;
+            themeBtn.setAttribute('aria-label', 'Toggle theme');
+            themeBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                toggleTheme();
+            });
+            
+            // create social media buttons
+            const emailBtn = document.createElement('a');
+            emailBtn.className = 'mobile-social-btn email-btn';
+            emailBtn.innerHTML = '<i class="bi bi-envelope-heart"></i>';
+            emailBtn.setAttribute('aria-label', 'Email');
+            emailBtn.href = 'mailto:gmhorne@ucdavis.edu';
+            
+            const githubBtn = document.createElement('a');
+            githubBtn.className = 'mobile-social-btn github-btn';
+            githubBtn.innerHTML = '<i class="bi bi-github"></i>';
+            githubBtn.setAttribute('aria-label', 'GitHub');
+            githubBtn.href = 'https://github.com/gracehorne';
+            
+            const scholarBtn = document.createElement('a');
+            scholarBtn.className = 'mobile-social-btn scholar-btn';
+            scholarBtn.innerHTML = '<i class="bi bi-google"></i>';
+            scholarBtn.setAttribute('aria-label', 'Google Scholar');
+            scholarBtn.href = 'https://scholar.google.com/citations?user=pE2oVU0AAAAJ&hl=en';
+            
             sidebar.appendChild(closeBtn);
+            sidebar.appendChild(homeBtn);
+            sidebar.appendChild(themeBtn);
+            sidebar.appendChild(emailBtn);
+            sidebar.appendChild(githubBtn);
+            sidebar.appendChild(scholarBtn);
         }
     }
     
-    // watch for sidebar state changes
+    // remove buttons when sidebar closes (mobile only)
+    function removeButtons() {
+        const buttons = sidebar?.querySelectorAll('.sidebar-close-btn, .sidebar-home-btn, .mobile-theme-toggle, .mobile-social-btn');
+        if (buttons) {
+            buttons.forEach(btn => btn.remove());
+        }
+    }
+    
+    // escape key handler
+    function handleEscapeKey(event) {
+        if (event.key === 'Escape' && 
+            window.innerWidth <= 768 && 
+            sidebar && 
+            sidebar.classList.contains('show')) {
+            closeSidebar();
+        }
+    }
+    
+    // watch for sidebar changes (mobile only)
     const observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
-            if (mutation.target.id === 'quarto-sidebar') {
-                if (mutation.target.classList.contains('show')) {
-                    setTimeout(addCloseButton, 50); // small delay for Quarto to finish
+            if (mutation.target.id === 'quarto-sidebar' && 
+                mutation.attributeName === 'class') {
+                
+                if (mutation.target.classList.contains('show') && window.innerWidth <= 768) {
+                    addButtons();
                 } else {
-                    const closeBtn = mutation.target.querySelector('.sidebar-close-btn');
-                    if (closeBtn) closeBtn.remove();
+                    removeButtons();
                 }
             }
         });
     });
     
+    // start observing
     if (sidebar) {
-        observer.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
+        observer.observe(sidebar, {
+            attributes: true,
+            attributeFilter: ['class']
+        });
     }
     
-    // escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && sidebar && sidebar.classList.contains('show')) {
-            closeSidebar();
+    // add escape key listener
+    document.addEventListener('keydown', handleEscapeKey);
+    
+    // handle window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            removeButtons(); // remove mobile buttons
+            addThemeToggle(); // add desktop theme toggle
+        } else {
+            removeThemeToggle(); // remove desktop theme toggle
         }
     });
+    
+    // initialize based on screen size
+    if (window.innerWidth > 768) {
+        addThemeToggle();
+    }
+    
+    // apply saved theme on page load
+    applySavedTheme();
+    
+    // initialize mobile buttons if sidebar is already open
+    if (sidebar && sidebar.classList.contains('show') && window.innerWidth <= 768) {
+        addButtons();
+    }
 });
 </script>
