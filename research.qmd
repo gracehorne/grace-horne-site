@@ -17,6 +17,6 @@ During the socially-distant summer of 2020, I raised hundreds of caterpillars wi
 Over the course of the experiment, I began to notice differences in how the three species tolerated each host plant: *Sphinx kalmiae* did quite well on lilac, but *Sphinx chersis* perished entirely on the same plant. These are the differences that colored my narrative. The problem of disappearing ash will not be discovered by painting in broad strokes.
 :::
 
-::: {style="width: 65%; margin: auto; font-weight: normal; text-align: left;"}
-![The impact of a plant species becoming locally rare can have rippling impacts up trophic levels.](images/graphicalAbstract.png){fig-alt="Graphical abstract of Horne et al. 2023" fig-align="center" width="600"}
+::: {style="width: 90%; margin: auto; font-weight: normal; text-align: left;"}
+![The impact of a plant species becoming locally rare can have rippling impacts up trophic levels.](images/graphicalAbstract.png){fig-alt="Graphical abstract of Horne et al. 2023" fig-align="center" width="467"}
 :::
