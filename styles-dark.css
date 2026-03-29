@@ -1,0 +1,448 @@
+/* css styles - dark theme */
+
+body {
+  color: #c6d0f5; 
+  background-color: #303446; 
+}
+
+/* dropdown menu from hamburger with same aesthetics */
+@media (max-width: 768px) {
+  .navbar-brand, .navbar-toggler {
+    background-color: rgba(48, 52, 70, 0.9) !important;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .navbar-collapse {
+    background-color: rgba(48, 52, 70, 0.9) !important;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  /* style the links in the dropdown */
+  .navbar-collapse .nav-link {
+    color: #c6d0f5 !important; /* light text on dark background */
+  }
+}
+
+.sidebar-title>a {
+    font-size: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a:hover, .sidebar nav[role=doc-toc] ul>li>ul>li>a:hover {
+    color: #ca9ee6 !important;
+}
+
+html body {
+  font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+/* apply normal font weight to strong elements only within nav */
+nav strong {
+    font-weight: normal;
+}
+
+  .quarto-page-breadcrumbs {
+    display: none !important; /* hides the breadcrumb navigation */
+  }
+
+.quarto-secondary-nav-title {
+  visibility: hidden;
+}
+
+nav.quarto-secondary-nav {
+    background-color: #303446 !important;
+    border-bottom: 1px solid #303446 !important;
+}
+
+div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, 
+nav.sidebar.sidebar-navigation:not(.rollup) {
+    background-color:  #303446;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active {
+    border-left: 1px solid #ef9f76;
+    color: #ef9f76 !important;
+}
+
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid #ef9f76;
+    color: #ef9f76 !important;
+}
+
+.panel-caption, .figure-caption, figcaption {
+    color: #737994;
+}
+
+/* unvisited link */
+a:link {
+  color: #f4b8e4;
+}
+
+/* visited link */
+a:visited {
+  color: #f4b8e4;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ca9ee6;
+}
+
+/* selected link */
+a:active {
+  color: #ef9f76;
+}
+
+div.sidebar-item-container .active, 
+div.sidebar-item-container .show>.nav-link, 
+div.sidebar-item-container .sidebar-link>code {
+    color: #ef9f76;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 90%;
+}
+
+.image {
+  flex: 1 1 200px;
+}
+
+.text {
+  font-size: 18px;
+  padding-left: 20px;
+  flex: 1 1 250px;
+}
+
+/* 100% transparent navbar */
+.navbar {
+  background-color: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* on mobile, navbar scrolls away with content (not fixed) */
+@media (max-width: 768px) {
+  .navbar {
+    position: relative !important;
+  }
+}
+
+/* remove navbar border/line */
+.navbar {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* hide table of contents */
+#TOC {
+  display: none !important;
+}
+
+.toc-actions {
+  display: none !important;
+}
+
+/* hide search */
+#quarto-search {
+  display: none !important;
+}
+
+.aa-Autocomplete {
+  display: none !important;
+}
+
+/* add background when scrolled */
+.navbar.scrolled {
+  background-color: #303446 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* hide navbar when scrolling down */
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+/* add padding to body so content isn't hidden under fixed navbar */
+body {
+  padding-top: 60px; /* adjust based on your navbar height */
+}
+
+/* alegreya sans font - loaded from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+/* navbar and dropdown styling - dark version */
+.navbar {
+  background-color: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+/* navbar links */
+.navbar .nav-link {
+  color: #f4b8e4 !important; /* unvisited link color */
+}
+
+.navbar .nav-link:visited {
+  color: #f4b8e4 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ca9ee6 !important; /* hover color */
+}
+
+.navbar .nav-link:active, .navbar .nav-link.active {
+  color: #ef9f76 !important; /* active link color */
+}
+
+/* remove bold from navbar */
+.navbar strong {
+  font-weight: normal;
+}
+
+/* prevent body graying/modal backdrop */
+.modal-backdrop {
+  display: none !important;
+}
+
+body.modal-open {
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
+/* sidebar toggle button styling - follows link aesthetics */
+.quarto-btn-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 12px !important; /* make button area bigger */
+}
+
+/* change sidebar toggle icon to bi-list - bigger size */
+.bi-layout-text-sidebar-reverse::before {
+  content: "\f479" !important; /* bi-list icon */
+  color: #f4b8e4 !important;
+  font-size: 1.5rem !important; /* make icon bigger */
+}
+
+/* sidebar toggle on hover (purple like hover links) */
+.quarto-btn-toggle:hover .bi-layout-text-sidebar-reverse::before {
+  color: #ca9ee6 !important;
+}
+
+/* sidebar toggle on active/click (orange like active links) */
+.quarto-btn-toggle:active .bi-layout-text-sidebar-reverse::before,
+.quarto-btn-toggle[aria-expanded="true"] .bi-layout-text-sidebar-reverse::before {
+  color: #ef9f76 !important;
+}
+
+/* mobile sidebar - work WITH Quarto's system */
+@media (max-width: 768px) {
+  /* completely hide sidebar during all transition states */
+  #quarto-sidebar {
+    display: none !important;
+  }
+  
+  /* only show when it has the 'show' class and make it full screen immediately */
+  #quarto-sidebar.show {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(48, 52, 70, 0.95) !important;
+    z-index: 1050 !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 60px 20px !important;
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  /* center the sidebar content */
+  #quarto-sidebar.show .sidebar-menu-container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  
+  /* style sidebar links */
+  #quarto-sidebar.show .sidebar-item-text {
+    color: #f4b8e4 !important;
+    font-size: 24px !important;
+    margin: 15px 0 !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+  }
+  
+  #quarto-sidebar.show .sidebar-item-text:hover {
+    color: #ca9ee6 !important;
+  }
+  
+  #quarto-sidebar.show .sidebar-item-text:active,
+  #quarto-sidebar.show .sidebar-item-text.active {
+    color: #ef9f76 !important;
+  }
+  
+  /* hide the sidebar header on mobile full screen */
+  #quarto-sidebar.show .sidebar-header {
+    display: none !important;
+  }
+  
+  /* close button styling */
+  .sidebar-close-btn {
+    position: absolute !important;
+    top: 20px !important;
+    right: 20px !important;
+    font-size: 24px !important;
+    color: #f4b8e4 !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 1060 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: color 0.2s ease !important;
+  }
+  
+  .sidebar-close-btn:hover {
+    color: #ca9ee6 !important;
+  }
+  
+  .sidebar-close-btn:active {
+    color: #ef9f76 !important;
+  }
+  
+  /* home button styling */
+  .sidebar-home-btn {
+    position: absolute !important;
+    top: 20px !important;
+    left: 20px !important;
+    font-size: 20px !important;
+    color: #f4b8e4 !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 1060 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
+  }
+  
+  .sidebar-home-btn:hover {
+    color: #ca9ee6 !important;
+  }
+  
+  .sidebar-home-btn:active {
+    color: #ef9f76 !important;
+  }
+}
+
+/* remove border around hamburger when toggled */
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* desktop theme toggle styling */
+.desktop-theme-toggle {
+  margin-top: 20px !important;
+}
+
+/* mobile theme toggle button */
+@media (max-width: 768px) {
+  .sidebar-theme-btn {
+    position: absolute !important;
+    top: 20px !important;
+    left: 70px !important; /* adjusted for better alignment */
+    font-size: 20px !important;
+    color: #f4b8e4 !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 1060 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: color 0.2s ease !important;
+  }
+  
+  .sidebar-theme-btn:hover {
+    color: #ca9ee6 !important;
+  }
+  
+  .sidebar-theme-btn:active {
+    color: #ef9f76 !important;
+  }
+  
+  /* mobile social media buttons */
+  .mobile-social-btn {
+    position: absolute !important;
+    top: 20px !important;
+    font-size: 18px !important;
+    color: #f4b8e4 !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 1060 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
+  }
+  
+  .mobile-social-btn:hover {
+    color: #ca9ee6 !important;
+  }
+  
+  .mobile-social-btn:active {
+    color: #ef9f76 !important;
+  }
+  
+  /* better centered alignment for all buttons */
+  .email-btn {
+    left: 120px !important;
+  }
+  
+  .github-btn {
+    left: 170px !important;
+  }
+  
+  .scholar-btn {
+    left: 220px !important;
+  }
+}

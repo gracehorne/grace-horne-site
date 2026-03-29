@@ -202,6 +202,80 @@ Photo credit: Kathy Keatley Garvey</figcaption>
 </div>
 </div>
 </div>
+<div style="text-align: center; margin-top: 1.5rem;">
+  <button id="uv-toggle-btn" onclick="toggleUVFlashlight()" style="
+    background: #3c0090;
+    color: #d4aaff;
+    border: 2px solid #7a30d0;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    transition: background 0.2s, color 0.2s;
+  ">🔦 Toggle UV flashlight</button>
+</div>
+
+<script>
+function toggleUVFlashlight() {
+  if (window.__uvFlashlight) {
+    window.__uvFlashlight.remove();
+    delete window.__uvFlashlight;
+    document.getElementById('uv-toggle-btn').textContent = '🔦 Toggle UV flashlight';
+    return;
+  }
+
+  const RADIUS = 160;
+  const DARKNESS = 0.92;
+  const UV_TINT = "rgba(60, 0, 160, 0.18)";
+
+  const overlay = document.createElement("div");
+  Object.assign(overlay.style, {
+    position:      "fixed",
+    inset:         "0",
+    pointerEvents: "none",
+    zIndex:        "2147483647",
+    transition:    "opacity 0.2s ease",
+    mixBlendMode:  "normal",
+  });
+
+  let mx = window.innerWidth  / 2;
+  let my = window.innerHeight / 2;
+
+  function buildGradient(x, y) {
+    return `radial-gradient(
+      circle ${RADIUS}px at ${x}px ${y}px,
+      transparent 0%,
+      ${UV_TINT}   ${RADIUS * 0.6}px,
+      rgba(0,0,0,${DARKNESS}) ${RADIUS}px
+    )`;
+  }
+
+  function onMouseMove(e) {
+    mx = e.clientX;
+    my = e.clientY;
+    overlay.style.background = buildGradient(mx, my);
+  }
+
+  overlay.style.background = buildGradient(mx, my);
+
+  try {
+    document.documentElement.appendChild(overlay);
+  } catch (err) {
+    document.body.appendChild(overlay);
+  }
+
+  document.addEventListener("mousemove", onMouseMove, { passive: true });
+
+  window.__uvFlashlight = overlay;
+  overlay.remove = function () {
+    document.removeEventListener("mousemove", onMouseMove);
+    (overlay.parentElement || document.documentElement).removeChild(overlay);
+  };
+
+  document.getElementById('uv-toggle-btn').textContent = '💡 UV flashlight ON';
+}
+</script>
 </section>
 </div>
 
@@ -871,7 +945,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"loop":false,"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","descPosition":"bottom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

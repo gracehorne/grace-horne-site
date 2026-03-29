@@ -1,3 +1,5 @@
+/*-- scss:rules --*/
+
 /* css styles */
 
 .sidebar-title>a {
@@ -13,13 +15,13 @@
 /* dropdown menu from hamburger with light background */
 @media (max-width: 768px) {
   .navbar-brand, .navbar-toggler {
-    background-color: rgba(248, 248, 242, 0.9) !important;
+    background-color: rgba(239, 241, 245, 0.9) !important;
     padding: 8px 12px;
     border-radius: 5px;
   }
   
   .navbar-collapse {
-    background-color: rgba(248, 248, 242, 0.9) !important;
+    background-color: rgba(239, 241, 245, 0.9) !important;
     border-radius: 5px;
     margin-top: 10px;
     padding: 10px;
@@ -27,12 +29,12 @@
   
   /* style the links in the dropdown */
   .navbar-collapse .nav-link {
-    color: #282A36 !important; /* dark text on light background */
+    color: #4c4f69 !important; /* dark text on light background */
   }
 }
 
 html body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Alegreya Sans', sans-serif !important;
 }
 
 /* apply normal font weight to strong elements only within nav */
@@ -41,57 +43,57 @@ nav strong {
 }
 
 nav.quarto-secondary-nav {
-    background-color: #f8f8f2 !important;
-    border-bottom: 1px solid #f8f8f2 !important;
+    background-color: #eff1f5 !important;
+    border-bottom: 1px solid #eff1f5 !important;
 }
 
 div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, 
 nav.sidebar.sidebar-navigation:not(.rollup) {
-    background-color:  #f8f8f2;
+    background-color:  #eff1f5;
 }
 
 .sidebar nav[role=doc-toc] ul>li>a.active {
-    border-left: 1px solid #ffb86c;
-    color: #ffb86c !important;
+    border-left: 1px solid #fe640b;
+    color: #fe640b !important;
 }
 
 .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
-    border-left: 1px solid #ffb86c;
-    color: #ffb86c !important;
+    border-left: 1px solid #fe640b;
+    color: #fe640b !important;
 }
 
 .sidebar nav[role=doc-toc] ul>li>a:hover, .sidebar nav[role=doc-toc] ul>li>ul>li>a:hover {
-    color: #bd93f9 !important;
+    color: #8839ef !important;
 }
 
 .panel-caption, .figure-caption, figcaption {
-    color: #6272a4;
+    color: #6c6f85;
 }
 
 /* unvisited link */
 a:link {
-  color: #ff79c6;
+  color: #ea76cb;
 }
 
 /* visited link */
 a:visited {
-  color: #ff79c6;
+  color: #ea76cb;
 }
 
 /* mouse over link */
 a:hover {
-  color: #bd93f9;
+  color: #8839ef;
 }
 
 /* selected link */
 a:active {
-  color: #ffb86c;
+  color: #fe640b;
 }
 
 div.sidebar-item-container .active, 
 div.sidebar-item-container .show>.nav-link, 
 div.sidebar-item-container .sidebar-link>code {
-    color: #ffb86c;
+    color: #fe640b;
 }
 
 .container {
@@ -162,7 +164,7 @@ img {
 
 /* add background when scrolled */
 .navbar.scrolled {
-  background-color: #f8f8f2 !important;
+  background-color: #eff1f5 !important;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -176,157 +178,32 @@ body {
   padding-top: 60px; /* adjust based on your navbar height */
 }
 
-/* montserrat font faces */
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 100;
-  src: url('../fonts/montserrat-v31-latin-100.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 100;
-  src: url('../fonts/montserrat-v31-latin-100italic.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 200;
-  src: url('../fonts/montserrat-v31-latin-200.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 200;
-  src: url('../fonts/montserrat-v31-latin-200italic.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/montserrat-v31-latin-300.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 300;
-  src: url('../fonts/montserrat-v31-latin-300italic.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/montserrat-v31-latin-regular.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 400;
-  src: url('../fonts/montserrat-v31-latin-italic.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/montserrat-v31-latin-500.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 500;
-  src: url('../fonts/montserrat-v31-latin-500italic.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/montserrat-v31-latin-600.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 600;
-  src: url('../fonts/montserrat-v31-latin-600italic.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/montserrat-v31-latin-700.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 700;
-  src: url('../fonts/montserrat-v31-latin-700italic.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  src: url('../fonts/montserrat-v31-latin-800.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 800;
-  src: url('../fonts/montserrat-v31-latin-800italic.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900;
-  src: url('../fonts/montserrat-v31-latin-900.woff2') format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 900;
-  src: url('../fonts/montserrat-v31-latin-900italic.woff2') format('woff2');
-}
+/* alegreya sans font - loaded from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 
 /* navbar and dropdown styling - light version */
 .navbar {
   background-color: transparent !important;
   border-bottom: none !important;
   box-shadow: none !important;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Alegreya Sans', sans-serif !important;
 }
 
 /* navbar links */
 .navbar .nav-link {
-  color: #ff79c6 !important; /* unvisited link color */
+  color: #ea76cb !important; /* unvisited link color */
 }
 
 .navbar .nav-link:visited {
-  color: #ff79c6 !important;
+  color: #ea76cb !important;
 }
 
 .navbar .nav-link:hover {
-  color: #bd93f9 !important; /* hover color */
+  color: #8839ef !important; /* hover color */
 }
 
 .navbar .nav-link:active, .navbar .nav-link.active {
-  color: #ffb86c !important; /* active link color */
+  color: #fe640b !important; /* active link color */
 }
 
 /* remove bold from navbar */
@@ -355,19 +232,19 @@ body.modal-open {
 /* change sidebar toggle icon to bi-list - bigger size */
 .bi-layout-text-sidebar-reverse::before {
   content: "\f479" !important; /* bi-list icon */
-  color: #ff79c6 !important;
+  color: #ea76cb !important;
   font-size: 1.5rem !important; /* make icon bigger */
 }
 
 /* sidebar toggle on hover (purple like hover links) */
 .quarto-btn-toggle:hover .bi-layout-text-sidebar-reverse::before {
-  color: #bd93f9 !important;
+  color: #8839ef !important;
 }
 
 /* sidebar toggle on active/click (orange like active links) */
 .quarto-btn-toggle:active .bi-layout-text-sidebar-reverse::before,
 .quarto-btn-toggle[aria-expanded="true"] .bi-layout-text-sidebar-reverse::before {
-  color: #ffb86c !important;
+  color: #fe640b !important;
 }
 
 /* mobile sidebar - work WITH Quarto's system */
@@ -384,7 +261,7 @@ body.modal-open {
     left: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
-    background-color: rgba(248, 248, 242, 0.95) !important;
+    background-color: rgba(239, 241, 245, 0.95) !important;
     z-index: 1050 !important;
     transform: none !important;
     display: flex !important;
@@ -407,7 +284,7 @@ body.modal-open {
   
   /* style sidebar links */
   #quarto-sidebar.show .sidebar-item-text {
-    color: #ff79c6 !important;
+    color: #ea76cb !important;
     font-size: 24px !important;
     margin: 15px 0 !important;
     text-align: center !important;
@@ -416,12 +293,12 @@ body.modal-open {
   }
   
   #quarto-sidebar.show .sidebar-item-text:hover {
-    color: #bd93f9 !important;
+    color: #8839ef !important;
   }
   
   #quarto-sidebar.show .sidebar-item-text:active,
   #quarto-sidebar.show .sidebar-item-text.active {
-    color: #ffb86c !important;
+    color: #fe640b !important;
   }
   
   /* hide the sidebar header on mobile full screen */
@@ -435,7 +312,7 @@ body.modal-open {
     top: 20px !important;
     right: 20px !important;
     font-size: 24px !important;
-    color: #ff79c6 !important;
+    color: #ea76cb !important;
     background: transparent !important;
     border: none !important;
     cursor: pointer !important;
@@ -450,11 +327,11 @@ body.modal-open {
   }
   
   .sidebar-close-btn:hover {
-    color: #bd93f9 !important;
+    color: #8839ef !important;
   }
   
   .sidebar-close-btn:active {
-    color: #ffb86c !important;
+    color: #fe640b !important;
   }
   
   /* home button styling */
@@ -463,7 +340,7 @@ body.modal-open {
     top: 20px !important;
     left: 20px !important;
     font-size: 20px !important;
-    color: #ff79c6 !important;
+    color: #ea76cb !important;
     background: transparent !important;
     border: none !important;
     cursor: pointer !important;
@@ -479,11 +356,11 @@ body.modal-open {
   }
   
   .sidebar-home-btn:hover {
-    color: #bd93f9 !important;
+    color: #8839ef !important;
   }
   
   .sidebar-home-btn:active {
-    color: #ffb86c !important;
+    color: #fe640b !important;
   }
 }
 
@@ -505,7 +382,7 @@ body.modal-open {
     top: 20px !important;
     left: 70px !important; /* adjusted for better alignment */
     font-size: 20px !important;
-    color: #ff79c6 !important;
+    color: #ea76cb !important;
     background: transparent !important;
     border: none !important;
     cursor: pointer !important;
@@ -520,11 +397,11 @@ body.modal-open {
   }
   
   .sidebar-theme-btn:hover {
-    color: #bd93f9 !important;
+    color: #8839ef !important;
   }
   
   .sidebar-theme-btn:active {
-    color: #ffb86c !important;
+    color: #fe640b !important;
   }
   
   /* mobile social media buttons */
@@ -532,7 +409,7 @@ body.modal-open {
     position: absolute !important;
     top: 20px !important;
     font-size: 18px !important;
-    color: #ff79c6 !important;
+    color: #ea76cb !important;
     background: transparent !important;
     border: none !important;
     cursor: pointer !important;
@@ -548,11 +425,11 @@ body.modal-open {
   }
   
   .mobile-social-btn:hover {
-    color: #bd93f9 !important;
+    color: #8839ef !important;
   }
   
   .mobile-social-btn:active {
-    color: #ffb86c !important;
+    color: #fe640b !important;
   }
   
   /* better centered alignment for all buttons */

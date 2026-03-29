@@ -42,5 +42,5 @@ format:
       - styles.css
     toc: false
     include-after-body: sidebar-close.html
-    backgroundcolor: "#f8f8f2"
-    fontcolor: "#282a36"
+    backgroundcolor: "#eff1f5"
+    fontcolor: "#4c4f69"
