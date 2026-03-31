@@ -34,7 +34,7 @@
 }
 
 html body {
-  font-family: 'Alegreya Sans', sans-serif !important;
+  font-family: 'Output Sans', sans-serif !important;
 }
 
 /* apply normal font weight to strong elements only within nav */
@@ -178,15 +178,31 @@ body {
   padding-top: 60px; /* adjust based on your navbar height */
 }
 
-/* alegreya sans font - loaded from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+/* output sans font - loaded from local files */
+@font-face {
+  font-family: 'Output Sans';
+  src: url('fonts/OutputSansVariable-VF-Edu.woff2') format('woff2'),
+       url('fonts/OutputSansVariable-VF-Edu.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Output Sans';
+  src: url('fonts/OutputSans-Italic-Edu.woff2') format('woff2'),
+       url('fonts/OutputSans-Italic-Edu.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 
 /* navbar and dropdown styling - light version */
 .navbar {
   background-color: transparent !important;
   border-bottom: none !important;
   box-shadow: none !important;
-  font-family: 'Alegreya Sans', sans-serif !important;
+  font-family: 'Output Sans', sans-serif !important;
 }
 
 /* navbar links */

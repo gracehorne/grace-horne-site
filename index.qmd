@@ -7,4 +7,479 @@ format:
 css: styles.css
 ---
 
-![](images/grace2.png){fig-align="center" width="20%"}
+::::: {.columns style="display: flex; align-items: center; gap: 20px;"}
+::: {.column style="flex: 1;"}
+![](images/grace2.png){fig-align="center" width="70%"}
+:::
+
+::: {.column style="flex: 1; text-align: left;"}
+*I am interested in herbivore-plant interactions, especially between [Lepidopterans](https://en.wikipedia.org/wiki/Lepidoptera) and their food-plants. I seek to qualify how these relationships will shift in response to global change. I am eager to engage with [community scientists](https://www.calacademy.org/community-science) in data collection and environmental education.*
+:::
+:::::
+
+```{=html}
+<style>
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; /* center the image */
+  }
+  
+  .column {
+    width: 100% !important;
+    flex: none !important;
+  }
+  
+  .column img {
+    width: 50%; /* image at 50% width */
+    max-width: 50%;
+    margin: 0 auto; /* center the image */
+    display: block;
+  }
+}
+</style>
+```
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Education**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| **2021 - present**
+| *University of California, Davis*
+| Ph.D. Entomology, in progress
+| Advisor: Dr. [Emily Meineke](https://emilykmeineke.com/)
+| 
+| **2017 - 2021**
+| *Colby College, Waterville, ME*
+| B.A. Biology (honors) & Environmental Science
+| *Magna cum laude* with distinction in both majors
+| Advisors: Drs. Justin Becknell & Judy Stone
+| Thesis: "Reduced performance of ash-specialist caterpillars on non-native, cultivated Oleaceous plants"
+| 
+| **Spring 2020**
+| *Round River Conservation Studies, Maun, Botswana*
+| 
+| [Round River Conservation Studies](https://www.roundriver.org/) (RRCS) is an environmental organization operating at the nexus of conservation and education. We explored the complex relationship between conservation, people, and wildlife, mostly in Mababe, Botswana. We worked with local experts to design and maintain wildlife monitoring systems to be used to substantiate economic and environmental decisions. This program helped me to develop fluency in field work, responses to human-wildlife conflict, and communication with local stakeholders.
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Teaching**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| 
+| **Winters 2022 - 2025**
+| *UC Davis Department of Entomology & Nematology, Davis, CA*
+| Natural History of Insects Guest Lecturer
+| Lecture: "Insects & Climate Change"
+| 
+| **Fall 2022**
+| *UC Davis Department of Environmental Science & Policy, Davis, CA*
+| General Ecology Teaching Assistant
+| 
+| **Spring 2022**
+| *UC Davis Department of Evolution & Ecology, Davis, CA*
+| Introduction to Ecology Teaching Assistant
+| 
+| **Fall 2018**
+| *Colby College Mathematics Department, Waterville, ME*
+| Series and Multi-variable Calculus Teaching Assistant
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Employment & Commissions**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| **2025**
+| Intern
+| Native Plant Trust, Framingham, MA
+| 
+| The mission of [Native Plant Trust](https://www.nativeplanttrust.org/) (NPT) is to save rare and endangered plants through conservation, horticulture, and education. As part of my role at NPT, I contributed to the New England Plant Conservation Program (NEPCoP) by assisting in securing permission for rare plant surveys from a variety of land owners, including government agencies, NGOs, and private landowners.
+| 
+| **2025**
+| Research Intern
+| Appalachian Mountain Club Jackson, NH
+| 
+| The [Appalachian Mountain Club](https://www.outdoors.org/) (AMC) aims to protect the outdoors from environmental threats. Their work runs the gamut from maintaining trails to administering a collection of high elevation huts to conducting observational research across New England’s alpine and sub-alpine zones. In my capacity as an intern, I helped develop an alpine pollinator monitoring project under the guidance of senior scientist Georgia Murray.
+| 
+| **2022 - 2024**
+| Picnic Day Co-Chair
+| University of California, Davis, CA
+| 
+| **2022 - 2023, 2025 - 2026**
+| Entomology Seminar Series Committee Member
+| University of California, Davis, CA
+| 
+| **2018 - 2021**
+| Education Staff & Undergraduate Researcher
+| The Caterpillar Lab, Marlborough, NH
+| 
+| [The Caterpillar Lab](https://www.thecaterpillarlab.org/) (TCL) is an environmental education organization focused on inviting people---kids and adults alike---to share in stories of ecology, evolution, and natural history. I have presented at over 30 locations including elementary school classrooms, botanic gardens, and children's museums, with a goal to ignite in us a curiosity of the world we live in, from the smallest leaf-miners to the tallest trees.
+| 
+| **2019 - 2020**
+| Student Assistant
+| Colby College Olin Science Library, Waterville, ME
+| 
+| **2019**
+| Colby Outdoor Orientation Trip (COOT) Leader
+| Colby College, Waterville, ME
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Fellowships & Grants**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center"}
+Total funds awarded: \$219,190
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| ***External***
+| **2024**
+| NSF INTERN Supplemental Funding for Non-Academic Research Internships (\$52,795)
+| 
+| **2023**
+| NSF Graduate Research Fellowship (\$147,000)
+| 
+| **2022**
+| CNPS Student Research Grant Award (\$595)
+| 
+| ***Internal***
+| **2025**
+| Duffey Dingle Research Award (\$1,300)
+| McBeth Memorial Scholarship (\$950)
+| 
+| **2024**
+| Entomology Student Support Research Award
+| Henry A. Jastro Research Scholarship (combined, \$2,750)
+| 
+| **2023**
+| Jastro-Shields Graduate Student Research Award (\$2,650)
+| 
+| **2022**
+| McBeth Memorial Scholarship
+| Henry A. Jastro Research Scholarship (combined, \$2,650)
+| 
+| **2020**
+| Colby College Students' Special Project Grant (\$500)
+| 
+| **2017 -- 2021**
+| Colby College National Merit Scholarship (\$8,000)
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Honors & Awards**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| **2024**
+| Environmental Entomology People's Choice Runner Up
+| 
+| **2021**
+| Colby College Off-Campus Study Photo Contest (**1^st^ place**)
+| Entry title, description: "Cricket Cricket," a macro-photograph of a *setotojane* katydid
+| 
+| **2017 - 2021**
+| Colby College National Merit Scholar
+| Dean's Honors (in every qualifying semester)
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Publications**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| Full text publication access [link](https://www.zotero.org/groups/4992939/grace-horne/library) (view "attachments").
+
+\
+3.     **Horne, Grace M.**, Lauren Azevedo-Schmidt, and Emily K. Meineke. (in prep.) Herbivory diversity and function: A unifying framework for temporal ecology.
+
+2.     **Horne, Grace M.**, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (in prep.) Climate change favors moths able to keep pace with an earlier spring.
+:::
+
+```{=html}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citation and Metrics</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            font-weight: normal;
+            text-align: left;
+        }
+        .content-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .altmetric-citation-pair {
+            display: flex;
+            flex-direction: row; /* keep side by side on mobile */
+            gap: 15px; /* increased space between altmetric and text */
+            align-items: flex-start;
+        }
+        .altmetric {
+            flex: 0 0 auto;
+            max-width: 100px;
+        }
+        .citation {
+            flex: 1;
+            width: 100%;
+        }
+        .image {
+            width: 100%; /* full width container on mobile */
+            max-width: 200px; /* constrain image size */
+            margin: 20px auto;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            .content-column {
+                flex: 1;
+            }
+            .altmetric-citation-pair {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .altmetric {
+                flex: 0 0 auto;
+                margin-right: 20px;
+            }
+            .image {
+                flex: 0 0 20%;
+                margin: 0;
+                align-self: center;
+                max-width: none; /* remove max-width constraint on desktop */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-column">
+            <div class="altmetric-citation-pair">
+                <div class="altmetric">
+                    <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+                    <div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="140836740"></div>
+                </div>
+                <div class="citation">
+                    <p>1. <strong>Horne, Grace M.</strong>, Rea Manderino, and Samuel P. Jaffe. (2023) Specialist herbivore performance on introduced plants during native host decline. <em>Environmental Entomology.</em></p>
+                </div>
+            </div>
+            <!-- Commented out second altmetric-citation pair
+            <div class="altmetric-citation-pair">
+                <div class="altmetric">
+                    <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+                    <div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="140836740"></div>
+                </div>
+                <div class="citation">
+                    <p>2. <strong>Horne, Grace M.</strong>, et al. (2022) Another important study on plant-herbivore interactions. <em>Journal of Ecology.</em></p>
+                </div>
+            </div>
+            -->
+        </div>
+        <div class="image">
+            <img src="images/image-237850656.png" alt="Related image">
+        </div>
+    </div>
+</body>
+</html>
+```
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Presentations**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left; fig-align: center"}
+| 12.      **Horne, Grace M.**\* and Emily K. Meineke. (2025) Herbarium sheets as ecological data caches. *Entomological Society of America Annual Meeting.* **Invited.**
+| 
+| 11.      **Horne, Grace M.**\*, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (2025) Climate change favors moths able to keep pace with an earlier spring. *Ecological Society of America Annual Meeting.* **Invited.**
+| 
+| 10.     Marielle S. Hansel Friedman\*, Alison E. L. Colwell, Elizeth Cinto Mejía, **Grace M. Horne**, Ian S. Pearse, Emily K. Meineke, Paul D. Pratt. (2024) Herbarium specimens faithfully capture changing plant-insect interactions over years. *Entomology Society of America Annual Meeting.*
+| 
+| 9.     **Horne, Grace M.\***, Rea Manderino, and Samuel P. Jaffe. (2024) Specialist herbivore performance on introduced plants during native host decline. *Entomology Society of America Annual Meeting.* **Invited**, but unable to deliver due to illness.
+| 
+| 8.     **Horne, Grace M.\*** and Marielle S. Hansel Friedman. (2024) #iluvbugs: Illuminating backyard biodiversity through citizen science and UV insect exploration. *IE Faculty Fellows and Graduate Scholars Symposium*. Poster.
+| 
+| 7.     **Horne, Grace M.**\*, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (2023) Long-term datasets reveal climatic nuance in moth responses to global change. *Biology of Butterflies Conference.*
+| 
+| 6.     **Horne, Grace M.**\* (2023) Climate change and our backyard fauna: a tale of the moths of Davis, CA. *Atria Covell Gardens.*
+| 
+| 5.     Meineke, Emily K., Alison Colwell\*, **Grace M. Horne**, and David Eng. (2022) Harnessing the Power of Inadvertent Collecting: Bias assessments in support of use of herbarium specimens for entomology research. *California Native Plant Society Conference.*
+| 
+| 4.     **Horne, Grace M.**\*, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (2022) Two new datasets reveal long-term moth community shifts in a biodiversity hotspot. *Ecological Society of American Annual Meeting.*
+| 
+| 3.     **Horne, Grace M.**\* (2021) Reduced performance of ash-specialist caterpillars on non-native, cultivated Oleaceous plants. *Colby Liberal Arts Symposium.*
+| 
+| 2.     **Horne, Grace M.**\* (2020) Will non-native Oleaceae family plants preserve and support native ash-feeding Sphingid populations in post-emerald ash borer forests? *Coastal Maine Botanical Gardens.*
+| 
+| 1.     **Horne, Grace M.**\* (2019) Canid infectious disease transmission via domestic dogs to *Lycaon pictus*. *Colby Liberal Arts Symposium.*
+| 
+| \* presenting author
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Workshops**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| **2024**
+| [wRiting functions in R](https://gracehorne.com/writing-functions-in-R), Entomology graduate students, March 12
+| 
+| **2023**
+| Using GitHub with R(Studio), Williams Lab \@ UCD, February 17
+| 
+| **2022**
+| Using GitHub with R(Studio), Meineke Lab \@ UCD, October 28
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Outreach & Extension**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| **Bold type** indicates an institution serving a majority low-income population
+| 
+| **Forthcoming**
+| Calscape “Pollinator Companion” decision support tool, a product of a working group led by Drs. Chris Cosma & L. Melissa Guzman in collaboration with the California Native Plant Society & National Center for Ecological Analysis and Synthesis
+| 
+| Age of Loneliness, feature documentary (in production). Directed by Jenni Morello. Interviewed as an entomologist and global change researcher.
+| 
+| **2025**
+| AMC Guide to the Pollinators of the WMNF, [full](https://drive.google.com/file/d/1aloFyCDI9kHhKHO_LqxdBAacF8EraHfE/view?usp=drive_link) & [abridged](https://drive.google.com/file/d/15WQ0iC4QMaNe-bYUuI1JUMEZHZpC-vq6/view?usp=drive_link) guides^†^
+| AMC Annual Dandelion Dig Day, July 9
+| The Caterpillar Lab \@ Garden in the Woods, August 30 – September 1
+| 
+| **2024**
+| UC Davis Picnic Day: Entomology Exhibit, April 20^†^
+| City Nature Challenge BioBlitz \@ Davis Arboretum, April 26
+| #iluvbugs BioBlitz \@ Davis Arboretum, April 27^†^
+| Bioblitz at The Seeds of Solidarity Farm, May 26
+| Discovery Museum Program, August 15 - 16
+| California Biodiversity Day, September 7
+| (collaboratively created [regional biodiversity guides](https://drive.google.com/drive/folders/1HQZsG10TBvSzO29jdyQa9i2nrTin_lov?usp=sharing))
+| 
+| **2023**
+| Bohart Museum Open House: "Beetles!," January 22
+| Museum Biodiversity Day, February 18
+| UC Davis Picnic Day: Entomology Exhibit, April 15^†^
+| Bohart Museum \@ Sacramento Earth Day, April 23
+| City Nature Challenge BioBlitz \@ Davis Arboretum, April 29^†^
+| City Nature Challenge \@ SMUD Museum of Science, April 29
+| Go Wild Yolo Library \@ Capay Open Space Park, June 10
+| 
+| **2022**
+| STEM Squad Event \@ **Winters Middle School**, February 24
+| STEM Squad Event \@ **Winters Middle School**, April 14
+| UC Davis Picnic Day: Entomology Exhibit, April 23^†^
+| Davis, CA Loopalooza: Bohart Museum Station, May 1
+| STEM Squad X Google Event \@ Holy Rosary School, May 13
+| Bohart Museum Open House: "Bugs in Ag," May 28
+| Bohart Museum Open House: "Insects, Art, & Culture," October 15
+| Go Wild Yolo Library \@ Capay Open Space Park, October 22
+| 
+| **2021**
+| Discovery Museum Residency, June 7 - 21
+| Troy, NH Girl Scouts of America Program, June 28
+| Berkshire Botanical Garden Residency, July 3 - 4
+| Royalston, MA Library Program, July 15
+| Bedrock Gardens Program, July 18
+| Squam Lakes Natural Science Center Program, July 28 - August 3
+| Vermont Institute of Natural Science Program, August 7
+| 
+| **2020\***
+| Coastal Maine Botanical Gardens Residency, August 29
+| 
+| **2019**
+| **Lincoln-Eliot School Program**, May 29
+| **Horace Mann School Program**, May 30
+| Randall Library Program, May 31
+| Keene Farmer's Market Booth, June 1
+| Framingham Public Library Program, June 2
+| NH Audubon Pollinator Party, June 15
+| Brattleboro Farmer's Market Booth, June 22
+| Wildwood Camp Program, June 25
+| Aldworth Manor Program, June 27
+| North Branch Nature Center Program, June 30
+| Bradford Conservation Commission Program, July 9
+| Squam Lakes Natural Science Center Program, July 11
+| Warren Public Library Program, July 13
+| Brattleboro, VT Museum Program, July 29
+| Coastal Maine Botanical Gardens Residency, July 22 - 27
+| Franklin Pierce University Camp Program, July 30
+| New England Botanic Garden at Tower Hill Program, August 3
+| 
+| **2018**
+| North Branch Nature Center BioBlitz, July 21 - 22
+| Arnold Arboretum Program, July 28
+| Boston Museum of Science Exhibit, July 11
+| New England Botanic Garden at Tower Hill Program, July 25 - 26
+| Discovery Museum Residency, July 28 - August 3
+| 
+| \* Senior thesis data collection, COVID-19 pandemic
+| ^†^ Independently designed and presented
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Professional Affiliations**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| **2022 -- present**
+| Ecological Society of America
+| Entomological Society of America
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Reviews**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| Proceedings of the Royal Society B
+| Scientific Reports
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+#### **Relevant Coursework**
+:::
+
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: left"}
+| Cell Biology
+| Conservation Biology
+| Env. & Natural Resource Economics
+| GIS & Spatial Analysis
+| Introduction to R
+| Series & Multivariable Calculus
+| Taxonomy of Flowering Plants
+| Woody Plants
+| Problems in Environmental Science
+| Evolutionary Analysis
+| Community Ecology
+| Forest Ecosystems
+| Introduction to Entomology
+| Insect Physiology
+| Digital Scientific Illustration
+| Trait-Based Ecology
+| Insect Ecology
+| Bayesian Statistics
+| Citizen Science in Conservation
+| Bio-Collections for Global Change Research
+| Metabolomics
+| Organisms & Methods Across Systems
+:::
