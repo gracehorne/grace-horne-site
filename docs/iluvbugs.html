@@ -39,9 +39,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -148,59 +145,9 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-anchor-id="iluvbugs-photo-gallery"><strong>#il<u>uv</u>bugs photo gallery</strong></h3>
 <p><br>
 </p>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-fig-align="top" data-layout-ncol="3">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/iluvbugsevent.png" class="lightbox" data-gallery="my-gallery" title="#iluvbugs X City Nature Challenge BioBlitz home base Photo credit: Marielle Hansel Friedman"><img src="images/iluvbugsevent.png" class="img-fluid figure-img" alt="#iluvbugs X City Nature Challenge BioBlitz home base Photo credit: Marielle Hansel Friedman"></a></p>
-<figcaption>#il<strong>uv</strong>bugs X City Nature Challenge BioBlitz home base<br>
-Photo credit: Marielle Hansel Friedman</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/IMG_4327.png" class="lightbox" data-gallery="my-gallery" title="A caterpillar fluoresces under ultraviolet light Photo credit: Grace Horne"><img src="images/IMG_4327.png" class="img-fluid figure-img" alt="A caterpillar fluoresces under ultraviolet light Photo credit: Grace Horne"></a></p>
-<figcaption>A caterpillar fluoresces under ultraviolet light<br>
-Photo credit: Grace Horne</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/IMG_4328.png" class="lightbox" data-gallery="my-gallery" title="A fawn sphinx caterpillar illuminated by ultraviolet light Photo credit: Grace Horne"><img src="images/IMG_4328.png" class="img-fluid figure-img" alt="A fawn sphinx caterpillar illuminated by ultraviolet light Photo credit: Grace Horne"></a></p>
-<figcaption>A fawn sphinx caterpillar illuminated by ultraviolet light<br>
-Photo credit: Grace Horne</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/glowingbugsexhibitpicnicday2-01.jpeg" class="lightbox" data-gallery="my-gallery" title="A viewing box of a fluorescing millipede at UCD Picnic Day Photo credit: Marielle Hansel Friedman"><img src="images/glowingbugsexhibitpicnicday2-01.jpeg" class="img-fluid figure-img" alt="A viewing box of a fluorescing millipede at UCD Picnic Day Photo credit: Marielle Hansel Friedman"></a></p>
-<figcaption>A viewing box of a fluorescing millipede at UCD Picnic Day<br>
-Photo credit: Marielle Hansel Friedman</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/GraceandMarielle_glowingbugsexhibit_picnicday-02.JPG" class="lightbox" data-gallery="my-gallery" title="Grace Horne and Marielle Hansel Friedman of the Meineke Lab discuss the mechanisms behind fluorescence at UCD Picnic Day Photo credit: Kathy Keatley Garvey"><img src="images/GraceandMarielle_glowingbugsexhibit_picnicday-02.JPG" class="img-fluid figure-img" alt="Grace Horne and Marielle Hansel Friedman of the Meineke Lab discuss the mechanisms behind fluorescence at UCD Picnic Day Photo credit: Kathy Keatley Garvey"></a></p>
-<figcaption>Grace Horne and Marielle Hansel Friedman of the Meineke Lab discuss the mechanisms behind fluorescence at UCD Picnic Day<br>
-Photo credit: Kathy Keatley Garvey</figcaption>
-</figure>
-</div>
-</div>
-</div>
+<div class="kinopio-embed" style="height: 420px; width: 100%;">
+  <iframe src="https://kinopio.club/embed/?spaceId=XFxt5q4xmVkOqK65KMfl4&amp;zoom=100" style="height: 100%; width: 100%; border: 0; border-radius: 6px;">
+  </iframe>
 </div>
 <div style="text-align: center; margin-top: 1.5rem;">
   <button id="uv-toggle-btn" onclick="toggleUVFlashlight()" style="
@@ -213,7 +160,7 @@ Photo credit: Kathy Keatley Garvey</figcaption>
     cursor: pointer;
     letter-spacing: 0.03em;
     transition: background 0.2s, color 0.2s;
-  ">🔦 Toggle UV flashlight</button>
+  ">⋆✴︎ Toggle UV flashlight</button>
 </div>
 
 <script>
@@ -221,7 +168,9 @@ function toggleUVFlashlight() {
   if (window.__uvFlashlight) {
     window.__uvFlashlight.remove();
     delete window.__uvFlashlight;
-    document.getElementById('uv-toggle-btn').textContent = '🔦 Toggle UV flashlight';
+    // remove iframe blockers
+    document.querySelectorAll('.__uv-iframe-block').forEach(el => el.remove());
+    document.getElementById('uv-toggle-btn').textContent = '⋆✴︎ Toggle UV flashlight';
     return;
   }
 
@@ -267,13 +216,32 @@ function toggleUVFlashlight() {
 
   document.addEventListener("mousemove", onMouseMove, { passive: true });
 
+  // cover each iframe with a transparent div so mousemove fires over them
+  document.querySelectorAll('iframe').forEach(iframe => {
+    const block = document.createElement('div');
+    block.className = '__uv-iframe-block';
+    Object.assign(block.style, {
+      position: 'absolute',
+      top: '0', left: '0',
+      width: '100%', height: '100%',
+      zIndex: '2147483646',
+      background: 'transparent',
+    });
+    // iframe parent must be positioned for absolute to work
+    const parent = iframe.parentElement;
+    if (getComputedStyle(parent).position === 'static') {
+      parent.style.position = 'relative';
+    }
+    parent.appendChild(block);
+  });
+
   window.__uvFlashlight = overlay;
   overlay.remove = function () {
     document.removeEventListener("mousemove", onMouseMove);
     (overlay.parentElement || document.documentElement).removeChild(overlay);
   };
 
-  document.getElementById('uv-toggle-btn').textContent = '💡 UV flashlight ON';
+  document.getElementById('uv-toggle-btn').textContent = '⋆✴︎ UV flashlight ON';
 }
 </script>
 </section>
@@ -945,38 +913,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","descPosition":"bottom"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

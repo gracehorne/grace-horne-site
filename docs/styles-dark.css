@@ -1,20 +1,20 @@
 /* css styles - dark theme */
 
 body {
-  color: #f8f8f2; 
-  background-color: #282A36; 
+  color: #c6d0f5; 
+  background-color: #303446; 
 }
 
 /* dropdown menu from hamburger with same aesthetics */
 @media (max-width: 768px) {
   .navbar-brand, .navbar-toggler {
-    background-color: rgba(40, 42, 54, 0.9) !important;
+    background-color: rgba(48, 52, 70, 0.9) !important;
     padding: 8px 12px;
     border-radius: 5px;
   }
   
   .navbar-collapse {
-    background-color: rgba(40, 42, 54, 0.9) !important;
+    background-color: rgba(48, 52, 70, 0.9) !important;
     border-radius: 5px;
     margin-top: 10px;
     padding: 10px;
@@ -22,7 +22,7 @@ body {
   
   /* style the links in the dropdown */
   .navbar-collapse .nav-link {
-    color: #f8f8f2 !important; /* light text on dark background */
+    color: #c6d0f5 !important; /* light text on dark background */
   }
 }
 
@@ -33,11 +33,11 @@ body {
 }
 
 .sidebar nav[role=doc-toc] ul>li>a:hover, .sidebar nav[role=doc-toc] ul>li>ul>li>a:hover {
-    color: #bd93f9 !important;
+    color: #ca9ee6 !important;
 }
 
 html body {
-  font-family: 'Alegreya Sans', sans-serif !important;
+  font-family: 'Output Sans', sans-serif !important;
 }
 
 /* apply normal font weight to strong elements only within nav */
@@ -54,53 +54,53 @@ nav strong {
 }
 
 nav.quarto-secondary-nav {
-    background-color: #282A36 !important;
-    border-bottom: 1px solid #282A36 !important;
+    background-color: #303446 !important;
+    border-bottom: 1px solid #303446 !important;
 }
 
 div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, 
 nav.sidebar.sidebar-navigation:not(.rollup) {
-    background-color:  #282A36;
+    background-color:  #303446;
 }
 
 .sidebar nav[role=doc-toc] ul>li>a.active {
-    border-left: 1px solid #ffb86c;
-    color: #ffb86c !important;
+    border-left: 1px solid #ef9f76;
+    color: #ef9f76 !important;
 }
 
 .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
-    border-left: 1px solid #ffb86c;
-    color: #ffb86c !important;
+    border-left: 1px solid #ef9f76;
+    color: #ef9f76 !important;
 }
 
 .panel-caption, .figure-caption, figcaption {
-    color: #6272a4;
+    color: #737994;
 }
 
 /* unvisited link */
 a:link {
-  color: #ff79c6;
+  color: #f4b8e4;
 }
 
 /* visited link */
 a:visited {
-  color: #ff79c6;
+  color: #f4b8e4;
 }
 
 /* mouse over link */
 a:hover {
-  color: #bd93f9;
+  color: #ca9ee6;
 }
 
 /* selected link */
 a:active {
-  color: #ffb86c;
+  color: #ef9f76;
 }
 
 div.sidebar-item-container .active, 
 div.sidebar-item-container .show>.nav-link, 
 div.sidebar-item-container .sidebar-link>code {
-    color: #ffb86c;
+    color: #ef9f76;
 }
 
 .container {
@@ -165,7 +165,7 @@ img {
 
 /* add background when scrolled */
 .navbar.scrolled {
-  background-color: #282A36 !important;
+  background-color: #303446 !important;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -179,32 +179,48 @@ body {
   padding-top: 60px; /* adjust based on your navbar height */
 }
 
-/* alegreya sans font - loaded from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+/* output sans font - loaded from local files */
+@font-face {
+  font-family: 'Output Sans';
+  src: url('fonts/OutputSansVariable-VF-Edu.woff2') format('woff2'),
+       url('fonts/OutputSansVariable-VF-Edu.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Output Sans';
+  src: url('fonts/OutputSans-Italic-Edu.woff2') format('woff2'),
+       url('fonts/OutputSans-Italic-Edu.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 
 /* navbar and dropdown styling - dark version */
 .navbar {
   background-color: transparent !important;
   border-bottom: none !important;
   box-shadow: none !important;
-  font-family: 'Alegreya Sans', sans-serif !important;
+  font-family: 'Output Sans', sans-serif !important;
 }
 
 /* navbar links */
 .navbar .nav-link {
-  color: #ff79c6 !important; /* unvisited link color */
+  color: #f4b8e4 !important; /* unvisited link color */
 }
 
 .navbar .nav-link:visited {
-  color: #ff79c6 !important;
+  color: #f4b8e4 !important;
 }
 
 .navbar .nav-link:hover {
-  color: #bd93f9 !important; /* hover color */
+  color: #ca9ee6 !important; /* hover color */
 }
 
 .navbar .nav-link:active, .navbar .nav-link.active {
-  color: #ffb86c !important; /* active link color */
+  color: #ef9f76 !important; /* active link color */
 }
 
 /* remove bold from navbar */
@@ -233,19 +249,19 @@ body.modal-open {
 /* change sidebar toggle icon to bi-list - bigger size */
 .bi-layout-text-sidebar-reverse::before {
   content: "\f479" !important; /* bi-list icon */
-  color: #ff79c6 !important;
+  color: #f4b8e4 !important;
   font-size: 1.5rem !important; /* make icon bigger */
 }
 
 /* sidebar toggle on hover (purple like hover links) */
 .quarto-btn-toggle:hover .bi-layout-text-sidebar-reverse::before {
-  color: #bd93f9 !important;
+  color: #ca9ee6 !important;
 }
 
 /* sidebar toggle on active/click (orange like active links) */
 .quarto-btn-toggle:active .bi-layout-text-sidebar-reverse::before,
 .quarto-btn-toggle[aria-expanded="true"] .bi-layout-text-sidebar-reverse::before {
-  color: #ffb86c !important;
+  color: #ef9f76 !important;
 }
 
 /* mobile sidebar - work WITH Quarto's system */
@@ -262,7 +278,7 @@ body.modal-open {
     left: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
-    background-color: rgba(40, 42, 54, 0.95) !important;
+    background-color: rgba(48, 52, 70, 0.95) !important;
     z-index: 1050 !important;
     transform: none !important;
     display: flex !important;
@@ -285,7 +301,7 @@ body.modal-open {
   
   /* style sidebar links */
   #quarto-sidebar.show .sidebar-item-text {
-    color: #ff79c6 !important;
+    color: #f4b8e4 !important;
     font-size: 24px !important;
     margin: 15px 0 !important;
     text-align: center !important;
@@ -294,12 +310,12 @@ body.modal-open {
   }
   
   #quarto-sidebar.show .sidebar-item-text:hover {
-    color: #bd93f9 !important;
+    color: #ca9ee6 !important;
   }
   
   #quarto-sidebar.show .sidebar-item-text:active,
   #quarto-sidebar.show .sidebar-item-text.active {
-    color: #ffb86c !important;
+    color: #ef9f76 !important;
   }
   
   /* hide the sidebar header on mobile full screen */
@@ -313,7 +329,7 @@ body.modal-open {
     top: 20px !important;
     right: 20px !important;
     font-size: 24px !important;
-    color: #ff79c6 !important;
+    color: #f4b8e4 !important;
     background: transparent !important;
     border: none !important;
     cursor: pointer !important;
@@ -328,11 +344,11 @@ body.modal-open {
   }
   
   .sidebar-close-btn:hover {
-    color: #bd93f9 !important;
+    color: #ca9ee6 !important;
   }
   
   .sidebar-close-btn:active {
-    color: #ffb86c !important;
+    color: #ef9f76 !important;
   }
   
   /* home button styling */
@@ -341,7 +357,7 @@ body.modal-open {
     top: 20px !important;
     left: 20px !important;
     font-size: 20px !important;
-    color: #ff79c6 !important;
+    color: #f4b8e4 !important;
     background: transparent !important;
     border: none !important;
     cursor: pointer !important;
@@ -357,11 +373,11 @@ body.modal-open {
   }
   
   .sidebar-home-btn:hover {
-    color: #bd93f9 !important;
+    color: #ca9ee6 !important;
   }
   
   .sidebar-home-btn:active {
-    color: #ffb86c !important;
+    color: #ef9f76 !important;
   }
 }
 
@@ -383,7 +399,7 @@ body.modal-open {
     top: 20px !important;
     left: 70px !important; /* adjusted for better alignment */
     font-size: 20px !important;
-    color: #ff79c6 !important;
+    color: #f4b8e4 !important;
     background: transparent !important;
     border: none !important;
     cursor: pointer !important;
@@ -398,11 +414,11 @@ body.modal-open {
   }
   
   .sidebar-theme-btn:hover {
-    color: #bd93f9 !important;
+    color: #ca9ee6 !important;
   }
   
   .sidebar-theme-btn:active {
-    color: #ffb86c !important;
+    color: #ef9f76 !important;
   }
   
   /* mobile social media buttons */
@@ -410,7 +426,7 @@ body.modal-open {
     position: absolute !important;
     top: 20px !important;
     font-size: 18px !important;
-    color: #ff79c6 !important;
+    color: #f4b8e4 !important;
     background: transparent !important;
     border: none !important;
     cursor: pointer !important;
@@ -426,11 +442,11 @@ body.modal-open {
   }
   
   .mobile-social-btn:hover {
-    color: #bd93f9 !important;
+    color: #ca9ee6 !important;
   }
   
   .mobile-social-btn:active {
-    color: #ffb86c !important;
+    color: #ef9f76 !important;
   }
   
   /* better centered alignment for all buttons */

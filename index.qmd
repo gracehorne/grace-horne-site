@@ -41,7 +41,9 @@ css: styles.css
 </style>
 ```
 
-::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center; text-decoration: underline"}
+::: {style="width: 100%; margin: auto; font-weight: normal; text-align: center;"}
+(I'm in the process of moving my CV [here](https://docs.google.com/document/d/10gc9fmVgzAN75K9mlt206B_PkyuSGwwhJu0l9VwqO80/preview?))
+
 #### **Education**
 :::
 
@@ -195,9 +197,11 @@ Total funds awarded: \$219,190
 | Full text publication access [link](https://www.zotero.org/groups/4992939/grace-horne/library) (view "attachments").
 
 \
+4.     Baiotto, T., C. Cosma, Y. Y. J. Cheung, D. Narango, J. Woodard, P. McCarville, A. Echeverri, **G. Horne**, E. Wood, N. M. Williams, K. C. Seltmann, J. R. Fleri, A. Owens, M. Lequerica Tamara, A. Boren, S. Doneski, R. P. Guralnick, D. Li, and L. M. Guzman. 2026. Local interaction networks reconstructed from global biodiversity data improve pollinator restoration decision making. bioRxiv:2026.03.30.715389.
+
 3.     **Horne, Grace M.**, Lauren Azevedo-Schmidt, and Emily K. Meineke. (in prep.) Herbivory diversity and function: A unifying framework for temporal ecology.
 
-2.     **Horne, Grace M.**, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (in prep.) Climate change favors moths able to keep pace with an earlier spring.
+2.     **Horne, Grace M.**, John de Benedictis, Matthew L. Forister, and Emily K. Meineke. (in review) Climate change favors moths able to keep pace with an earlier spring.
 :::
 
 ```{=html}

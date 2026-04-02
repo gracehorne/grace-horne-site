@@ -33,6 +33,9 @@ website:
       - icon: google
         href: https://scholar.google.com/citations?user=pE2oVU0AAAAJ&hl=en
         aria-label: "Google Scholar"
+execute:
+  freeze: true
+
 format:
   html:
     page-layout: full
